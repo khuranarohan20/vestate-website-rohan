@@ -2,32 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "ClashDisplay Regular";
+  src: url("/assets/font/ClashDisplay-Regular.otf") format("opentype");
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--white-color);
+  font-family: "ClashDisplay Regular";
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Colors */
+:root {
+  --white-color: #ffffff;
+  --head-light: #fafafa;
+  --head-dark: #0c1136;
+  --black: #000000;
+  --btn-color: #cdea67;
+  --amenities-color: #20273c;
+  --amenities-para-color: #303454;
+  --para1-dark: #949494;
+  --para2-light: #6a6a6a;
+}
+
+/* Heading 3  (56px)*/
+
+.head-2 {
+  font-size: 4rem;
+}
+.head-3 {
+  font-size: 3.5rem;
+}
+
+.head-btn {
+  font-family: "Manrope SemiBold";
+  font-size: 1rem;
+  color: var(--black);
+}
+.text-22 {
+  font-size: 1.4rem;
+}
+.project-btn {
+  border: 1px solid #ffffff;
+  font-size: 1.4rem;
+}
+.input-style {
+  background: transparent;
+  width: 18.94rem;
+  border-bottom: 1px solid #909090;
+  padding-bottom: 0.5rem;
+}
+.input-full {
+  background: transparent;
+  width: 100%;
+  border-bottom: 1px solid #909090;
+  padding-bottom: 0.5rem;
+  color: #121112;
 }
