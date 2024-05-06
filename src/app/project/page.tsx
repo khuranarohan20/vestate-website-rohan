@@ -6,18 +6,18 @@ import FooterSection from "@/components/footer";
 const ProjectSection = () => {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-pure-black">
         <HeaderSection />
-        <div className="w-[82rem] m-auto pt-10">
+        <div className="max-w-[82rem] m-auto pt-10">
           <div
             className="flex justify-between pb-10"
             style={{ borderBottom: "1px solid #ffffff" }}
           >
             <div className="my-auto mx-0">
-              <h1 className="bg-white px-5 font-semibold text-[5.5rem] h-[5.63rem] flex items-center">
+              <h1 className="bg-white px-5 font-semibold text-[5.5rem] leading-[5rem] flex items-center">
                 V-Estate
               </h1>
-              <p className="text-btn flex items-center font-semibold text-[5.5rem]">
+              <p className="text-btn flex items-center font-semibold text-[5.5rem] leading-[5rem] pt-2">
                 Projects{" "}
                 <svg
                   className="ml-4"
@@ -204,7 +204,7 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
-      <div className="w-[82rem] m-auto pt-40 pb-20">
+      <div className="max-w-[82rem] m-auto pt-40 pb-20">
         <RealEstate />
       </div>
       <FooterSection />

@@ -4,9 +4,9 @@ import HeaderSection from "@/components/header";
 const ContactSection = () => {
   return (
     <>
-      <div className="bg-black h-[47.8rem]">
+      <div className="bg-pure-black h-[47.8rem]">
         <HeaderSection />
-        <div className="main-banner w-[82rem] m-auto">
+        <div className="main-banner max-w-[82rem] m-auto">
           <div className="flex pb-10 mt-16">
             <div className="mr-36">
               <h2 className="text-white font-medium text-7xl leading-[5rem]">
@@ -50,7 +50,7 @@ const ContactSection = () => {
                 have. We’ve got the answers.
               </p>
             </div>
-            <div className="flex items-center  w-[38.5rem] mt-20">
+            <div className="flex items-center  max-w-[38.5rem] mt-20">
               <div className="mr-20">
                 <h3 className="text-white font-medium text-3xl">Visit Us</h3>
                 <p className="text-white text-base ">
@@ -70,8 +70,8 @@ const ContactSection = () => {
             <img src="/assets/Images/contact-banner.png" alt="" />
           </div>
         </div>
-        <div className="bg-btn mt-24">
-          <div className="w-[81rem] m-auto flex justify-between py-[7.63rem]">
+        <div className="bg-prime-green mt-24">
+          <div className="max-w-[81rem] m-auto flex justify-between py-[7.63rem]">
             <div>
               <h2 className="text-form-head font-semibold text-7xl ">
                 Have A <br></br> Project? <br></br> Let's <br></br> Discuss

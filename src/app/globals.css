@@ -28,13 +28,15 @@ body {
 
 /* Heading 3  (56px)*/
 
-.head-2 {
+.head-64 {
   font-size: 4rem;
 }
 .head-3 {
   font-size: 3.5rem;
 }
-
+.head-14 {
+  font-size: 0.9rem;
+}
 .head-btn {
   font-family: "Manrope SemiBold";
   font-size: 1rem;

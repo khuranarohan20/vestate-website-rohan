@@ -1,9 +1,15 @@
+import { Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
+
+const manrope = Manrope({ subsets: ["greek"] });
+const inter = Inter({ subsets: ["greek"] });
+
 const FooterSection = () => {
   return (
     <>
       <div className=" pb-12" style={{ borderBottom: "1px solid #bbbbbb" }}>
-        <div className="w-[82rem] m-auto">
-          <div className="flex justify-between mt-10">
+        <div className="max-w-[82rem] m-auto">
+          <div className="flex justify-between mt-20">
             <div>
               <img src="/assets/Images/footer-logo.svg" alt="v-state" />
             </div>
@@ -34,29 +40,29 @@ const FooterSection = () => {
             <div className="flex w-[31.4rem]">
               <div className="pr-14">
                 <ul className="text-base text-form-head font-medium">
-                  <li>
+                  <li className="font-semibold head-14 text-form-head leading-4 pb-2">
                     <a href="">Home</a>
                   </li>
-                  <li>
+                  <li className="font-semibold head-14 text-form-head leading-4 pb-2">
                     <a href="">book A Demo</a>
                   </li>
-                  <li>
+                  <li className="font-semibold head-14 text-form-head leading-4 pb-2">
                     <a href="">Projects</a>
                   </li>
-                  <li>
+                  <li className="font-semibold head-14 text-form-head leading-4 ">
                     <a href="">Contact</a>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul className="text-base text-form-head font-medium">
-                  <li>
+                  <li className="font-semibold head-14 text-form-head leading-4 pb-2">
                     <a href="">Pre-Sale</a>
                   </li>
-                  <li>
+                  <li className="font-semibold head-14 text-form-head leading-4 pb-2">
                     <a href="">Sales-Tool</a>
                   </li>
-                  <li>
+                  <li className="font-semibold head-14 text-form-head leading-4">
                     <a href="">Post-Sale</a>
                   </li>
                 </ul>
@@ -64,17 +70,31 @@ const FooterSection = () => {
             </div>
             <div className="flex justify-between">
               <div className="pr-28">
-                <p>Address:</p>
-                <p>
-                  405, Corporate Annexe Sonawala Rd <br></br> Goregaon (East),
-                  Mumbai,India
+                <p className="font-semibold head-14 pb-2">Address:</p>
+                <p
+                  className={`${manrope.className} text-form-head leading-6 text-left head-14`}
+                >
+                  405, Corporate Annexe <br></br>Sonawala Rd Goregaon <br></br>
+                  (East), Mumbai,India
                 </p>
               </div>
               <div>
-                <p>Contact:</p>
-                <p className="text-xl">+91 830-322-9629</p>
-                <p className="text-xl">+91 915- 238- 7077</p>
-                <p>hello@v-estate.com</p>
+                <p className="font-semibold head-14 pb-2">Contact:</p>
+                <p
+                  className={`${manrope.className} text-form-head text-xl leading-5 font-semibold pb-1`}
+                >
+                  +91 830-322-9629
+                </p>
+                <p
+                  className={`${manrope.className} text-form-head text-xl leading-5 font-semibold pb-1`}
+                >
+                  +91 915- 238- 7077
+                </p>
+                <p
+                  className={`${manrope.className} text-form-head text-xl leading-5 font-semibold pt-2`}
+                >
+                  hello@v-estate.com
+                </p>
                 <div className="flex gap-2.5 pt-6">
                   <svg
                     width="24"
@@ -122,11 +142,19 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <div className="w-[82rem] m-auto flex justify-between py-10">
-        <p className="text-form-head text-xs">© 2024 - V-Estate </p>
+      <div className="max-w-[82rem] m-auto flex justify-between py-10">
+        <p className={`${inter.className} text-form-head text-xs leading-4`}>
+          © 2024 - V-Estate{" "}
+        </p>
         <div className="flex">
-          <p className="pr-10 text-form-head text-xs">Privacy Policy</p>
-          <p className="text-form-head text-xs">Terms of Service</p>
+          <p
+            className={`${inter.className} pr-10 text-form-head text-xs leading-4 `}
+          >
+            Privacy Policy
+          </p>
+          <p className={`${inter.className} text-form-head text-xs leading-4 `}>
+            Terms of Service
+          </p>
         </div>
       </div>
     </>
