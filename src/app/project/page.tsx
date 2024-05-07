@@ -2,22 +2,23 @@ import HeaderSection from "@/components/header";
 import HomeSection from "@/components/footer";
 import RealEstate from "@/components/realEstate";
 import FooterSection from "@/components/footer";
+import Image from "next/image";
 
 const ProjectSection = () => {
   return (
     <>
       <div className="bg-pure-black">
         <HeaderSection />
-        <div className="max-w-[82rem] m-auto pt-10">
+        <div className="lg:max-w-[62rem]  lgdesktop:max-w-[82rem] m-auto pt-10">
           <div
             className="flex justify-between pb-10"
             style={{ borderBottom: "1px solid #ffffff" }}
           >
             <div className="my-auto mx-0">
-              <h1 className="bg-white px-5 font-semibold text-[5.5rem] leading-[5rem] flex items-center">
+              <h1 className="bg-white px-5 font-semibold lg:text-[4.5rem] xl:text-[5.5rem] leading-[5rem] flex items-center">
                 V-Estate
               </h1>
-              <p className="text-btn flex items-center font-semibold text-[5.5rem] leading-[5rem] pt-2">
+              <p className="text-prime-green flex items-center font-semibold lg:text-[4.5rem] xl:text-[5.5rem] leading-[5rem] pt-2">
                 Projects{" "}
                 <svg
                   className="ml-4"
@@ -53,7 +54,13 @@ const ProjectSection = () => {
               </p>
             </div>
             <div>
-              <img src="/assets/Images/florence.png" alt="" />
+              <Image
+                width={662}
+                height={296}
+                className="lg:w-[30rem] lgdesktop:w-[40.3rem] 2xl:w-[42.8rem]"
+                src="/assets/Images/florence.png"
+                alt=""
+              />
               <h2 className="text-white head-3 font-semibold">
                 Florence Fortune
               </h2>
@@ -84,12 +91,17 @@ const ProjectSection = () => {
           </div>
 
           <div
-            className="flex justify-between py-10 "
+            className="flex justify-between py-10 lg:gap-6 lgdesktop:gap-0"
             style={{ borderBottom: "1px solid #ffffff" }}
           >
             <div>
-              <img src="/assets/Images/L&T.png" alt="" />
-              <h2 className="text-white head-3 font-semibold">
+              <Image
+                width={644}
+                height={350}
+                src="/assets/Images/L&T.png"
+                alt=""
+              />
+              <h2 className="text-white head-3  font-semibold">
                 L&T Rejuve 360
               </h2>
               <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
@@ -117,8 +129,13 @@ const ProjectSection = () => {
               </button>
             </div>
             <div>
-              <img src="/assets/Images/shapoorji.png" alt="" />
-              <h2 className="text-white head-3 font-semibold">
+              <Image
+                width={644}
+                height={350}
+                src="/assets/Images/shapoorji.png"
+                alt=""
+              />
+              <h2 className="text-white head-3  font-semibold">
                 Shapoorji & Pallonji
               </h2>
               <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
@@ -146,10 +163,15 @@ const ProjectSection = () => {
               </button>
             </div>
           </div>
-          <div className="flex justify-between pt-10 pb-12">
+          <div className="flex justify-between pt-10 pb-12 lg:gap-6 lgdesktop:gap-0">
             <div>
-              <img src="/assets/Images/L&T.png" alt="" />
-              <h2 className="text-white head-3 font-semibold">Jp Infra</h2>
+              <Image
+                width={644}
+                height={350}
+                src="/assets/Images/L&T.png"
+                alt=""
+              />
+              <h2 className="text-white head-3  font-semibold">Jp Infra</h2>
               <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
                 View Project{" "}
                 <svg
@@ -175,8 +197,13 @@ const ProjectSection = () => {
               </button>
             </div>
             <div>
-              <img src="/assets/Images/shapoorji.png" alt="" />
-              <h2 className="text-white head-3 font-semibold">L&T</h2>
+              <Image
+                width={644}
+                height={350}
+                src="/assets/Images/shapoorji.png"
+                alt=""
+              />
+              <h2 className="text-white head-3  font-semibold">L&T</h2>
               <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
                 View Project{" "}
                 <svg
@@ -204,7 +231,7 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[82rem] m-auto pt-40 pb-20">
+      <div className=" lg:max-w-[62rem] lgdesktop:max-w-[82rem]  m-auto pt-40 pb-20">
         <RealEstate />
       </div>
       <FooterSection />

@@ -1,18 +1,21 @@
 import FooterSection from "@/components/footer";
 import HeaderSection from "@/components/header";
+import Image from "next/image";
+import { Manrope } from "next/font/google";
 
+const manrope = Manrope({ subsets: ["greek"] });
 const ContactSection = () => {
   return (
     <>
-      <div className="bg-pure-black h-[47.8rem]">
+      <div className="bg-pure-black lg:h-[47.8rem] h-[33.8rem]">
         <HeaderSection />
-        <div className="main-banner max-w-[82rem] m-auto">
-          <div className="flex pb-10 mt-16">
-            <div className="mr-36">
-              <h2 className="text-white font-medium text-7xl leading-[5rem]">
+        <div className="main-banner px-14">
+          <div className="flex 2xl:justify-between pb-10 mt-16">
+            <div className="lg:mr-36 mr-0">
+              <h2 className="text-white font-medium lg:text-7xl text-[2.5rem] lg:leading-[5rem] leading-[2.82rem]">
                 Let's
                 <br></br>
-                <span className="text-btn flex items-center">
+                <span className="text-prime-green flex items-center ">
                   Get in Touch
                   <svg
                     className="pl-3.5"
@@ -45,61 +48,83 @@ const ContactSection = () => {
                   </svg>
                 </span>
               </h2>
-              <p className="text-white text-base leading-5 w-[34rem]">
+              <p
+                className={`${manrope.className} text-white  lg:text-base text-[0.57rem] lg:leading-5 lg:w-[34rem] leading-3 w-3/4 opacity-70`}
+              >
                 Our experts are available to answer any questions you might
                 have. We’ve got the answers.
               </p>
             </div>
-            <div className="flex items-center  max-w-[38.5rem] mt-20">
-              <div className="mr-20">
-                <h3 className="text-white font-medium text-3xl">Visit Us</h3>
-                <p className="text-white text-base ">
-                  405, Corporate Annexe Sonawala Rd <br></br>Goregaon (East),
-                  Mumbai,India
+            <div className="flex items-center  max-w-[38.5rem] lg:mt-20 mt-[2.2rem]">
+              <div className="lg:mr-20 mr-12">
+                <h3 className="text-white font-medium lg:text-3xl text-base">
+                  Visit Us
+                </h3>
+                <p
+                  className={`${manrope.className} text-white lg:text-base text-xs opacity-70 lg:leading-[1.4rem] leading-[0.88rem]`}
+                >
+                  405, Corporate Annexe <br className="lg:hidden block"></br>{" "}
+                  Sonawala Rd Goregaon <br className="lg:hidden block"></br>{" "}
+                  (East), Mumbai,India
                 </p>
               </div>
               <div>
-                <h3 className="text-white font-medium text-3xl">Contact</h3>
-                <p className="text-white text-base">hello@v-estate.com</p>
-                <p className="text-white text-base">+91 915-238-7077</p>
+                <h3 className="text-white font-medium lg:text-3xl text-base">
+                  Contact
+                </h3>
+                <p
+                  className={`${manrope.className} text-white lg:text-base text-xs opacity-70 lg:leading-[1.65rem] leading-[0.88rem] `}
+                >
+                  hello@v-estate.com
+                </p>
+                <p
+                  className={`${manrope.className} text-white lg:text-base  text-xs opacity-70 lg:leading-[1.65rem] leading-[0.88rem]`}
+                >
+                  +91 915-238-7077
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="w-100">
-            <img src="/assets/Images/contact-banner.png" alt="" />
-          </div>
+          {/* <div className="w-100"> */}
+          <Image
+            width={1920}
+            height={645}
+            src="/assets/Images/contact-banner.png"
+            alt=""
+          />
+          {/* </div> */}
         </div>
-        <div className="bg-prime-green mt-24">
-          <div className="max-w-[81rem] m-auto flex justify-between py-[7.63rem]">
+        <div className="bg-prime-green lg:mt-24 mt-12">
+          <div className=" flex justify-between lg:py-[7.63rem] py-16 px-20">
             <div>
-              <h2 className="text-form-head font-semibold text-7xl ">
+              <h2 className="text-form-head font-semibold lg:text-7xl text-[2.5rem] lg:leading-[5rem] leading-[2.85rem]">
                 Have A <br></br> Project? <br></br> Let's <br></br> Discuss
               </h2>
             </div>
             <div className="discuss-form-container">
               <form>
-                <div className="flex gap-5 mb-16">
+                <div className="flex gap-5 lg:mb-16 mb-9">
                   <input
-                    className="input-style placeholder:text-form-head focus:outline-none text-lg"
+                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="text"
                     placeholder="Your Name"
                   />
                   <input
-                    className="input-style placeholder:text-form-head focus:outline-none text-lg"
+                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="email"
                     placeholder="Your Email"
                   />
                 </div>
 
-                <div className="flex gap-5 mb-16">
+                <div className="flex gap-5 lg:mb-16 mb-9">
                   <input
-                    className="input-style placeholder:text-form-head focus:outline-none text-lg"
+                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="phone"
                     placeholder="Phone Number"
                   />
                   <input
-                    className="input-style placeholder:text-form-head focus:outline-none text-lg"
+                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="text"
                     placeholder="Company Name"
                   />
@@ -107,12 +132,14 @@ const ContactSection = () => {
 
                 <div>
                   <input
-                    className="input-full placeholder:text-form-head focus:outline-none text-lg"
+                    className={`${manrope.className} input-full placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="text"
                     placeholder="Message"
                   />
                 </div>
-                <button className="bg-white rounded-full px-[2.21rem] pt-[1rem] pb-3.5 mt-8">
+                <button
+                  className={`${manrope.className} bg-white lg:rounded-full rounded-2xl lg:px-[2.21rem] lg:py-[1rem] px-[1.2rem] py-[0.5rem] mt-8 font-semibold lg-text-base text-[0.57rem] font-medium`}
+                >
                   Submit
                 </button>
               </form>

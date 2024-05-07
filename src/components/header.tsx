@@ -4,7 +4,7 @@ const manrope = Manrope({ subsets: ["greek"] });
 const HeaderSection = () => {
   return (
     <>
-      <div className="flex justify-between max-w-[82rem] m-auto py-10">
+      <div className="flex justify-between py-10 xl:px-[11rem] lg:px-[1rem] lgdesktop:px-14 px-20 items-center">
         <div>
           <svg
             width="181"

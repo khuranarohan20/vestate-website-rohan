@@ -9,6 +9,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: {
+        "72rem": "72rem",
+      },
+      screens: {
+        mobile: "540px",
+        // => @media (min-width: 640px) { ... }
+
+        laptop: "1024px",
+        // => @media (min-width: 1024px) { ... }
+        tab: "920px",
+        desktop: "1280px",
+        lgdesktop: "1440px",
+        llgdesktop: "1620px",
+        // => @media (min-width: 1280px) { ... }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
