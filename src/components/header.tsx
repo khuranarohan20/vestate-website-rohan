@@ -4,7 +4,7 @@ const manrope = Manrope({ subsets: ["greek"] });
 const HeaderSection = () => {
   return (
     <>
-      <div className="flex justify-between py-10 xl:px-[11rem] lg:px-[1rem] lgdesktop:px-14 px-20 items-center">
+      <div className="flex justify-between py-10 lg:px-14 tab:px-14 items-center">
         <div>
           <svg
             width="181"
@@ -22,7 +22,7 @@ const HeaderSection = () => {
           </svg>
         </div>
         <div className="flex items-center ">
-          <div className="flex items-center text-head-meun hidden">
+          <div className="flex items-center text-head-meun lg:hidden">
             <div>
               <p>
                 <a href="">Home</a>

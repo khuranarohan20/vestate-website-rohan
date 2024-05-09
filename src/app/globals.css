@@ -21,6 +21,28 @@ body {
     font-size: 3rem !important;
   }
 }
+
+@media (max-width: 1023px) and (min-width: 720px) {
+  .head-3 {
+    font-size: 2rem !important;
+  }
+  .head-64 {
+    font-size: 2.25rem !important;
+  }
+  .real-estate {
+    margin-top: -0.5rem !important;
+  }
+  .project-btn {
+    font-size: 0.75rem !important;
+  }
+  .marginRight {
+    margin-right: -35px !important;
+  }
+  .sales-logo {
+    background-position: -0.5rem 1rem !important;
+  }
+}
+
 /* Colors */
 :root {
   --white-color: #ffffff;
@@ -52,7 +74,7 @@ body {
   font-size: 1.4rem;
 }
 .project-btn {
-  border: 1px solid #ffffff;
+  border: 0.75px solid rgba(255, 255, 255, 0.5);
   font-size: 1.4rem;
 }
 .input-style {

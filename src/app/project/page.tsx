@@ -9,19 +9,19 @@ const ProjectSection = () => {
     <>
       <div className="bg-pure-black">
         <HeaderSection />
-        <div className="lg:max-w-[62rem]  lgdesktop:max-w-[82rem] m-auto pt-10">
+        <div className=" tab:px-[1.82rem] lgdesktop:max-w-[82rem] lgdesktop:m-auto pt-10 lg:px-14 lgdesktop:px-0">
           <div
             className="flex justify-between pb-10"
-            style={{ borderBottom: "1px solid #ffffff" }}
+            style={{ borderBottom: "0.75px solid rgba(255, 255, 255, 0.5)" }}
           >
             <div className="my-auto mx-0">
-              <h1 className="bg-white px-5 font-semibold lg:text-[4.5rem] xl:text-[5.5rem] leading-[5rem] flex items-center">
+              <h1 className="bg-white px-5 font-semibold tab:px-2 tab:text-[3.15rem] tab:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] flex items-center">
                 V-Estate
               </h1>
-              <p className="text-prime-green flex items-center font-semibold lg:text-[4.5rem] xl:text-[5.5rem] leading-[5rem] pt-2">
+              <p className="text-prime-green flex items-center font-semibold tab:text-[3.15rem] tab:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] pt-2">
                 Projects{" "}
                 <svg
-                  className="ml-4"
+                  className="lg:ml-4 tab:w-[1.32rem] tab:ml-2 lg:w-[2.5rem]"
                   width="40"
                   height="40"
                   viewBox="0 0 40 40"
@@ -57,17 +57,17 @@ const ProjectSection = () => {
               <Image
                 width={662}
                 height={296}
-                className="lg:w-[30rem] lgdesktop:w-[40.3rem] 2xl:w-[42.8rem]"
+                className=" tab:w-[22.65rem] lg:w-[30rem] lgdesktop:w-[40.3rem] 2xl:w-[42.8rem] "
                 src="/assets/Images/florence.png"
-                alt=""
+                alt="florence-fortune"
               />
               <h2 className="text-white head-3 font-semibold">
                 Florence Fortune
               </h2>
-              <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
                 View Project{" "}
                 <svg
-                  className="ml-1"
+                  className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -91,8 +91,8 @@ const ProjectSection = () => {
           </div>
 
           <div
-            className="flex justify-between py-10 lg:gap-6 lgdesktop:gap-0"
-            style={{ borderBottom: "1px solid #ffffff" }}
+            className="flex justify-between py-10 tab:gap-x-3 lg:gap-6"
+            style={{ borderBottom: "0.75px solid rgba(255, 255, 255, 0.5)" }}
           >
             <div>
               <Image
@@ -104,10 +104,10 @@ const ProjectSection = () => {
               <h2 className="text-white head-3  font-semibold">
                 L&T Rejuve 360
               </h2>
-              <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
                 View Project{" "}
                 <svg
-                  className="ml-1"
+                  className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -138,10 +138,10 @@ const ProjectSection = () => {
               <h2 className="text-white head-3  font-semibold">
                 Shapoorji & Pallonji
               </h2>
-              <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
                 View Project{" "}
                 <svg
-                  className="ml-1"
+                  className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -163,7 +163,7 @@ const ProjectSection = () => {
               </button>
             </div>
           </div>
-          <div className="flex justify-between pt-10 pb-12 lg:gap-6 lgdesktop:gap-0">
+          <div className="flex justify-between pt-10 pb-12 lg:gap-6 tab:gap-x-3 ">
             <div>
               <Image
                 width={644}
@@ -172,10 +172,10 @@ const ProjectSection = () => {
                 alt=""
               />
               <h2 className="text-white head-3  font-semibold">Jp Infra</h2>
-              <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
                 View Project{" "}
                 <svg
-                  className="ml-1"
+                  className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -204,10 +204,10 @@ const ProjectSection = () => {
                 alt=""
               />
               <h2 className="text-white head-3  font-semibold">L&T</h2>
-              <button className="flex items-center text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
                 View Project{" "}
                 <svg
-                  className="ml-1"
+                  className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -231,10 +231,10 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
-      <div className=" lg:max-w-[62rem] lgdesktop:max-w-[82rem]  m-auto pt-40 pb-20">
+      <div className="lgdesktop:max-w-[82rem] m-auto pt-40 pb-20 tab:pb-0 tab:pt-20 tab:px-[1.82rem] lg:px-14 lgdesktop:px-0">
         <RealEstate />
+        <FooterSection />
       </div>
-      <FooterSection />
     </>
   );
 };

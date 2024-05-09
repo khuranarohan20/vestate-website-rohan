@@ -9,7 +9,7 @@ const FooterSection = () => {
   return (
     <>
       <div
-        className="xl:max-w-[82rem] lg:max-w-[62rem] m-auto lg:pb-12 pb-10"
+        className="xl:max-w-[82rem] m-auto lg:pb-12 pb-10"
         style={{ borderBottom: "1px solid #bbbbbb" }}
       >
         <div className="flex justify-between lg:mt-20 mt-10">
@@ -77,10 +77,10 @@ const FooterSection = () => {
             </div>
           </div>
           <div className="flex lg:justify-between">
-            <div className="lg:pr-28 pr-0 w-2/4 lg:w-auto">
+            <div className="lg:pr-16 lgdesktop:pr-28 pr-0 w-2/4 lg:w-auto">
               <p className="font-semibold text-base pb-2">Address:</p>
               <p
-                className={`${manrope.className} text-form-head leading-6 text-left head-14 `}
+                className={`${manrope.className} text-form-head leading-6 text-left head-14  tab:w-10/12 lgdesktop:w-auto`}
               >
                 405, Corporate Annexe Sonawala Rd{" "}
                 <br className="lg:block hidden"></br>
@@ -101,7 +101,7 @@ const FooterSection = () => {
                 +91 915- 238- 7077
               </p>
               <p
-                className={`${manrope.className} text-form-head head-14 text-lg leading-5 font-semibold leading-5`}
+                className={`${manrope.className} text-form-head head-14 text-lg font-semibold leading-5`}
               >
                 hello@v-estate.com
               </p>

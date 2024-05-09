@@ -3,20 +3,26 @@ import Image from "next/image";
 const RealEstate = () => {
   return (
     <>
-      <div className="flex justify-between bg-real-estate bg-no-repeat bg-contain px-10 ">
-        <div className="mx-0 my-auto pt-10">
-          <h1 className="bg-white text-center head-3  leading-[2.63rem] inline px-4">
+      <div className="flex justify-between relative ">
+        <Image
+          src="/assets/Images/real-estate-bg.png"
+          width={1312}
+          height={494}
+          alt=""
+          className="absolute lg:h-full tab:h-[21.06rem] z-10"
+        />
+        <div className="mx-0 my-auto tab:py-28 lg:py-10 pl-14 pr-6 relative z-20 ">
+          <h1 className="bg-white text-center head-3 leading-[2.63rem] inline px-4 tab:py-3 lg:py-0">
             Bring Out The Best
           </h1>
-          <p className="head-64 font-semibold lgdesktop:leading-[4rem] lg:leading-[3rem] pt-4 pb-2">
-            Of Your Real Estate{" "}
-          </p>
-          <p className="head-64 font-semibold lgdesktop:leading-[4rem] lg:leading-[3rem]  pb-4">
+          <p className="head-64 font-semibold lgdesktop:leading-[4rem]  lg:leading-[3rem] tab:leading-[2.25rem] tab:pt-6 tab:pb-5 lg:pt-5 lg:pb-3.5">
+            Of Your Real Estate <br className="lg:block tab:hidden"></br>{" "}
             Project
           </p>
+          {/* <p className="head-64 font-semibold lgdesktop:leading-[4rem] lg:leading-[3rem] tab:leading-[2.25rem] lg:pb-4 tab:pb-2"></p> */}
           <button
-            className="flex items-center px-12 py-2 rounded-full text-2xl"
-            style={{ border: "1px solid #121112" }}
+            className="flex items-center lg:px-[2.12rem] lg:py-1.5 tab:px-14  tab:py-2.5 rounded-full text-2xl"
+            style={{ border: "0.38px solid rgba(18, 17, 18, 0.5)" }}
           >
             Book Demo{" "}
             <svg
@@ -41,7 +47,10 @@ const RealEstate = () => {
             </svg>
           </button>
         </div>
-        <div className="pb-9" style={{ marginTop: "-1rem" }}>
+        <div
+          className="pb-9 px-6 tab:pb-8 real-estate lg:flex tab:hidden relative z-20"
+          style={{ marginTop: "-1rem" }}
+        >
           <Image
             width={535}
             height={463}

@@ -15,10 +15,10 @@ const config: Config = {
       screens: {
         mobile: "540px",
         // => @media (min-width: 640px) { ... }
-
+        tab: "720px",
         laptop: "1024px",
         // => @media (min-width: 1024px) { ... }
-        tab: "920px",
+
         desktop: "1280px",
         lgdesktop: "1440px",
         llgdesktop: "1620px",
@@ -29,7 +29,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "real-estate": "url('/assets/Images/real-estate-bg.png')",
-        "post-sales-logo": "url('/assets/Images/post-sales-logo.png')",
+        "post-sales-logo": "url('/assets/Images/vestate-logo.png')",
         "post-video-frame": "url('/assets/Images/Ipad.png')",
       },
       colors: {
@@ -47,6 +47,7 @@ const config: Config = {
         "post-sales": "#000519",
         "light-grey": "#F6F6F6",
         "augment-para": "#25294B",
+        "window-txt": "#1D2540",
       },
     },
   },

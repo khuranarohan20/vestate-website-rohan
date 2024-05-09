@@ -7,11 +7,11 @@ const manrope = Manrope({ subsets: ["greek"] });
 const ContactSection = () => {
   return (
     <>
-      <div className="bg-pure-black lg:h-[47.8rem] h-[33.8rem]">
+      <div className="bg-pure-black lg:h-[47.8rem] h-[30.8rem]">
         <HeaderSection />
         <div className="main-banner px-14">
-          <div className="flex 2xl:justify-between pb-10 mt-16">
-            <div className="lg:mr-36 mr-0">
+          <div className="flex 2xl:justify-between pb-10 lgdesktop:mt-16 tab:mt-8">
+            <div className="lg:mr-36 mr-0 marginRight">
               <h2 className="text-white font-medium lg:text-7xl text-[2.5rem] lg:leading-[5rem] leading-[2.82rem]">
                 Let's
                 <br></br>
@@ -55,8 +55,8 @@ const ContactSection = () => {
                 have. We’ve got the answers.
               </p>
             </div>
-            <div className="flex items-center  max-w-[38.5rem] lg:mt-20 mt-[2.2rem]">
-              <div className="lg:mr-20 mr-12">
+            <div className="flex items-center  lg:w-[38.5rem]  lg:mt-20 tab:w-[auto] mt-[2.2rem]">
+              <div className="lg:mr-20 tab:mr-8">
                 <h3 className="text-white font-medium lg:text-3xl text-base">
                   Visit Us
                 </h3>
@@ -64,8 +64,10 @@ const ContactSection = () => {
                   className={`${manrope.className} text-white lg:text-base text-xs opacity-70 lg:leading-[1.4rem] leading-[0.88rem]`}
                 >
                   405, Corporate Annexe <br className="lg:hidden block"></br>{" "}
-                  Sonawala Rd Goregaon <br className="lg:hidden block"></br>{" "}
-                  (East), Mumbai,India
+                  Sonawala Rd{" "}
+                  <br className="tab:hidden lg:hidden lgdesktop:block "></br>{" "}
+                  Goregaon <br className="lg:hidden block"></br> (East),
+                  Mumbai,India
                 </p>
               </div>
               <div>
@@ -106,12 +108,12 @@ const ContactSection = () => {
               <form>
                 <div className="flex gap-5 lg:mb-16 mb-9">
                   <input
-                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
+                    className={`${manrope.className} tab:w-[10.63rem] lg:w-[18.94rem] llgdesktop:w-[24rem]  input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="text"
                     placeholder="Your Name"
                   />
                   <input
-                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
+                    className={`${manrope.className} tab:w-[10.63rem] lg:w-[18.94rem] llgdesktop:w-[24rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="email"
                     placeholder="Your Email"
                   />
@@ -119,12 +121,12 @@ const ContactSection = () => {
 
                 <div className="flex gap-5 lg:mb-16 mb-9">
                   <input
-                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
+                    className={`${manrope.className} tab:w-[10.63rem] lg:w-[18.94rem] llgdesktop:w-[24rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="phone"
                     placeholder="Phone Number"
                   />
                   <input
-                    className={`${manrope.className} lg:w-[18.94rem] w-[10.63rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
+                    className={`${manrope.className} tab:w-[10.63rem] lg:w-[18.94rem] llgdesktop:w-[24rem] input-style placeholder:text-form-head focus:outline-none lg:text-lg text-[0.63rem] font-medium`}
                     type="text"
                     placeholder="Company Name"
                   />
@@ -138,7 +140,7 @@ const ContactSection = () => {
                   />
                 </div>
                 <button
-                  className={`${manrope.className} bg-white lg:rounded-full rounded-2xl lg:px-[2.21rem] lg:py-[1rem] px-[1.2rem] py-[0.5rem] mt-8 font-semibold lg-text-base text-[0.57rem] font-medium`}
+                  className={`${manrope.className} bg-white lg:rounded-full rounded-2xl lg:px-[2.21rem] lg:py-[1rem] tab:px-[1.2rem] tab:py-[0.5rem] mt-8 font-semibold lg:text-base tab:text-[0.57rem]`}
                 >
                   Submit
                 </button>
@@ -146,7 +148,9 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-        <FooterSection />
+        <div className=" lgdesktop:max-w-[82rem]  tab:px-[1.82rem] lgdesktop:m-auto lgdesktop:px-0">
+          <FooterSection />
+        </div>
       </div>
     </>
   );

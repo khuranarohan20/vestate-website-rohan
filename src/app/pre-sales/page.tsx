@@ -2,6 +2,7 @@ import FooterSection from "@/components/footer";
 import HeaderSection from "@/components/header";
 import RealEstate from "@/components/realEstate";
 import { Manrope } from "next/font/google";
+import Image from "next/image";
 
 const manrope = Manrope({ subsets: ["greek"] });
 
@@ -12,18 +13,25 @@ const PreSales = () => {
         <div className="bg-post-sales bg-no-repeat">
           <HeaderSection />
           <div
-            className="bg-post-sales-logo bg-no-repeat h-[41.3rem] bg-center"
+            className=" bg-no-repeat h-[41.3rem] bg-center relative"
             style={{ backgroundPosition: "4.5rem -7rem" }}
           >
-            <div className="max-w-[59.3rem] my-0 mx-auto pt-14">
+            <Image
+              width={826}
+              height={443}
+              src="/assets/Images/vestate-logo.png"
+              alt=""
+              className=" lg:h-full lg:w-full absolute z-10"
+            />
+            <div className="max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
               <p className="text-white opacity-75 text-center text-[2.5rem] pb-5">
                 V-Estate
               </p>
-              <p className="text-white text-[6.8rem] text-center leading-[4.5rem] pb-7 font-semibold">
+              <p className="text-white lg:text-[6.8rem] text-center lg:leading-[4.5rem] pb-7 font-semibold tab:text-7xl">
                 Pre Sales
               </p>
               <p
-                className={`${manrope.className} text-white opacity-65 text-22 text-center`}
+                className={`${manrope.className} text-white opacity-65 text-base text-center tab:px-36 lg:px-0`}
               >
                 Pre-sales tools play a pivotal role in the overall sales
                 journey, serving as powerful magnets to attract customers to
@@ -34,7 +42,7 @@ const PreSales = () => {
                 comprehensive and intricate insight into the project, showcasing
                 its key highlights and intricacies for a thorough understanding.
               </p>
-              <div className="mx-auto my-0 max-w-[59.3rem] translate-x-[2rem]">
+              <div className="mx-auto my-0 max-w-[59.3rem] lg:translate-x-[2rem] tab:translate-x-[0]">
                 <img src="/assets/Images/pre-sales-video.png" alt="" />
                 {/* <div className="bg-post-video-frame bg-no-repeat"> */}
                 {/* <video src=""></video> */}
@@ -42,11 +50,11 @@ const PreSales = () => {
             </div>
           </div>
 
-          <div className="bg-light-grey h-[23rem]"></div>
+          <div className="bg-light-grey lg:h-[23rem] tab:h-[19.6rem]"></div>
         </div>
         <div className="bg-prime-green">
           <div className="max-w-[82rem] m-auto">
-            <div className="flex justify-between py-20">
+            <div className="flex lg:justify-between tab:flex-col tab:justify-center tab:items-center py-20">
               <div>
                 <h2 className="text-7xl leading-[3.33rem] bg-white inline px-6">
                   Project Overview
@@ -246,7 +254,7 @@ const PreSales = () => {
         </div>
 
         <div className="max-w-[82rem] m-auto">
-          <div className="flex justify-between py-20">
+          <div className="flex justify-between lg:justify-between tab:flex-col-reverse tab:justify-center tab:items-center  py-20">
             <div className="mt-16">
               <div
                 className="bg-white flex gap-2.5 items-center pl-8 pr-7 pt-2 pb-4 w-[33.15rem] mb-5 rounded"
@@ -386,7 +394,7 @@ const PreSales = () => {
         </div>
         <div className="bg-form-head">
           <div className="max-w-[82rem] m-auto">
-            <div className="flex justify-between pt-24">
+            <div className="flex lg:justify-between tab:flex-col tab:justify-center tab:items-center pt-24">
               <div>
                 <h2 className="text-7xl leading-[3.33rem] bg-prime-green inline px-6">
                   Amenities Highlight
@@ -404,7 +412,7 @@ const PreSales = () => {
                 />
               </div>
 
-              <div className="my-52">
+              <div className="lg:my-52 tab:mt-16 tab:mb-20">
                 <div
                   className="flex gap-2.5 items-center px-5 py-4 w-[33.15rem] rounded mb-5"
                   style={{ border: "1px solid  rgba(176, 219, 23, 0.25)" }}
@@ -515,15 +523,15 @@ const PreSales = () => {
           </div>
         </div>
 
-        <div className="max-w-[82rem] m-auto">
-          <div className="flex justify-between mt-28">
-            <div className="w-3/5">
+        <div className="max-w-[82rem] m-auto tab:px-16 lg:px-0">
+          <div className="flex lg:justify-between tab:flex-col-reverse tab:justify-center tab:items-center mt-28">
+            <div className="lg:w-3/5 tab:w-auto tab:my-5">
               <img
                 src="/assets/Images/vicinity-mapping.png"
                 alt="amenities-highlight"
               />
             </div>
-            <div className="m-auto  w-2/5">
+            <div className="m-auto  lg:w-2/5 tab:w-auto">
               <h2 className="bg-prime-green px-4 text-7xl inline leading-[3.33rem]">
                 Interior Unit
               </h2>
@@ -535,12 +543,12 @@ const PreSales = () => {
               >
                 This feature lets the visitor get a detailed understanding of
                 the unit layout and how the finished unit can look like{" "}
-                <br></br> post possession
+                <br className="tab:hidden lg:block"></br> post possession
               </p>
             </div>
           </div>
 
-          <div className="flex justify-between mt-20 mb-20">
+          <div className="flex justify-between tab:flex-col lg:my-20 tab:mt-5 tab:mb-20 tab:items-center tab:gap-5 lg:gap-0">
             <div className="flex">
               <div className="bg-prime-green rounded-2xl p-4 flex justify-center items-center w-[5.15rem] h-[5.15rem] mt-2.5">
                 <svg
@@ -561,7 +569,7 @@ const PreSales = () => {
                   Layout Understanding
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 w-[16.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[27.5rem] leading-[1.45rem]`}
                 >
                   The interior unit or dollhouse view allows potential buyers to
                   navigate inside the flat and gain a clear understanding of its
@@ -589,7 +597,7 @@ const PreSales = () => {
                   Personalization
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 w-[16.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[27.5rem] leading-[1.45rem]`}
                 >
                   Buyers can personalize their exploration by virtually walking
                   through different units, helping them select the one that best
@@ -617,7 +625,7 @@ const PreSales = () => {
                   Reduced Surprises
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 w-[16.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[27.5rem] leading-[1.45rem]`}
                 >
                   It minimizes surprises upon purchase since customers have a
                   detailed understanding of the interior, reducing the
