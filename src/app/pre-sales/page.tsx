@@ -54,9 +54,9 @@ const PreSales = () => {
         </div>
         <div className="bg-prime-green">
           <div className="max-w-[82rem] m-auto">
-            <div className="flex lg:justify-between tab:flex-col tab:justify-center tab:items-center py-20">
+            <div className="flex lg:justify-between lg:flex-row tab:flex-col tab:justify-center tab:items-center py-20">
               <div>
-                <h2 className="text-7xl leading-[3.33rem] bg-white inline px-6">
+                <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-white inline px-6">
                   Project Overview
                 </h2>
                 <p
@@ -254,7 +254,7 @@ const PreSales = () => {
         </div>
 
         <div className="max-w-[82rem] m-auto">
-          <div className="flex justify-between lg:justify-between tab:flex-col-reverse tab:justify-center tab:items-center  py-20">
+          <div className="flex justify-between  lg:flex-row lg:justify-between tab:flex-col-reverse tab:justify-center tab:items-center  py-20">
             <div className="mt-16">
               <div
                 className="bg-white flex gap-2.5 items-center pl-8 pr-7 pt-2 pb-4 w-[33.15rem] mb-5 rounded"
@@ -375,11 +375,11 @@ const PreSales = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-7xl leading-[3.33rem] bg-prime-green inline px-5">
+              <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-prime-green inline px-5">
                 Vicinity Mapping
               </h2>
               <p
-                className={`${manrope.className} text-amenities-para opacity-60 head-14 font-medium pt-8 pb-8 w-[30rem]`}
+                className={`${manrope.className} text-amenities-para opacity-60 lg:text-lg tab:text-base  font-medium pt-8 pb-8 w-[30rem]`}
               >
                 This feature lets the visitor understand the location factor of
                 the project and the surrounding vicinity
@@ -394,13 +394,13 @@ const PreSales = () => {
         </div>
         <div className="bg-form-head">
           <div className="max-w-[82rem] m-auto">
-            <div className="flex lg:justify-between tab:flex-col tab:justify-center tab:items-center pt-24">
+            <div className="flex lg:justify-between lg:flex-row tab:flex-col tab:justify-center tab:items-center pt-24">
               <div>
-                <h2 className="text-7xl leading-[3.33rem] bg-prime-green inline px-6">
+                <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-prime-green inline px-6">
                   Amenities Highlight
                 </h2>
                 <p
-                  className={`${manrope.className} text-white opacity-60 head-14 font-medium py-6 w-[30rem]`}
+                  className={`${manrope.className} text-white opacity-60 lg:text-lg tab:text-base font-medium py-6 w-[30rem]`}
                 >
                   This feature lets the visitor understand the added value the
                   project has embodied and offers to its buyers.
@@ -524,7 +524,7 @@ const PreSales = () => {
         </div>
 
         <div className="max-w-[82rem] m-auto tab:px-16 lg:px-0">
-          <div className="flex lg:justify-between tab:flex-col-reverse tab:justify-center tab:items-center mt-28">
+          <div className="flex lg:justify-between lg:flex-row tab:flex-col-reverse tab:justify-center tab:items-center mt-28">
             <div className="lg:w-3/5 tab:w-auto tab:my-5">
               <img
                 src="/assets/Images/vicinity-mapping.png"
@@ -532,14 +532,14 @@ const PreSales = () => {
               />
             </div>
             <div className="m-auto  lg:w-2/5 tab:w-auto">
-              <h2 className="bg-prime-green px-4 text-7xl inline leading-[3.33rem]">
+              <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-5xl inline leading-[3.33rem]">
                 Interior Unit
               </h2>
-              <p className="text-7xl font-semibold leading-[3.33rem] pt-8">
+              <p className="lg:text-7xl tab:text-5xl font-semibold leading-[3.33rem] pt-8">
                 Dollhouse View
               </p>
               <p
-                className={`${manrope.className} text-lg text-amenities-para leading-[1.94rem] pt-5`}
+                className={`${manrope.className} lg:text-lg tab:text-base text-amenities-para leading-[1.94rem] pt-5`}
               >
                 This feature lets the visitor get a detailed understanding of
                 the unit layout and how the finished unit can look like{" "}
@@ -548,7 +548,7 @@ const PreSales = () => {
             </div>
           </div>
 
-          <div className="flex justify-between tab:flex-col lg:my-20 tab:mt-5 tab:mb-20 tab:items-center tab:gap-5 lg:gap-0">
+          <div className="flex justify-between lg:flex-row tab:flex-col lg:my-20 tab:mt-5 tab:mb-20 tab:items-center tab:gap-5 lg:gap-0">
             <div className="flex">
               <div className="bg-prime-green rounded-2xl p-4 flex justify-center items-center w-[5.15rem] h-[5.15rem] mt-2.5">
                 <svg
