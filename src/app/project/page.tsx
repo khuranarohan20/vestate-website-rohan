@@ -11,17 +11,17 @@ const ProjectSection = () => {
         <HeaderSection />
         <div className=" tab:px-[1.82rem] lgdesktop:max-w-[82rem] lgdesktop:m-auto pt-10 lg:px-14 lgdesktop:px-0">
           <div
-            className="flex justify-between pb-10"
+            className="flex justify-between pb-10  tab:flex-row mobile:flex-col"
             style={{ borderBottom: "0.75px solid rgba(255, 255, 255, 0.5)" }}
           >
-            <div className="my-auto mx-0">
-              <h1 className="bg-white px-5 font-semibold tab:px-2 tab:text-[3.15rem] tab:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] flex items-center">
+            <div className="my-auto mx-0 mobile:flex mobile:flex-col mobile:justify-center mobile:items-center tab:block">
+              <h1 className="bg-white px-5 font-semibold tab:px-2 mobile:text-[3.15rem] mobile:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] flex items-center">
                 V-Estate
               </h1>
-              <p className="text-prime-green flex items-center font-semibold tab:text-[3.15rem] tab:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] pt-2">
+              <p className="text-prime-green flex items-center font-semibold mobile:text-[3.15rem] mobile:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] pt-2 mobile:pb-3 tab:pb-0">
                 Projects{" "}
                 <svg
-                  className="lg:ml-4 tab:w-[1.32rem] tab:ml-2 lg:w-[2.5rem]"
+                  className="lg:ml-4 tab:w-[1.32rem] mobile:ml-2 lg:w-[2.5rem] mobile:w-[1.3rem] "
                   width="40"
                   height="40"
                   viewBox="0 0 40 40"
@@ -53,18 +53,18 @@ const ProjectSection = () => {
                 </svg>
               </p>
             </div>
-            <div>
+            <div className="mobile:px-9">
               <Image
                 width={662}
                 height={296}
-                className=" tab:w-[22.65rem] lg:w-[30rem] lgdesktop:w-[40.3rem] 2xl:w-[42.8rem] "
+                className=" tab:w-[22.65rem] lg:w-[30rem] lgdesktop:w-[40.3rem] 2xl:w-[42.8rem] mobile:mx-auto mobile:my-0"
                 src="/assets/Images/florence.png"
                 alt="florence-fortune"
               />
-              <h2 className="text-white head-3 font-semibold">
+              <h2 className="text-white head-3 font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 Florence Fortune
               </h2>
-              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
                 View Project{" "}
                 <svg
                   className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
@@ -91,20 +91,20 @@ const ProjectSection = () => {
           </div>
 
           <div
-            className="flex justify-between py-10 tab:gap-x-3 lg:gap-6"
+            className="flex justify-between py-10 tab:gap-x-3 lg:gap-6 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center mobile:px-9"
             style={{ borderBottom: "0.75px solid rgba(255, 255, 255, 0.5)" }}
           >
-            <div>
+            <div className="mobile:py-4 tab:py-0">
               <Image
                 width={644}
                 height={350}
                 src="/assets/Images/L&T.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold">
+              <h2 className="text-white head-3  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 L&T Rejuve 360
               </h2>
-              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
                 View Project{" "}
                 <svg
                   className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
@@ -128,17 +128,17 @@ const ProjectSection = () => {
                 </svg>
               </button>
             </div>
-            <div>
+            <div className="mobile:py-4 tab:py-0">
               <Image
                 width={644}
                 height={350}
                 src="/assets/Images/shapoorji.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold">
+              <h2 className="text-white head-3  font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 Shapoorji & Pallonji
               </h2>
-              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
+              <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
                 View Project{" "}
                 <svg
                   className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
@@ -163,16 +163,18 @@ const ProjectSection = () => {
               </button>
             </div>
           </div>
-          <div className="flex justify-between pt-10 pb-12 lg:gap-6 tab:gap-x-3 ">
-            <div>
+          <div className="flex justify-between pt-10 pb-12 lg:gap-6 tab:gap-x-3 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center mobile:px-9">
+            <div className="mobile:py-4 tab:py-0">
               <Image
                 width={644}
                 height={350}
                 src="/assets/Images/L&T.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold">Jp Infra</h2>
-              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
+              <h2 className="text-white head-3  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+                Jp Infra
+              </h2>
+              <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
                 View Project{" "}
                 <svg
                   className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"
@@ -196,15 +198,17 @@ const ProjectSection = () => {
                 </svg>
               </button>
             </div>
-            <div>
+            <div className="mobile:py-4 tab:py-0">
               <Image
                 width={644}
                 height={350}
                 src="/assets/Images/shapoorji.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold">L&T</h2>
-              <button className="flex items-center  text-white project-btn rounded-full py-0.5 px-5">
+              <h2 className="text-white head-3  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+                L&T
+              </h2>
+              <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5  mobile:px-4">
                 View Project{" "}
                 <svg
                   className="ml-1 tab:w-[0.63rem] lg:w-[1.25rem]"

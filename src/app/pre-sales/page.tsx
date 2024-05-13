@@ -257,7 +257,7 @@ const PreSales = () => {
           <div className="flex justify-between  lg:flex-row lg:justify-between tab:flex-col-reverse tab:justify-center tab:items-center  py-20">
             <div className="mt-16">
               <div
-                className="bg-white flex gap-2.5 items-center pl-8 pr-7 pt-2 pb-4 w-[33.15rem] mb-5 rounded"
+                className="bg-white flex gap-2.5 items-center pl-8 pr-7 pt-2 pb-4 lg:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
                 <div
@@ -297,7 +297,7 @@ const PreSales = () => {
                 </div>
               </div>
               <div
-                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-6 w-[33.15rem] mb-5 rounded"
+                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-6 lg:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
                 <div
@@ -340,7 +340,7 @@ const PreSales = () => {
                 </div>
               </div>
               <div
-                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-9 w-[33.15rem] mb-5 rounded"
+                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-6 lg:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
                 <div
@@ -414,7 +414,7 @@ const PreSales = () => {
 
               <div className="lg:my-52 tab:mt-16 tab:mb-20">
                 <div
-                  className="flex gap-2.5 items-center px-5 py-4 w-[33.15rem] rounded mb-5"
+                  className="flex gap-2.5 items-center px-5 py-4 lg:w-[33.15rem] tab:w-[41rem] rounded mb-5"
                   style={{ border: "1px solid  rgba(176, 219, 23, 0.25)" }}
                 >
                   <div
@@ -464,19 +464,20 @@ const PreSales = () => {
                   </div>
 
                   <div className="pl-2">
-                    <h2 className="text-white text-lg font-bold opacity-80">
-                      Visual Representation
+                    <h2 className="text-white lg:text-lg tab:text-2xl font-bold opacity-80">
+                      Accessibility Information
                     </h2>
                     <p
-                      className={`${manrope.className} text-xs text-white opacity-80 leading-[1.1rem]`}
+                      className={`${manrope.className}  lg:text-xs tab:text-base text-white opacity-80 leading-[1.1rem] tab:w-[31rem] lg-w-full`}
                     >
-                      360-degree images provide a realistic visual<br></br>
-                      representation of the project's amenities
+                      Visitors can assess the convenience of the location, such
+                      as proximity to schools, hospitals, shopping centers, and
+                      transportation hubs.
                     </p>
                   </div>
                 </div>
                 <div
-                  className="flex gap-2.5 items-center px-5 py-4 w-[33.15rem] mb-5 rounded "
+                  className="flex gap-2.5 items-center px-5 py-4 lg:w-[33.15rem] tab:w-[41rem] mb-5 rounded "
                   style={{ border: "1px solid  rgba(176, 219, 23, 0.25)" }}
                 >
                   <div
@@ -506,15 +507,14 @@ const PreSales = () => {
                   </div>
 
                   <div className="pl-2">
-                    <h2 className="text-white text-lg font-bold opacity-80">
-                      Attractiveness
+                    <h2 className="text-white lg:text-lg tab:text-2xl font-bold opacity-80">
+                      Neighborhood Evaluation
                     </h2>
                     <p
-                      className={`${manrope.className} text-xs text-white opacity-80 leading-[1.1rem]`}
+                      className={`${manrope.className} lg:text-xs tab:text-base text-white opacity-80 leading-[1.1rem]`}
                     >
-                      Highlighting amenities can make the project more <br></br>
-                      appealing, showcasing the added value it offers in{" "}
-                      <br></br> terms of leisure and convenience
+                      It enables users to evaluate the neighborhood, which is
+                      crucial for their lifestyle and daily needs.
                     </p>
                   </div>
                 </div>
@@ -569,7 +569,7 @@ const PreSales = () => {
                   Layout Understanding
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[27.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
                 >
                   The interior unit or dollhouse view allows potential buyers to
                   navigate inside the flat and gain a clear understanding of its
@@ -597,7 +597,7 @@ const PreSales = () => {
                   Personalization
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[27.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
                 >
                   Buyers can personalize their exploration by virtually walking
                   through different units, helping them select the one that best
@@ -625,7 +625,7 @@ const PreSales = () => {
                   Reduced Surprises
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[27.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
                 >
                   It minimizes surprises upon purchase since customers have a
                   detailed understanding of the interior, reducing the

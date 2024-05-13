@@ -11,17 +11,17 @@ const RealEstate = () => {
           alt=""
           className="absolute lg:h-full tab:h-[21.06rem] z-10"
         />
-        <div className="mx-0 my-auto tab:py-28 lg:py-10 pl-14 pr-6 relative z-20 ">
-          <h1 className="bg-white text-center head-3 leading-[2.63rem] inline px-4 tab:py-3 lg:py-0">
+        <div className="mx-0 my-auto tab:py-28 lg:py-10 pl-14 pr-6 relative z-20 mobile:pt-20">
+          <h1 className="bg-white text-center head-3 leading-[2.63rem] inline px-4 tab:py-2 lg:py-0  mobile:leading-[1.12rem]">
             Bring Out The Best
           </h1>
-          <p className="head-64 font-semibold lgdesktop:leading-[4rem]  lg:leading-[3rem] tab:leading-[2.25rem] tab:pt-6 tab:pb-5 lg:pt-5 lg:pb-3.5">
+          <p className="head-64 font-semibold lgdesktop:leading-[4rem]  lg:leading-[3rem] tab:leading-[2.25rem] tab:pt-6 tab:pb-5 lg:pt-5 lg:pb-3.5 mobile-leading-[1.6rem] mobile:py-2">
             Of Your Real Estate <br className="lg:block tab:hidden"></br>{" "}
             Project
           </p>
           {/* <p className="head-64 font-semibold lgdesktop:leading-[4rem] lg:leading-[3rem] tab:leading-[2.25rem] lg:pb-4 tab:pb-2"></p> */}
           <button
-            className="flex items-center lg:px-[2.12rem] lg:py-1.5 tab:px-14  tab:py-2.5 rounded-full text-2xl"
+            className="flex items-center lg:px-[2.12rem] lg:py-1.5 tab:px-14  tab:py-2.5 rounded-full text-2xl mobile:text-lg mobile:px-5 mobile:py-0.5"
             style={{ border: "0.38px solid rgba(18, 17, 18, 0.5)" }}
           >
             Book Demo{" "}
@@ -48,7 +48,7 @@ const RealEstate = () => {
           </button>
         </div>
         <div
-          className="pb-9 px-6 tab:pb-8 real-estate lg:flex tab:hidden relative z-20"
+          className="pb-9 px-6 tab:pb-8 real-estate lg:flex tab:hidden mobile:hidden relative z-20"
           style={{ marginTop: "-1rem" }}
         >
           <Image

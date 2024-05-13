@@ -12,7 +12,7 @@ const SalesToolSection = () => {
         <div className="bg-post-sales bg-no-repeat">
           <HeaderSection />
           <div
-            className=" bg-no-repeat h-[41.3rem] bg-center relative"
+            className=" bg-no-repeat lg:h-[41.3rem] tab:h-[36.3rem]  bg-center relative"
             style={{ backgroundPosition: "4.5rem -7rem" }}
           >
             <Image
@@ -23,14 +23,14 @@ const SalesToolSection = () => {
               className=" lg:h-full lg:w-full absolute z-10"
             />
             <div className="max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
-              <p className="text-white opacity-75 text-center text-[2.5rem] pb-5">
+              <p className="text-white opacity-75 text-center lg:text-[2.5rem] tab:text-[1.75rem] lg:pb-5 tab:pb-3">
                 V-Estate
               </p>
-              <p className="text-white lg:text-[6.8rem] text-center lg:leading-[4.5rem] pb-7 font-semibold tab:text-7xl">
+              <p className="text-white lg:text-[6.8rem] text-center lg:leading-[4.5rem] lg:pb-7 tab:pb-5 font-semibold tab:text-5xl">
                 Sales Tool
               </p>
               <p
-                className={`${manrope.className} text-white opacity-65 text-base text-center tab:px-36 lg:px-0`}
+                className={`${manrope.className} text-white opacity-65 text-base text-center px-32 `}
               >
                 Pre-sales experiences encompass a versatile set of tools
                 designed to articulate & convey the company's vision, showcase
@@ -49,32 +49,33 @@ const SalesToolSection = () => {
           <div className="bg-light-grey lg:h-[23rem] tab:h-[19.6rem]"></div>
         </div>
 
-        <div className="bg-prime-green py-[7.8rem]">
+        <div className="bg-prime-green lg:py-[7.8rem] tab:py-16">
           <div className="lg:max-w-[73.5rem] m-auto">
-            <div className="mb-16 flex justify-center items-center flex-col">
-              <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-white px-6 inline">
+            <div className="lg:mb-16 tab:mb-8 flex justify-center items-center flex-col">
+              <h2 className="lg:text-7xl tab:text-[2rem] lg:leading-[3.33rem] tab:leading-8 bg-white lg:px-6 lg:py-4 tab:py-2 tab:px-4">
                 Exterior
               </h2>
-              <p className="text-amenities-para text-7xl font-semibold py-5 text-center">
+              <p className="text-amenities-para lg:text-7xl tab:text-[2rem] tab:leading-40 font-semibold lg:py-5 tab:py-3 text-center">
                 Comprehensive Exploration
               </p>
             </div>
 
-            <div>
-              <div className="flex">
+            <div className="">
+              <div className="flex tab:justify-center lg:justify-normal">
                 <Image
+                  className="lg:w-[35rem] tab:w-[19.68rem]"
                   width={560}
                   height={328}
                   src="/assets/Images/Exterior.png"
                   alt="project-overview"
                 />
 
-                <div className="ml-16">
-                  <h2 className="l:text-7xl tab:text-5xl leading-[3.33rem] bg-white px-6 py-5">
+                <div className="lg:ml-16 tab:ml-14">
+                  <h2 className="lg:text-5xl tab:text-2xl lg:leading-[3.33rem] tab:leading-8 bg-white lg:px-6 lg:py-5 tab:px-4 tab:py-2 text-center">
                     Amenity Showcase
                   </h2>
                   <div
-                    className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mt-5 mb-5 rounded h-24"
+                    className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem]  lg:mt-5 lg:mb-5 tab:mt-3 tab:mb-3rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
                     style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                   >
                     <div
@@ -84,6 +85,7 @@ const SalesToolSection = () => {
                       }}
                     >
                       <svg
+                        className="tab:w-[1.25rem] lg:w-[2.56rem]"
                         width="41"
                         height="41"
                         viewBox="0 0 41 41"
@@ -109,9 +111,9 @@ const SalesToolSection = () => {
                       </svg>
                     </div>
 
-                    <div className="pl-2">
+                    <div className="lg:pl-2 tab:pl-1">
                       <p
-                        className={`${manrope.className} text-base text-augment-para leading-6 `}
+                        className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                       >
                         Highlight and showcase each amenity, providing a virtual
                         tour of recreational spaces, parks, pools, and other
@@ -120,7 +122,7 @@ const SalesToolSection = () => {
                     </div>
                   </div>
                   <div
-                    className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mb-5 rounded h-24"
+                    className="flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] lg:mt-5 lg:mb-5 tab:mt-3 rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
                     style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                   >
                     <div
@@ -130,6 +132,7 @@ const SalesToolSection = () => {
                       }}
                     >
                       <svg
+                        className="tab:w-[1.25rem] lg:w-[2.56rem]"
                         width="41"
                         height="41"
                         viewBox="0 0 41 41"
@@ -149,7 +152,7 @@ const SalesToolSection = () => {
 
                     <div className="pl-2">
                       <p
-                        className={`${manrope.className} text-base text-augment-para leading-6`}
+                        className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                       >
                         Clients gain a vivid understanding of the lifestyle the
                         property offers.
@@ -160,13 +163,13 @@ const SalesToolSection = () => {
               </div>
 
               <div>
-                <div className="flex mt-20">
+                <div className="flex mt-20 tab:justify-center lg:justify-normal">
                   <div className="mr-16">
-                    <h2 className="l:text-7xl tab:text-5xl leading-[3.33rem] bg-white px-6 py-5">
+                    <h2 className="lg:text-5xl tab:text-2xl leading-[3.33rem] tab:leading-8 bg-white lg:px-6 lg:py-5 tab:px-4 tab:py-2 text-center">
                       Architectural Insights
                     </h2>
                     <div
-                      className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mt-5 mb-5 rounded h-24"
+                      className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] mt-5 mb-5 rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
                       style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                     >
                       <div
@@ -176,6 +179,7 @@ const SalesToolSection = () => {
                         }}
                       >
                         <svg
+                          className="tab:w-[1.25rem] lg:w-[2.56rem]"
                           width="40"
                           height="41"
                           viewBox="0 0 40 41"
@@ -193,7 +197,7 @@ const SalesToolSection = () => {
 
                       <div className="pl-2">
                         <p
-                          className={`${manrope.className} text-base text-augment-para leading-6 `}
+                          className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 `}
                         >
                           Explore the ergonomic architecture of the property,
                           emphasizing design elements that contribute to a
@@ -202,7 +206,7 @@ const SalesToolSection = () => {
                       </div>
                     </div>
                     <div
-                      className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mb-5 rounded h-24"
+                      className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] mt-5 mb-5 rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
                       style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                     >
                       <div
@@ -212,6 +216,7 @@ const SalesToolSection = () => {
                         }}
                       >
                         <svg
+                          className="tab:w-[1.25rem] lg:w-[2.56rem]"
                           width="40"
                           height="41"
                           viewBox="0 0 40 41"
@@ -263,7 +268,7 @@ const SalesToolSection = () => {
 
                       <div className="pl-2">
                         <p
-                          className={`${manrope.className} text-base text-augment-para leading-6`}
+                          className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                         >
                           Architectural details are highlighted, creating a
                           lasting impression on potential buyers.
@@ -272,6 +277,7 @@ const SalesToolSection = () => {
                     </div>
                   </div>
                   <Image
+                    className="lg:w-[35rem] tab:w-[19.68rem]"
                     width={560}
                     height={328}
                     src="/assets/Images/Exterior.png"
@@ -284,30 +290,30 @@ const SalesToolSection = () => {
         </div>
 
         <div className="lg:max-w-[70rem] m-auto">
-          <div className="flex my-36">
-            <div className="w-1/2">
-              <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-5xl inline leading-[3.33rem]">
+          <div className="flex lg:my-36 tab:my-20 justify-center">
+            <div className="lg:w-1/2 tab:w-[18.125rem]">
+              <h2 className="bg-prime-green lg:px-6 lg:text-7xl tab:text-2xl lg:leading-[3.33rem] inline tab:leading-8 tab:px-4 tab:py-2">
                 Realistic Unit
               </h2>
-              <p className="lg:text-7xl tab:text-5xl font-semibold leading-[3.33rem] pt-4 pb-6">
+              <p className="lg:text-7xl tab:text-2xl font-semibold leading-[3.33rem] lg:pt-4 lg:pb-6 tab:py-2">
                 Visualization
               </p>
               <Image
                 width={560}
                 height={328}
-                src="/assets/Images/Exterior.png"
+                src="/assets/Images/Visualization.png"
                 alt="project-overview"
               />
             </div>
 
-            <div className="w-1/2 ml-20">
+            <div className="lg:w-1/2 tab:w-[18.125rem] lg:ml-20 tab:ml-8">
               <div
-                className="flex rounded p-8 mb-5"
+                className="flex rounded lg:p-8 tab:p-5 lg:mb-5 tab:mb-3"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
-                <div>
+                <div style={{ marginTop: "-0.4rem" }}>
                   <svg
-                    className="mr-3"
+                    className="tab:w-[1.31rem] lg:w-[2.06rem] mr-3"
                     width="33"
                     height="33"
                     viewBox="0 0 33 33"
@@ -325,13 +331,13 @@ const SalesToolSection = () => {
 
                 <div className="">
                   <h2
-                    className="font-semibold text-2xl text-head-dark leading-8 pl-3"
+                    className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-1 tab:text-sm tab:leading-[1.12rem] "
                     style={{ borderLeft: "0.75px solid rgba(12, 17, 54, 0.5)" }}
                   >
                     Delivery Day Preview
                   </h2>
                   <ul
-                    className={`${manrope.className} text-base leading-6 text-head-dark list-disc pl-9`}
+                    className={`${manrope.className} list-disc lg:pl-9 tab:pl-7 lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                   >
                     <li className="pb-2">
                       Clients virtually walk through the units to experience the
@@ -346,12 +352,12 @@ const SalesToolSection = () => {
                 </div>
               </div>
               <div
-                className="flex rounded p-8"
+                className="flex rounded lg:p-8 tab:p-5"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
-                <div>
+                <div style={{ marginTop: "-0.1rem" }}>
                   <svg
-                    className="mr-3"
+                    className="tab:w-[1.25rem] lg:w-[2.56rem] mr-3"
                     width="28"
                     height="32"
                     viewBox="0 0 28 32"
@@ -398,13 +404,13 @@ const SalesToolSection = () => {
                 </div>
                 <div className="">
                   <h2
-                    className="font-semibold text-2xl text-head-dark leading-8 pl-3"
+                    className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-1 tab:text-sm tab:leading-[1.12rem] "
                     style={{ borderLeft: "0.75px solid rgba(12, 17, 54, 0.5)" }}
                   >
                      Orientation Details
                   </h2>
                   <ul
-                    className={`${manrope.className} text-base leading-6 text-head-dark list-disc pl-9`}
+                    className={`${manrope.className} list-disc lg:pl-9 tab:pl-7 lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                   >
                     <li className="pb-2">
                       Showcase how each unit is oriented within the building,
@@ -423,27 +429,27 @@ const SalesToolSection = () => {
           </div>
         </div>
 
-        <div className="bg-post-sales py-36">
-          <div className="px-[5.2rem]">
+        <div className="bg-form-head lg:py-36 tab:py-20">
+          <div className="lg:px-[5.2rem] tab:px-[3.2rem]">
             <div className="mb-8 text-center">
-              <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-5xl inline leading-[3.33rem]">
+              <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-[2rem] inline lg:leading-[3.33rem] tab:leading-8">
                 Vicinity Touchpoints
               </h2>
-              <p className="lg:text-7xl tab:text-5xl font-semibold text-white leading-[3.33rem] pt-4 pb-6">
+              <p className="lg:text-7xl tab:text-[2rem] font-semibold text-white lg:leading-[3.33rem] tab:leading-10 lg:pt-4 lg:pb-6 tab:pt-2">
                 Contextual Surroundings
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="w-[31.43rem] mr-12">
+              <div className="lgdesktop:w-[32.73rem] lg:w-[34rem] 2xl:w-[38rem] lg:mr-12 tab:mr-6">
                 <div
-                  className="p-6 mb-6"
+                  className="lg:p-6 tab:p-4 lg:mb-6 tab:mb-4"
                   style={{ border: "1px solid rgba(255, 255, 255, 0.25)" }}
                 >
-                  <h2 className="font-semibold text-2xl text-white leading-8 pb-2">
+                  <h2 className="font-semibold lg:text-2xl tab:text[0.875rem] text-white lg:leading-8 tab:leading[1.125rem] pb-2">
                     Points of Interest Highlight
                   </h2>
                   <ul
-                    className={`${manrope.className} text-base leading-6 text-white list-disc pl-6 opacity-80`}
+                    className={`${manrope.className} lg:text-base leading-6 text-white list-disc pl-6 opacity-80 tab:text-[0.56rem] tab:leading-3`}
                   >
                     <li className="pb-2">
                       Identify and highlight nearby points of interest, such as
@@ -461,11 +467,11 @@ const SalesToolSection = () => {
                   className="p-6"
                   style={{ border: "1px solid rgba(255, 255, 255, 0.25)" }}
                 >
-                  <h2 className="font-semibold text-2xl text-white leading-8 pb-2">
+                  <h2 className="font-semibold lg:text-2xl tab:text[0.875rem] text-white lg:leading-8 tab:leading[1.125rem] pb-2">
                     Transportation Visualization
                   </h2>
                   <ul
-                    className={`${manrope.className} text-base leading-6 text-white list-disc pl-6 opacity-80`}
+                    className={`${manrope.className} lg:text-base leading-6 text-white list-disc pl-6 opacity-80 tab:text-[0.56rem] tab:leading-3`}
                   >
                     <li className="pb-2">
                       Map out transportation options, illustrating road
@@ -480,9 +486,9 @@ const SalesToolSection = () => {
                 </div>
               </div>
               <Image
-                className="w-7/12"
-                width={560}
-                height={328}
+                className="lg:w-[32.5rem] lgdesktop:w-[42.18rem] mx-0 my-auto"
+                width={675}
+                height={396}
                 src="/assets/Images/contextual.png"
                 alt="project-overview"
               />
@@ -490,27 +496,27 @@ const SalesToolSection = () => {
           </div>
         </div>
 
-        <div className="py-40">
-          <div className="mb-8 text-center">
-            <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-5xl inline leading-[3.33rem]">
+        <div className="lg:py-40 tab:py-20">
+          <div className="lg:mb-8 tab:mb-4 text-center">
+            <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-[2rem] inline lg:leading-[3.33rem] tab:leading-8">
               All Weather Modes
             </h2>
-            <p className="lg:text-7xl tab:text-5xl font-semibold text-head-dark leading-[3.33rem] pt-4 pb-6">
+            <p className="lg:text-7xl tab:text-[2rem] font-semibold text-head-dark lg:leading-[3.33rem] tab:leading-10 lg:pt-4 lg:pb-6 tab:pt-2">
                Dynamic Environmental Experience
             </p>
           </div>
 
-          <div className="flex gap-10 px-40">
+          <div className="flex lg:gap-10 tab:gap-3.5 px-40 justify-center">
             <div>
               <div
-                className="rounded w-[33.6rem] p-4"
+                className="rounded lg:w-[33.6rem]  tab:w-[19rem] lg:p-4 tab:py-3 tab:pr-3"
                 style={{ border: "1px solid rgba(18, 17, 18, 0.25)" }}
               >
-                <h2 className="font-semibold text-2xl text-head-dark leading-8 pl-3 pb-2">
+                <h2 className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-2 tab:text-sm tab:leading-[1.12rem] ">
                    Seasonal Variation
                 </h2>
                 <ul
-                  className={`${manrope.className} text-base leading-6 text-head-dark list-disc pl-9`}
+                  className={`${manrope.className} lg:text-base lg:leading-6 text-head-dark list-disc pl-9 tab:text-[0.56rem] tab:leading-3`}
                 >
                   <li className="pb-2 ">
                     Showcase the property in different seasons, allowing clients
@@ -526,14 +532,14 @@ const SalesToolSection = () => {
             </div>
             <div className="mb-10">
               <div
-                className="rounded w-[33.6rem] p-4"
+                className="rounded lg:w-[33.6rem]  tab:w-[19rem] lg:p-4 tab:py-3 tab:pr-3"
                 style={{ border: "1px solid rgba(18, 17, 18, 0.25)" }}
               >
-                <h2 className="font-semibold text-2xl text-head-dark leading-8 pl-3 pb-2">
+                <h2 className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-2 tab:text-sm tab:leading-[1.12rem]">
                    Day-to-Night Transition
                 </h2>
                 <ul
-                  className={`${manrope.className} text-base leading-6 text-head-dark list-disc pl-9`}
+                  className={`${manrope.className} lg:text-base lg:leading-6 text-head-dark list-disc pl-9 tab:text-[0.56rem] tab:leading-3`}
                 >
                   <li className="pb-2">
                     Enable clients to experience the property's ambiance at
@@ -550,39 +556,40 @@ const SalesToolSection = () => {
           </div>
 
           <Image
-            className="my-0 mx-auto"
+            className="my-0 mx-auto lg:w-[68.75rem] tab:w-[40.31rem]"
             width={1100}
             height={645}
-            src="/assets/Images/Exterior.png"
+            src="/assets/Images/weather-mode.png"
             alt="project-overview"
           />
         </div>
-        <div className=" py-[7.8rem]">
+        <div className="lg:py-[7.8rem] tab:py-[3.8rem]">
           <div className="lg:max-w-[73.5rem] m-auto">
-            <div className="mb-20 flex justify-center items-center flex-col">
-              <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-prime-green px-6 inline">
+            <div className="lg:mb-20 tab:mb-10 flex justify-center items-center flex-col">
+              <h2 className="lg:text-7xl tab:text-[2rem] leading-[3.33rem] bg-prime-green px-6 inline">
                 Window Mode
               </h2>
-              <p className="text-amenities-para text-7xl font-semibold py-5 text-center">
+              <p className="text-amenities-para lg:text-7xl tab:text-[2rem] font-semibold lg:py-5 tab:py-2 text-center">
                 Accurate Unit Views
               </p>
             </div>
 
             <div>
-              <div className="flex">
+              <div className="flex tab:justify-center lg:justify-normal">
                 <Image
+                  className="lg:w-[35rem] tab:w-[19.68rem]"
                   width={560}
                   height={328}
                   src="/assets/Images/view-accuracy.png"
                   alt="project-overview"
                 />
 
-                <div className="ml-16">
-                  <h2 className="text-5xl leading-[3.33rem] px-6 py-5 text-head-dark">
+                <div className="lg:ml-16 tab:ml-8">
+                  <h2 className="lg:text-5xl tab:text-[1.68rem] leading-[3.33rem] lg:py-5 tab:py-3 text-head-dark">
                     View Accuracy
                   </h2>
                   <div
-                    className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mt-5 mb-5 rounded h-24"
+                    className=" flex gap-2.5 items-center px-5 py-4 lg:w-[34rem] tab:w-[19.68rem] mt-0 lg:mb-5 tab:mb-3 rounded h-24 lg:h-24 tab:h-[3.4rem] tab:p-2"
                     style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                   >
                     <div
@@ -592,6 +599,7 @@ const SalesToolSection = () => {
                       }}
                     >
                       <svg
+                        className="tab:w-[1.25rem] lg:w-[2.56rem]"
                         width="41"
                         height="41"
                         viewBox="0 0 41 41"
@@ -619,7 +627,7 @@ const SalesToolSection = () => {
 
                     <div className="pl-2">
                       <p
-                        className={`${manrope.className} text-base text-augment-para leading-6 `}
+                        className={`${manrope.className} lg:text-base text-form-head lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                       >
                         Identify and highlight nearby points of interest, such
                         as schools, shopping centers, and recreational areas,
@@ -628,7 +636,7 @@ const SalesToolSection = () => {
                     </div>
                   </div>
                   <div
-                    className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mb-5 rounded h-24"
+                    className=" flex gap-2.5 items-center px-5 py-4 lg:w-[34rem] tab:w-[19.68rem] mb-5 rounded h-24 lg:h-24 tab:h-[3.4rem] tab:p-2"
                     style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                   >
                     <div
@@ -638,6 +646,7 @@ const SalesToolSection = () => {
                       }}
                     >
                       <svg
+                        className="tab:w-[1.25rem] lg:w-[2.56rem]"
                         width="41"
                         height="41"
                         viewBox="0 0 41 41"
@@ -653,7 +662,7 @@ const SalesToolSection = () => {
 
                     <div className="pl-2">
                       <p
-                        className={`${manrope.className} text-base text-augment-para leading-6`}
+                        className={`${manrope.className} lg:text-base text-form-head lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                       >
                         Transparency in showcasing views contributes to the
                         overall satisfaction of the clients.
@@ -664,13 +673,13 @@ const SalesToolSection = () => {
               </div>
 
               <div>
-                <div className="flex mt-20">
-                  <div className="mr-16">
-                    <h2 className="l:text-7xl tab:text-5xl leading-[3.33rem]">
+                <div className="flex lg:justify-normal tab:justify-center lg:mt-20 tab:mt-10">
+                  <div className="lg:mr-16 tab:mr-8">
+                    <h2 className="lg:text-5xl tab:text-[1.68rem] leading-[3.33rem] lg:py-5 tab:py-3 text-head-dark">
                       Immersive Experience
                     </h2>
                     <div
-                      className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mt-5 mb-5 rounded h-24"
+                      className=" flex gap-2.5 items-center px-5 py-4 lg:w-[34rem] tab:w-[19.68rem] mt-0 lg:mb-5 tab:mb-3 rounded h-24 lg:h-24 tab:h-[3.4rem] tab:p-2"
                       style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                     >
                       <div
@@ -680,6 +689,7 @@ const SalesToolSection = () => {
                         }}
                       >
                         <svg
+                          className="tab:w-[1.25rem] lg:w-[2.56rem]"
                           width="36"
                           height="40"
                           viewBox="0 0 36 40"
@@ -703,7 +713,7 @@ const SalesToolSection = () => {
 
                       <div className="pl-2">
                         <p
-                          className={`${manrope.className} text-base text-augment-para leading-6 `}
+                          className={`${manrope.className} lg:text-base text-form-head lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                         >
                           Enhance the overall immersive experience by allowing
                           clients to virtually stand in different rooms and
@@ -712,7 +722,7 @@ const SalesToolSection = () => {
                       </div>
                     </div>
                     <div
-                      className=" flex gap-2.5 items-center px-5 py-4 w-[34rem] mb-5 rounded h-24"
+                      className=" flex gap-2.5 items-center px-5 py-4 lg:w-[34rem] tab:w-[19.68rem] mt-0 lg:mb-5 tab:mb-3 rounded h-24 lg:h-24 tab:h-[3.4rem] tab:p-2"
                       style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                     >
                       <div
@@ -722,6 +732,7 @@ const SalesToolSection = () => {
                         }}
                       >
                         <svg
+                          className="tab:w-[1.25rem] lg:w-[2.56rem]"
                           width="41"
                           height="41"
                           viewBox="0 0 41 41"
@@ -739,7 +750,7 @@ const SalesToolSection = () => {
 
                       <div className="pl-2">
                         <p
-                          className={`${manrope.className} text-base text-augment-para leading-6`}
+                          className={`${manrope.className} lg:text-base text-form-head lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
                         >
                           Creates a memorable and engaging experience.
                         </p>
@@ -747,6 +758,7 @@ const SalesToolSection = () => {
                     </div>
                   </div>
                   <Image
+                    className="lg:w-[35rem] tab:w-[19.68rem]"
                     width={560}
                     height={328}
                     src="/assets/Images/immersive-exp.png"
@@ -758,96 +770,191 @@ const SalesToolSection = () => {
           </div>
         </div>
 
-        <div className="bg-prime-green py-40">
-          <div className="mb-12 px-[9.2rem]">
-            <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-white px-6 inline">
-              Floor Plan / Dollhouse
-            </h2>
-            <p className="text-amenities-para text-7xl font-semibold py-5">
-              Seamless Interior Exploration
-            </p>
-          </div>
-          <Image
-            className="mx-auto my-0"
-            width={1127}
-            height={873}
-            src="/assets/Images/floor-plan.png"
-            alt="project-overview"
-          />
-          <div className="lgdesktop:flex gap-6 mt-10 px-[9.2rem]">
-            <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[33.93rem]">
-              <svg
-                className="mr-4"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.8662 4.60936C2.70905 4.65621 2.67762 4.65621 2.6619 4.67183C2.25329 4.95294 1.89184 5.70257 1.57752 5.57764C1.01176 5.35899 0.618872 4.7343 0.131688 4.29701C-0.0411833 4.14084 -0.0411833 4.0159 0.115973 3.84411C1.35751 2.64157 2.56761 1.42341 3.79342 0.205257C3.98201 0.0178485 4.12345 0.0334659 4.29632 0.220874C5.47499 1.4078 6.66938 2.5791 7.84805 3.7504C7.87948 3.78164 7.95806 3.82849 7.95806 3.85972C7.98949 4.65621 7.17228 4.828 6.82653 5.35899C6.66938 5.59325 6.44936 5.71819 6.19791 5.42146C5.94646 5.12473 5.6793 4.85924 5.41213 4.56251C5.12925 4.79677 5.22354 5.03103 5.22354 5.21844C5.22354 14.7763 5.22354 24.3185 5.20783 33.8763C5.20783 34.4854 5.36498 34.6572 5.97789 34.6572C15.5958 34.6416 25.1981 34.6416 34.816 34.6416C35.0046 34.6416 35.1775 34.6416 35.3346 34.6416C35.4604 34.4073 35.2561 34.3448 35.1775 34.2355C34.9575 33.9076 34.2974 33.6733 34.5017 33.3141C34.8317 32.7519 35.3975 32.3146 35.9161 31.8617C36.089 31.7055 36.2304 31.971 36.3561 32.0803C37.5034 33.2204 38.6506 34.3761 39.8136 35.4849C40.1122 35.766 40.0179 35.9378 39.7822 36.1721C38.6192 37.3121 37.472 38.4522 36.3404 39.5923C36.089 39.8578 35.9161 39.889 35.6489 39.5923C35.2718 39.1706 34.6589 38.827 34.5017 38.3429C34.3446 37.8119 35.1932 37.6245 35.4289 37.0779C35.1775 36.9061 34.8946 36.9842 34.6274 36.9842C24.3651 36.9842 14.0871 36.9686 3.82485 36.9998C3.05479 36.9998 2.83477 36.828 2.83477 36.0315C2.8662 25.849 2.85049 15.6821 2.85049 5.49955C2.8662 5.23405 2.8662 4.95294 2.8662 4.60936Z"
-                  fill="#B0DB17"
-                />
-                <path
-                  d="M8.72665 11.2471C9.08811 11.4345 9.32385 11.5594 9.54386 11.6844C12.8756 13.5897 16.1916 15.5106 19.5547 17.3691C20.1205 17.6814 20.2776 18.0406 20.2776 18.6497C20.2462 22.5541 20.2619 26.4584 20.2619 30.3471C20.2619 30.597 20.2619 30.8625 20.2619 31.1124C19.9004 31.2061 19.7119 30.9874 19.5076 30.8625C16.1287 28.9416 12.7498 27.005 9.37099 25.0997C8.91524 24.8498 8.71094 24.5687 8.71094 24.0221C8.74237 20.024 8.72665 16.0104 8.72665 12.0123C8.72665 11.7937 8.72665 11.5907 8.72665 11.2471Z"
-                  fill="#B0DB17"
-                />
-                <path
-                  d="M34.1407 11.3086C34.1407 12.8859 34.1407 14.3852 34.1407 15.9001C34.1407 18.6331 34.125 21.3662 34.1564 24.0836C34.1564 24.5678 33.9993 24.8176 33.5907 25.0519C30.1647 26.9884 26.7387 28.9406 23.3284 30.9084C22.7626 31.2364 22.6055 31.2208 22.6055 30.518C22.6212 26.4887 22.6212 22.4594 22.6055 18.4301C22.6055 18.0397 22.6526 17.7586 23.0455 17.5399C26.6287 15.5097 30.2118 13.4638 33.795 11.4179C33.8578 11.3711 33.9364 11.3711 34.1407 11.3086Z"
-                  fill="#B0DB17"
-                />
-                <path
-                  d="M9.92578 9.18525C11.2616 8.42 12.456 7.73283 13.6504 7.04567C16.0706 5.65572 18.5065 4.28139 20.9267 2.89145C21.241 2.71966 21.4767 2.61033 21.8539 2.82898C25.4214 4.89047 29.0045 6.93635 32.5877 8.98222C32.6663 9.02908 32.7448 9.10716 32.8234 9.16963C32.6977 9.43513 32.4462 9.48198 32.2577 9.60692C28.8316 11.5591 25.4056 13.5113 21.9796 15.4791C21.6811 15.6508 21.4453 15.807 21.0524 15.5884C17.4064 13.4488 13.729 11.3717 9.92578 9.18525Z"
-                  fill="#B0DB17"
-                />
-              </svg>
-              <p
-                className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                style={{ borderLeft: "1px solid #0E1D29" }}
-              >
-                Clients seamlessly transition from 2D floor plans to 3D
-                dollhouse views, gaining a deeper understanding of the interior
-                layout.
+        <div className="bg-prime-green lg:py-40 tab:py-20">
+          <div className="lg:max-w-[71rem] tab:px-20 lg:px-0 m-auto">
+            <div className="mb-12">
+              <h2 className="lg:text-7xl tab:text-[2rem] lg:leading-[3.33rem] tab:leading-[1.87rem] bg-white px-6 inline">
+                Floor Plan / Dollhouse
+              </h2>
+              <p className="text-amenities-para lg:text-7xl tab:text-[2rem] font-semibold lg:py-5 tab:py-1">
+                Seamless Interior Exploration
               </p>
             </div>
-            <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[33.93rem]">
-              <svg
-                className="mr-4"
-                width="39"
-                height="38"
-                viewBox="0 0 39 38"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19.7846 37.5965C19.418 37.5965 19.0513 37.6111 18.6846 37.5965C17.1299 37.5528 15.8099 36.6345 15.7219 35.1186C15.6192 33.4278 14.7979 32.6407 13.3019 32.2326C12.9939 32.1451 12.7739 32.1014 12.5099 32.3201C12.0699 32.6699 11.6005 32.976 11.1312 33.2821C9.85515 34.0983 8.47646 33.9963 7.36177 32.976C6.76043 32.4367 6.18842 31.8682 5.64574 31.2706C4.64839 30.1774 4.54573 28.8364 5.32307 27.5829C5.35241 27.5392 5.36707 27.4955 5.41107 27.4663C6.74576 26.3294 6.43776 25.0613 5.71908 23.7495C5.57241 23.4725 5.42574 23.3559 5.1324 23.3122C4.57506 23.2393 4.01772 23.1373 3.47504 23.0207C2.00835 22.7 1.055 21.5777 1.011 20.0764C0.996333 19.3184 0.996333 18.5751 1.011 17.8171C1.04033 16.3012 1.97902 15.0186 3.47504 14.9165C5.0884 14.7999 5.98308 14.1003 6.36442 12.5844C6.45242 12.2346 6.54043 11.9868 6.27642 11.6661C5.90975 11.2143 5.57241 10.7333 5.27907 10.2377C4.54573 9.04248 4.66306 7.7015 5.60174 6.66662C6.17375 6.03986 6.7751 5.42768 7.42044 4.85922C8.46179 3.92637 9.81115 3.82434 11.0138 4.53855C11.0725 4.58228 11.1458 4.61143 11.1898 4.65516C12.3339 5.96698 13.5952 5.70462 14.9299 4.97583C15.1939 4.83007 15.3406 4.69889 15.3846 4.3928C15.4579 3.86807 15.5606 3.34334 15.6632 2.81861C15.9713 1.27357 17.1153 0.311568 18.6993 0.282416C19.4326 0.26784 20.166 0.26784 20.8993 0.282416C22.3954 0.326144 23.7154 1.259 23.818 2.73115C23.9354 4.3928 24.6981 5.23819 26.2234 5.63174C26.5608 5.71919 26.7954 5.76292 27.0741 5.52971C27.5288 5.16531 28.0128 4.83007 28.5115 4.53855C29.7141 3.80976 31.0635 3.91179 32.1049 4.84465C32.7649 5.42768 33.3809 6.05444 33.9676 6.69577C34.8769 7.71608 34.9649 9.04248 34.2609 10.2085C34.2169 10.2668 34.1876 10.3397 34.1436 10.3835C32.8529 11.5204 33.0582 12.7739 33.8209 14.1003C33.9676 14.3627 34.0849 14.523 34.3929 14.5667C34.9209 14.6396 35.4489 14.7416 35.9769 14.8437C37.5316 15.1497 38.4996 16.2867 38.5436 17.8463C38.5583 18.6188 38.573 19.4059 38.529 20.1784C38.4703 21.534 37.5169 22.6563 36.2263 22.9478C35.6396 23.079 35.1996 22.8895 34.9942 22.321C34.8036 21.7672 35.0676 21.3153 35.5956 21.1696C36.4463 20.9218 36.6663 20.3533 36.6369 19.5662C36.6076 19.0123 36.6369 18.4439 36.6223 17.89C36.6076 17.2487 36.2849 16.8405 35.6396 16.7239C34.8476 16.5782 34.0556 16.4324 33.2635 16.3012C32.7209 16.2138 32.3835 15.9223 32.2369 15.3975C31.9729 14.4355 31.5915 13.5173 31.0928 12.6427C30.8288 12.1763 30.8435 11.739 31.1662 11.2872C31.6355 10.6604 32.0609 10.0191 32.5155 9.37772C32.9409 8.79469 32.8822 8.24081 32.3689 7.74523C31.8995 7.27881 31.4448 6.81238 30.9608 6.36053C30.4768 5.87953 29.9488 5.82122 29.3768 6.21477C28.7315 6.65205 28.0861 7.08932 27.4554 7.55575C26.9861 7.90557 26.5314 7.93472 26.0328 7.6432C25.1821 7.1622 24.2727 6.78323 23.334 6.53544C22.7767 6.38968 22.4834 6.03986 22.3954 5.47141C22.278 4.69889 22.1314 3.94095 21.9847 3.183C21.8673 2.51252 21.442 2.17727 20.7673 2.1627C20.1367 2.1627 19.4913 2.1627 18.8606 2.1627C18.1126 2.14812 17.6579 2.48336 17.5406 3.24131C17.4086 3.98467 17.2473 4.71346 17.1446 5.45683C17.0566 6.02529 16.7779 6.37511 16.2059 6.53544C15.2379 6.7978 14.3139 7.17677 13.4339 7.67235C12.9499 7.93472 12.5099 7.90557 12.0699 7.57032C11.4685 7.11847 10.8378 6.69577 10.2072 6.27308C9.51781 5.82122 9.09247 5.85038 8.50579 6.40426C8.05112 6.84153 7.59644 7.27881 7.15644 7.74523C6.59909 8.32826 6.56976 8.75096 7.02443 9.43603C7.43511 10.0336 7.84578 10.6458 8.28579 11.2289C8.65246 11.7099 8.69646 12.1763 8.38846 12.7156C7.90445 13.561 7.53778 14.4647 7.27377 15.3975C7.11244 15.9514 6.76043 16.2429 6.18842 16.3158C5.44041 16.4178 4.69239 16.5782 3.95905 16.7094C3.24037 16.826 2.88836 17.2487 2.88836 17.9629C2.88836 18.6188 2.88836 19.2747 2.88836 19.9306C2.90303 20.6011 3.2257 21.0238 3.91505 21.1404C4.67773 21.2716 5.45507 21.4319 6.21775 21.5485C6.78976 21.636 7.1271 21.9421 7.28844 22.496C7.55244 23.4288 7.91912 24.3325 8.40312 25.1779C8.69646 25.6735 8.66713 26.1253 8.31512 26.5918C7.86045 27.1894 7.43511 27.8161 7.00977 28.4429C6.55509 29.1134 6.59909 29.5361 7.1711 30.1337C7.62578 30.6147 8.09512 31.0665 8.57913 31.5184C9.04847 31.9702 9.56181 32.0285 10.1045 31.6496C10.7645 31.1977 11.4392 30.7459 12.0845 30.2649C12.5392 29.9442 12.9792 29.915 13.4485 30.192C14.3286 30.6876 15.2526 31.0665 16.2206 31.3289C16.7486 31.4747 17.0419 31.8099 17.1153 32.3492C17.2473 33.1363 17.3939 33.9234 17.5406 34.7105C17.6579 35.3518 18.0686 35.6725 18.7286 35.6871C19.242 35.7016 19.7553 35.6579 20.2687 35.7016C21.134 35.7599 21.7793 35.5559 22.058 34.6085C22.2047 34.1129 22.674 33.9088 23.1874 34.0837C23.73 34.2586 23.9354 34.6813 23.8327 35.2352C23.5834 36.5033 22.4394 37.4945 21.1047 37.5819C20.6647 37.6111 20.2247 37.5819 19.7846 37.5965C19.7846 37.5819 19.7846 37.5819 19.7846 37.5965Z"
-                  fill="#B0DB17"
-                />
-                <path
-                  d="M19.7846 37.5965C19.418 37.5965 19.0513 37.6111 18.6846 37.5965C17.1299 37.5528 15.8099 36.6345 15.7219 35.1186C15.6192 33.4278 14.7979 32.6407 13.3019 32.2326C12.9939 32.1451 12.7739 32.1014 12.5099 32.3201C12.0699 32.6699 11.6005 32.976 11.1312 33.2821C9.85515 34.0983 8.47646 33.9963 7.36177 32.976C6.76043 32.4367 6.18842 31.8682 5.64574 31.2706C4.64839 30.1774 4.54573 28.8364 5.32307 27.5829C5.35241 27.5392 5.36707 27.4955 5.41107 27.4663C6.74576 26.3294 6.43776 25.0613 5.71908 23.7495C5.57241 23.4725 5.42574 23.3559 5.1324 23.3122C4.57506 23.2393 4.01772 23.1373 3.47504 23.0207C2.00835 22.7 1.055 21.5777 1.011 20.0764C0.996333 19.3184 0.996333 18.5751 1.011 17.8171C1.04033 16.3012 1.97902 15.0186 3.47504 14.9165C5.0884 14.7999 5.98308 14.1003 6.36442 12.5844C6.45242 12.2346 6.54043 11.9868 6.27642 11.6661C5.90975 11.2143 5.57241 10.7333 5.27907 10.2377C4.54573 9.04248 4.66306 7.7015 5.60174 6.66662C6.17375 6.03986 6.7751 5.42768 7.42044 4.85922C8.46179 3.92637 9.81115 3.82434 11.0138 4.53855C11.0725 4.58228 11.1458 4.61143 11.1898 4.65516C12.3339 5.96698 13.5952 5.70462 14.9299 4.97583C15.1939 4.83007 15.3406 4.69889 15.3846 4.3928C15.4579 3.86807 15.5606 3.34334 15.6632 2.81861C15.9713 1.27357 17.1153 0.311568 18.6993 0.282416C19.4326 0.26784 20.166 0.26784 20.8993 0.282416C22.3954 0.326144 23.7154 1.259 23.818 2.73115C23.9354 4.3928 24.6981 5.23819 26.2234 5.63174C26.5608 5.71919 26.7954 5.76292 27.0741 5.52971C27.5288 5.16531 28.0128 4.83007 28.5115 4.53855C29.7141 3.80976 31.0635 3.91179 32.1049 4.84465C32.7649 5.42768 33.3809 6.05444 33.9676 6.69577C34.8769 7.71608 34.9649 9.04248 34.2609 10.2085C34.2169 10.2668 34.1876 10.3397 34.1436 10.3835C32.8529 11.5204 33.0582 12.7739 33.8209 14.1003C33.9676 14.3627 34.0849 14.523 34.3929 14.5667C34.9209 14.6396 35.4489 14.7416 35.9769 14.8437C37.5316 15.1497 38.4996 16.2867 38.5436 17.8463C38.5583 18.6188 38.573 19.4059 38.529 20.1784C38.4703 21.534 37.5169 22.6563 36.2263 22.9478C35.6396 23.079 35.1996 22.8895 34.9942 22.321C34.8036 21.7672 35.0676 21.3153 35.5956 21.1696C36.4463 20.9218 36.6663 20.3533 36.6369 19.5662C36.6076 19.0123 36.6369 18.4439 36.6223 17.89C36.6076 17.2487 36.2849 16.8405 35.6396 16.7239C34.8476 16.5782 34.0556 16.4324 33.2635 16.3012C32.7209 16.2138 32.3835 15.9223 32.2369 15.3975C31.9729 14.4355 31.5915 13.5173 31.0928 12.6427C30.8288 12.1763 30.8435 11.739 31.1662 11.2872C31.6355 10.6604 32.0609 10.0191 32.5155 9.37772C32.9409 8.79469 32.8822 8.24081 32.3689 7.74523C31.8995 7.27881 31.4448 6.81238 30.9608 6.36053C30.4768 5.87953 29.9488 5.82122 29.3768 6.21477C28.7315 6.65205 28.0861 7.08932 27.4554 7.55575C26.9861 7.90557 26.5314 7.93472 26.0328 7.6432C25.1821 7.1622 24.2727 6.78323 23.334 6.53544C22.7767 6.38968 22.4834 6.03986 22.3954 5.47141C22.278 4.69889 22.1314 3.94095 21.9847 3.183C21.8673 2.51252 21.442 2.17727 20.7673 2.1627C20.1367 2.1627 19.4913 2.1627 18.8606 2.1627C18.1126 2.14812 17.6579 2.48336 17.5406 3.24131C17.4086 3.98467 17.2473 4.71346 17.1446 5.45683C17.0566 6.02529 16.7779 6.37511 16.2059 6.53544C15.2379 6.7978 14.3139 7.17678 13.4339 7.67235C12.9499 7.93472 12.5099 7.90557 12.0699 7.57032C11.4685 7.11847 10.8378 6.69577 10.2072 6.27307C9.51781 5.82122 9.09247 5.85038 8.50579 6.40426C8.05112 6.84153 7.59644 7.27881 7.15644 7.74523C6.59909 8.32826 6.56976 8.75096 7.02443 9.43603C7.43511 10.0336 7.84578 10.6458 8.28579 11.2289C8.65246 11.7099 8.69646 12.1763 8.38846 12.7156C7.90445 13.561 7.53778 14.4647 7.27377 15.3975C7.11244 15.9514 6.76043 16.2429 6.18842 16.3158C5.44041 16.4178 4.69239 16.5782 3.95905 16.7094C3.24037 16.826 2.88836 17.2487 2.88836 17.9629C2.88836 18.6188 2.88836 19.2747 2.88836 19.9306C2.90303 20.6011 3.2257 21.0238 3.91505 21.1404C4.67773 21.2716 5.45507 21.4319 6.21775 21.5485C6.78976 21.636 7.1271 21.9421 7.28844 22.496C7.55244 23.4288 7.91912 24.3325 8.40312 25.1779C8.69646 25.6735 8.66713 26.1253 8.31512 26.5918C7.86045 27.1894 7.43511 27.8161 7.00977 28.4429C6.55509 29.1134 6.59909 29.5361 7.1711 30.1337C7.62578 30.6147 8.09512 31.0665 8.57913 31.5184C9.04847 31.9702 9.56181 32.0285 10.1045 31.6496C10.7645 31.1977 11.4392 30.7459 12.0845 30.2649C12.5392 29.9442 12.9792 29.915 13.4485 30.192C14.3286 30.6876 15.2526 31.0665 16.2206 31.3289C16.7486 31.4747 17.0419 31.8099 17.1153 32.3492C17.2473 33.1363 17.3939 33.9234 17.5406 34.7105C17.6579 35.3518 18.0686 35.6725 18.7286 35.6871C19.242 35.7016 19.7553 35.6579 20.2687 35.7016C21.134 35.7599 21.7793 35.5559 22.058 34.6085C22.2047 34.1129 22.674 33.9088 23.1874 34.0837C23.73 34.2586 23.9354 34.6813 23.8327 35.2352C23.5834 36.5033 22.4394 37.4945 21.1047 37.5819C20.6647 37.6111 20.2247 37.5819 19.7846 37.5965ZM19.7846 37.5965C19.7846 37.5819 19.7846 37.5819 19.7846 37.5965Z"
-                  stroke="#B0DB17"
-                  stroke-width="0.25"
-                />
-                <path
-                  d="M19.0969 11.8121C19.9329 12.57 20.7102 13.2259 21.4289 13.9547C22.9543 15.4998 22.9396 17.3655 21.4143 18.9105C20.8423 19.479 20.2702 20.0474 19.6836 20.5867C18.1289 22.0443 16.2808 22.0151 14.7408 20.5284C13.9928 19.7996 13.2301 19.1 12.4381 18.3566C12.2621 19.1291 12.4234 19.9016 12.6288 20.6596C13.4795 23.7497 16.3688 25.9798 19.5956 25.8632C21.8983 25.7757 23.7023 26.5482 25.2423 28.2244C26.8997 30.0318 28.6744 31.7518 30.3904 33.5155C30.5077 33.6321 30.6397 33.7487 30.7278 33.8944C31.0211 34.3317 31.0358 34.7836 30.6397 35.148C30.2584 35.5123 29.8037 35.4978 29.3784 35.1917C29.2171 35.0751 29.0997 34.9293 28.9531 34.7836C27.149 32.9324 25.3303 31.1104 23.541 29.2302C22.5583 28.1953 21.3996 27.7143 19.9476 27.758C14.7702 27.9329 10.7221 24.1724 10.4727 19.0125C10.4581 18.6481 10.4874 18.2837 10.5021 17.9193C10.5314 17.1322 10.9274 16.5929 11.6461 16.3014C12.3794 16.0099 13.0541 16.1702 13.6115 16.695C14.4181 17.4675 15.1955 18.2837 15.9875 19.0708C16.9115 19.9891 17.5569 20.0037 18.4809 19.1146C19.0382 18.5753 19.6102 18.0359 20.1529 17.4821C20.8423 16.7824 20.8569 16.0828 20.1676 15.3686C19.3902 14.5523 18.5982 13.7652 17.8062 12.9781C17.2049 12.3805 16.9262 11.6955 17.2489 10.8646C17.5715 10.0338 18.2462 9.75688 19.0969 9.69858C24.3183 9.36334 28.9237 13.7798 28.6451 18.9834C28.557 20.645 29.0264 21.9423 30.2144 23.0938C31.9744 24.8137 33.6611 26.6065 35.3772 28.3702C35.4945 28.4868 35.6265 28.6034 35.7292 28.7346C36.1545 29.2156 36.1838 29.8132 35.7732 30.163C35.3038 30.5566 34.8345 30.4983 34.3945 30.0901C34.2478 29.959 34.1158 29.8132 33.9838 29.682C32.1944 27.8455 30.4197 26.0089 28.6157 24.2015C27.2224 22.8022 26.6063 21.1697 26.7237 19.202C26.9877 15.252 23.981 11.8995 20.0062 11.6372C19.8009 11.5934 19.5516 11.5206 19.0969 11.8121Z"
-                  fill="#B0DB17"
-                  stroke="#B0DB17"
-                  stroke-width="0.25"
-                />
-              </svg>
+            <Image
+              className="mx-auto my-0 lg:w-[70.43rem] tab:w-[39.56rem]"
+              width={1127}
+              height={873}
+              src="/assets/Images/floor-plan.png"
+              alt="project-overview"
+            />
+            <div className="flex gap-6 mt-10">
+              <div className="bg-white flex gap-2.5 items-center lg:px-5 lg:py-4 tab:p-2 w-[33.93rem]">
+                <svg
+                  width="41"
+                  height="41"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.09368 33.7661C3.80947 34.0909 3.89067 34.5781 4.21548 34.8623L10.1839 39.4096C10.5087 39.6533 11.0365 39.6127 11.2801 39.2472L13.7162 36.0804L6.52975 30.5586L4.09368 33.7661Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M35.6409 23.2081L30.1191 24.8727C30.1191 24.9945 30.1191 25.1569 30.1191 25.2787C30.0379 26.8216 28.9011 28.1208 27.3989 28.4456L27.0335 28.5268C25.044 28.9328 22.9733 29.1764 20.9433 29.217L19.2786 29.2576C18.7508 29.2576 18.3448 28.8516 18.3042 28.3644C18.3042 27.8366 18.7102 27.4306 19.1974 27.39L20.8621 27.3494C22.8109 27.3088 24.7598 27.0652 26.668 26.6998L27.0335 26.6186C27.7237 26.4968 28.2515 25.8877 28.2921 25.1569C28.3327 24.7509 28.1703 24.3449 27.8861 24.0201C27.6019 23.6953 27.2365 23.5329 26.7899 23.4923L17.9794 23.1269C17.005 23.0863 16.0305 23.3705 15.2185 23.9389L7.8291 29.2576L15.3809 35.023L22.7703 35.7944C24.0696 35.9162 25.3688 35.5508 26.3838 34.7794L37.265 26.375C37.671 26.0501 37.9146 25.6035 37.9552 25.0757C37.9958 24.5479 37.8334 24.0607 37.468 23.6953C37.0213 23.2081 36.2905 23.0051 35.6409 23.2081Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M28.0873 20.8134C33.5685 20.8134 37.994 16.3878 37.994 10.9067C37.9534 5.42553 33.5279 1 28.0873 1C22.6468 1 18.1807 5.42553 18.1807 10.9067C18.1807 16.3878 22.6062 20.8134 28.0873 20.8134ZM22.7686 11.0691L23.9866 9.85106C24.1896 9.64805 24.555 9.64805 24.7987 9.85106L26.7475 11.7999L31.376 7.17138C31.5791 6.96837 31.9445 6.96837 32.1881 7.17138L33.4061 8.38941C33.6091 8.59242 33.6091 8.95783 33.4061 9.20144L27.1535 15.454C26.9505 15.657 26.5851 15.657 26.3415 15.454L22.7686 11.8811C22.525 11.6781 22.525 11.3127 22.7686 11.0691Z"
+                    fill="#CDEA67"
+                  />
+                </svg>
 
-              <p
-                className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                style={{ borderLeft: "1px solid #0E1D29" }}
-              >
-                Facilitates a more intuitive exploration of the property's
-                design.
-              </p>
+                <p
+                  className={`${manrope.className} text-augment-para pl-4 lg:text-base tab:text-[0.56rem] font-bold opacity-80 capitalize`}
+                  style={{ borderLeft: "1px solid #0E1D29" }}
+                >
+                  Clients seamlessly transition from 2D floor plans to 3D
+                  dollhouse views, gaining a deeper understanding of the
+                  interior layout.
+                </p>
+              </div>
+              <div className="bg-white flex gap-2.5 items-center lg:px-5 lg:py-4 tab:p-2 w-[33.93rem]">
+                <svg
+                  width="41"
+                  height="41"
+                  viewBox="0 0 41 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.4002 9.19922H31.4002C31.0819 9.19922 30.7767 9.32565 30.5517 9.55069C30.3266 9.77573 30.2002 10.081 30.2002 10.3992V13.3992C30.2002 13.7175 30.3266 14.0227 30.5517 14.2477C30.7767 14.4728 31.0819 14.5992 31.4002 14.5992H34.4002C34.7185 14.5992 35.0237 14.4728 35.2487 14.2477C35.4738 14.0227 35.6002 13.7175 35.6002 13.3992V10.3992C35.6002 10.081 35.4738 9.77573 35.2487 9.55069C35.0237 9.32565 34.7185 9.19922 34.4002 9.19922ZM31.4002 13.3992V10.3992H34.4002V13.3992H31.4002Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M8.59941 23.5996H4.99941C4.84028 23.5996 4.68767 23.6628 4.57515 23.7753C4.46263 23.8879 4.39941 24.0405 4.39941 24.1996C4.39941 24.3587 4.46263 24.5114 4.57515 24.6239C4.68767 24.7364 4.84028 24.7996 4.99941 24.7996H8.59941C8.75854 24.7996 8.91116 24.7364 9.02368 24.6239C9.1362 24.5114 9.19941 24.3587 9.19941 24.1996C9.19941 24.0405 9.1362 23.8879 9.02368 23.7753C8.91116 23.6628 8.75854 23.5996 8.59941 23.5996Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M4.99941 8.00078H9.19941C9.35854 8.00078 9.51116 7.93757 9.62368 7.82505C9.7362 7.71252 9.79941 7.55991 9.79941 7.40078C9.79941 7.24165 9.7362 7.08904 9.62368 6.97652C9.51116 6.864 9.35854 6.80078 9.19941 6.80078H4.99941C4.84028 6.80078 4.68767 6.864 4.57515 6.97652C4.46263 7.08904 4.39941 7.24165 4.39941 7.40078C4.39941 7.55991 4.46263 7.71252 4.57515 7.82505C4.68767 7.93757 4.84028 8.00078 4.99941 8.00078Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M35.0002 6.80078H30.8002C30.6411 6.80078 30.4885 6.864 30.3759 6.97652C30.2634 7.08904 30.2002 7.24165 30.2002 7.40078C30.2002 7.55991 30.2634 7.71252 30.3759 7.82505C30.4885 7.93757 30.6411 8.00078 30.8002 8.00078H35.0002C35.1593 8.00078 35.3119 7.93757 35.4245 7.82505C35.537 7.71252 35.6002 7.55991 35.6002 7.40078C35.6002 7.24165 35.537 7.08904 35.4245 6.97652C35.3119 6.864 35.1593 6.80078 35.0002 6.80078Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M8.59941 9.19922H5.59941C5.28115 9.19922 4.97593 9.32565 4.75089 9.55069C4.52584 9.77573 4.39941 10.081 4.39941 10.3992V13.3992C4.39941 13.7175 4.52584 14.0227 4.75089 14.2477C4.97593 14.4728 5.28115 14.5992 5.59941 14.5992H8.59941C8.91767 14.5992 9.2229 14.4728 9.44794 14.2477C9.67299 14.0227 9.79941 13.7175 9.79941 13.3992V10.3992C9.79941 10.081 9.67299 9.77573 9.44794 9.55069C9.2229 9.32565 8.91767 9.19922 8.59941 9.19922ZM5.59941 13.3992V10.3992H8.59941V13.3992H5.59941Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M35 2H5C4.20464 2.00095 3.44213 2.31733 2.87973 2.87973C2.31733 3.44213 2.00095 4.20464 2 5V24.2C2.00095 24.9954 2.31733 25.7579 2.87973 26.3203C3.44213 26.8827 4.20464 27.199 5 27.2H15.6548L19.2242 30.7694C19.28 30.8252 19.3242 30.8914 19.3544 30.9643C19.3846 31.0372 19.4001 31.1153 19.4 31.1942V32.1104C19.0503 32.2341 18.7473 32.4627 18.5325 32.7652C18.3177 33.0676 18.2015 33.429 18.2 33.8V36.2C18.2 36.6774 18.3896 37.1352 18.7272 37.4728C19.0648 37.8104 19.5226 38 20 38H27.2C27.6774 38 28.1352 37.8104 28.4728 37.4728C28.8104 37.1352 29 36.6774 29 36.2V33.8C28.9985 33.429 28.8824 33.0676 28.6675 32.7652C28.4527 32.4627 28.1497 32.2341 27.8 32.1104V31.163C27.7999 31.0447 27.835 30.9289 27.9008 30.8306L28.7 29.636C28.8962 29.3409 29.0006 28.9943 29 28.64V27.2H35C35.7954 27.199 36.5579 26.8827 37.1203 26.3203C37.6827 25.7579 37.9991 24.9954 38 24.2V5C37.9991 4.20464 37.6827 3.44213 37.1203 2.87973C36.5579 2.31733 35.7954 2.00095 35 2ZM27.8 36.2C27.8 36.3591 27.7368 36.5117 27.6243 36.6243C27.5117 36.7368 27.3591 36.8 27.2 36.8H20C19.8409 36.8 19.6883 36.7368 19.5757 36.6243C19.4632 36.5117 19.4 36.3591 19.4 36.2V33.8C19.4 33.6409 19.4632 33.4883 19.5757 33.3757C19.6883 33.2632 19.8409 33.2 20 33.2H27.2C27.3591 33.2 27.5117 33.2632 27.6243 33.3757C27.7368 33.4883 27.8 33.6409 27.8 33.8V36.2ZM27.8 28.64C27.8001 28.7583 27.765 28.8741 27.6992 28.9724L26.9 30.164C26.7033 30.4599 26.5989 30.8076 26.6 31.163V32H20.6V31.1942C20.6007 30.9576 20.5544 30.7233 20.4639 30.5047C20.3734 30.2862 20.2404 30.0878 20.0726 29.921C20.0726 29.921 16.583 26.354 15.3692 25.217C14.8256 24.7082 15.7112 23.8202 16.2248 24.377C16.7384 24.9338 18.3758 26.5286 18.3758 26.5286C18.4604 26.6108 18.5673 26.6665 18.6832 26.6886C18.7991 26.7107 18.919 26.6984 19.028 26.6531C19.137 26.6079 19.2303 26.5317 19.2964 26.4339C19.3625 26.3362 19.3985 26.2212 19.4 26.1032V17.6C19.4 17.4409 19.4632 17.2883 19.5757 17.1757C19.6883 17.0632 19.8409 17 20 17C20.1591 17 20.3117 17.0632 20.4243 17.1757C20.5368 17.2883 20.6 17.4409 20.6 17.6V24.2C20.6 24.3591 20.6632 24.5117 20.7757 24.6243C20.8883 24.7368 21.0409 24.8 21.2 24.8C21.3591 24.8 21.5117 24.7368 21.6243 24.6243C21.7368 24.5117 21.8 24.3591 21.8 24.2V20.6C21.8 20.4409 21.8632 20.2883 21.9757 20.1757C22.0883 20.0632 22.2409 20 22.4 20C22.5591 20 22.7117 20.0632 22.8243 20.1757C22.9368 20.2883 23 20.4409 23 20.6V24.2C23 24.3591 23.0632 24.5117 23.1757 24.6243C23.2883 24.7368 23.4409 24.8 23.6 24.8C23.7591 24.8 23.9117 24.7368 24.0243 24.6243C24.1368 24.5117 24.2 24.3591 24.2 24.2V21.2C24.2 21.0409 24.2632 20.8883 24.3757 20.7757C24.4883 20.6632 24.6409 20.6 24.8 20.6C24.9591 20.6 25.1117 20.6632 25.2243 20.7757C25.3368 20.8883 25.4 21.0409 25.4 21.2V24.2C25.4 24.3591 25.4632 24.5117 25.5757 24.6243C25.6883 24.7368 25.8409 24.8 26 24.8C26.1591 24.8 26.3117 24.7368 26.4243 24.6243C26.5368 24.5117 26.6 24.3591 26.6 24.2V22.4C26.6 22.2409 26.6632 22.0883 26.7757 21.9757C26.8883 21.8632 27.0409 21.8 27.2 21.8C27.3591 21.8 27.5117 21.8632 27.6243 21.9757C27.7368 22.0883 27.8 22.2409 27.8 22.4V28.64ZM20 15.8C19.5226 15.8 19.0648 15.9896 18.7272 16.3272C18.3896 16.6648 18.2 17.1226 18.2 17.6V17.7146C17.5137 17.3184 16.9773 16.7067 16.674 15.9746C16.3708 15.2424 16.3176 14.4306 16.5227 13.6652C16.7278 12.8997 17.1797 12.2233 17.8085 11.7408C18.4372 11.2584 19.2075 10.9969 20 10.9969C20.7925 10.9969 21.5628 11.2584 22.1915 11.7408C22.8203 12.2233 23.2722 12.8997 23.4773 13.6652C23.6824 14.4306 23.6292 15.2424 23.326 15.9746C23.0227 16.7067 22.4863 17.3184 21.8 17.7146V17.6C21.8 17.1226 21.6104 16.6648 21.2728 16.3272C20.9352 15.9896 20.4774 15.8 20 15.8ZM24.8 14.6C24.8033 13.7283 24.5691 12.8722 24.1227 12.1235C23.6763 11.3748 23.0344 10.7619 22.2659 10.3504C21.4975 9.93889 20.6315 9.74443 19.7609 9.78786C18.8903 9.83128 18.048 10.111 17.3243 10.5969C16.6006 11.0828 16.0229 11.7566 15.6532 12.546C15.2835 13.3354 15.1357 14.2106 15.2257 15.0776C15.3157 15.9446 15.6401 16.7707 16.1641 17.4674C16.6881 18.164 17.3919 18.7047 18.2 19.0316V21.56C16.6706 21.168 15.3121 20.2849 14.333 19.0463C13.3539 17.8076 12.8084 16.2819 12.7802 14.7033C12.752 13.1247 13.2426 11.5804 14.1768 10.3076C15.1109 9.03473 16.437 8.10365 17.9515 7.65724C19.4659 7.21083 21.085 7.27378 22.5602 7.83642C24.0355 8.39905 25.2853 9.43028 26.1178 10.7718C26.9503 12.1133 27.3196 13.691 27.1689 15.2627C27.0182 16.8343 26.3559 18.3131 25.2836 19.472C25.0566 19.4062 24.8187 19.3864 24.584 19.4139C24.3493 19.4414 24.1224 19.5157 23.9168 19.6322C23.7438 19.3585 23.4992 19.1373 23.2096 18.9925C22.9199 18.8477 22.5962 18.7849 22.2734 18.8108C23.0329 18.3994 23.6681 17.7916 24.1125 17.0509C24.5569 16.3102 24.7944 15.4638 24.8 14.6ZM36.8 24.2C36.8 24.6774 36.6104 25.1352 36.2728 25.4728C35.9352 25.8104 35.4774 26 35 26H29V22.4C28.9998 22.1067 28.9279 21.8179 28.7907 21.5588C28.6534 21.2996 28.4549 21.0779 28.2124 20.9129C27.9699 20.748 27.6908 20.6448 27.3993 20.6123C27.1078 20.5798 26.8129 20.6191 26.54 20.7266C26.4842 20.527 26.3945 20.3384 26.2748 20.1692C27.5858 18.7048 28.3382 16.8249 28.3995 14.8603C28.4608 12.8958 27.8272 10.9726 26.6102 9.4292L30.2192 5.6H35C35.1591 5.6 35.3117 5.53679 35.4243 5.42426C35.5368 5.31174 35.6 5.15913 35.6 5C35.6 4.84087 35.5368 4.68826 35.4243 4.57574C35.3117 4.46321 35.1591 4.4 35 4.4H29.96C29.8783 4.40005 29.7975 4.41679 29.7225 4.44918C29.6475 4.48158 29.5799 4.52895 29.5238 4.5884L25.7996 8.54C24.6759 7.45388 23.2693 6.70593 21.7405 6.38167C20.2118 6.05741 18.6226 6.16995 17.1548 6.7064L15.0242 4.5758C14.9117 4.46327 14.7591 4.40003 14.6 4.4H5C4.84087 4.4 4.68826 4.46321 4.57574 4.57574C4.46321 4.68826 4.4 4.84087 4.4 5C4.4 5.15913 4.46321 5.31174 4.57574 5.42426C4.68826 5.53679 4.84087 5.6 5 5.6H14.3516L15.98 7.2278C14.4773 8.045 13.2604 9.3022 12.4926 10.8307C11.7247 12.3593 11.4427 14.0861 11.6843 15.7795C11.9259 17.4729 12.6795 19.052 13.8442 20.3048C15.0088 21.5577 16.5287 22.4244 18.2 22.7888V24.6548L17.078 23.5328C15.5 21.8804 12.9122 24.35 14.4686 26H5C4.52261 26 4.06477 25.8104 3.72721 25.4728C3.38964 25.1352 3.2 24.6774 3.2 24.2V5C3.2 4.52261 3.38964 4.06477 3.72721 3.72721C4.06477 3.38964 4.52261 3.2 5 3.2H35C35.4774 3.2 35.9352 3.38964 36.2728 3.72721C36.6104 4.06477 36.8 4.52261 36.8 5V24.2Z"
+                    fill="#CDEA67"
+                  />
+                  <path
+                    d="M11.0004 24.7996C11.3318 24.7996 11.6004 24.531 11.6004 24.1996C11.6004 23.8682 11.3318 23.5996 11.0004 23.5996C10.669 23.5996 10.4004 23.8682 10.4004 24.1996C10.4004 24.531 10.669 24.7996 11.0004 24.7996Z"
+                    fill="#CDEA67"
+                  />
+                </svg>
+
+                <p
+                  className={`${manrope.className} text-augment-para pl-4 lg:text-base tab:text-[0.56rem] font-bold opacity-80 capitalize`}
+                  style={{ borderLeft: "1px solid #0E1D29" }}
+                >
+                  Facilitates a more intuitive exploration of the property's
+                  design.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-40">
+        <div className="lg:max-w-[72.5rem] m-auto lg:py-20 tab:py-10 px-20">
+          <div className="flex lg:justify-between">
+            <Image
+              className="mx-auto my-0 lg:w-[65.31rem] tab:w-[23.68rem]"
+              width={675}
+              height={396}
+              src="/assets/Images/personalized-interior.png"
+              alt="project-overview"
+            />
+            <div className="m-auto lg:pl-12 tab:pl-10">
+              <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-[2rem] lg:leading-[3.33rem] inline tab:leading-[1.87rem]">
+                Interior
+              </h2>
+              <p className="lg:text-7xl tab:text-[2rem] font-semibold lg:leading-[3rem] tab:leading-[2.2rem] lg:pt-4 lg:pb-6 tab:py-2">
+                Personalized Design
+              </p>
+            </div>
+          </div>
+
+          <div></div>
+          <div className="flex lg:gap-6 tab:gap-3 px-4 pt-10 ">
+            <div>
+              <div
+                className="rounded lg:w-[33.6rem] tab:w-[19rem] lg:pt-4 lg:px-4 tab:pt-3 tab:px-2 lg:pb-[3.2rem] tab:pb-[2.1rem]"
+                style={{ border: "1px solid rgba(18, 17, 18, 0.25)" }}
+              >
+                <h2 className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-2 tab:text-sm tab:leading-[1.12rem]">
+                   Design Flexibility
+                </h2>
+                <ul
+                  className={`${manrope.className} lg:text-base lg:leading-6 text-head-dark list-disc pl-9 tab:text-[0.56rem] tab:leading-3`}
+                >
+                  <li className="pb-2 ">
+                    Clients can experiment with various interior design options,
+                    including color schemes, flooring, and furnishings.
+                  </li>
+                  <li> Fosters a sense of ownership and personalization.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="lg:mb-6 tab:mb-3">
+              <div
+                className="rounded lg:w-[33.6rem] tab:w-[19rem] lg:pt-4 tab:pt-3 lg:px-4 tab:px-2 lg:pb-7 tab:pb-[0.6rem]"
+                style={{ border: "1px solid rgba(18, 17, 18, 0.25)" }}
+              >
+                <h2 className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-2 tab:text-sm tab:leading-[1.12rem]">
+                   Engagement Time Increase
+                </h2>
+                <ul
+                  className={`${manrope.className} lg:text-base lg:leading-6 text-head-dark list-disc pl-9 tab:text-[0.56rem] tab:leading-3`}
+                >
+                  <li className="pb-2">
+                    The freedom to customize interiors increases the time
+                    clients spend exploring the property, deepening their
+                    connection.
+                  </li>
+                  <li>
+                    {" "}
+                    Longer engagement translates to a higher likelihood of
+                    conversion.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="rounded p-4 mx-4 lg:w-[68.75rem] tab:w-[38.79rem]"
+            style={{ border: "1px solid rgba(18, 17, 18, 0.25)" }}
+          >
+            <h2 className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-2 tab:text-sm tab:leading-[1.12rem]">
+               Virtual Walkthroughs
+            </h2>
+            <ul
+              className={`${manrope.className} lg:text-base lg:leading-6 text-head-dark list-disc pl-9 tab:text-[0.56rem] tab:leading-3`}
+            >
+              <li className="pb-2 ">
+                Provide virtual walkthroughs of customized interiors, allowing
+                clients to experience their envisioned design in a realistic
+                manner.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="lg:mt-36 lg:mb-24 tab:mt-16 tab:mb-12">
           <div className="flex justify-center items-center flex-col mb-20">
             <h2 className="bg-prime-green text-5xl px-6 py-4">
               One Stop Solution
@@ -855,14 +962,17 @@ const SalesToolSection = () => {
           </div>
 
           <Image
-            className="mx-auto mt-0"
+            className="mx-auto mt-0 lg:w-[75rem] tab:w-[42.18rem]"
             width={1200}
             height={478}
             src="/assets/Images/one-stop-solution.png"
             alt="project-overview"
           />
         </div>
-        <FooterSection />
+        <div className="lgdesktop:max-w-[82rem] m-auto pt-40 pb-20 tab:pb-0 tab:pt-20 tab:px-[1.82rem] lg:px-14 lgdesktop:px-0">
+          <RealEstate />
+          <FooterSection />
+        </div>
       </div>
     </>
   );

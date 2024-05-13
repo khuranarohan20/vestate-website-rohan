@@ -43,6 +43,15 @@ body {
   }
 }
 
+@media (min-width: 320px) {
+  .head-3 {
+    font-size: 1.85rem;
+  }
+  .project-btn {
+    font-size: 1.12rem;
+  }
+}
+
 /* Colors */
 :root {
   --white-color: #ffffff;

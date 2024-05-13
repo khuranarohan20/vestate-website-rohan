@@ -13,16 +13,12 @@ const config: Config = {
         "72rem": "72rem",
       },
       screens: {
-        mobile: "540px",
-        // => @media (min-width: 640px) { ... }
+        mobile: "320px",
         tab: "720px",
         laptop: "1024px",
-        // => @media (min-width: 1024px) { ... }
-
         desktop: "1280px",
         lgdesktop: "1440px",
         llgdesktop: "1620px",
-        // => @media (min-width: 1280px) { ... }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -31,9 +27,12 @@ const config: Config = {
         "real-estate": "url('/assets/Images/real-estate-bg.png')",
         "post-sales-logo": "url('/assets/Images/vestate-logo.png')",
         "post-video-frame": "url('/assets/Images/Ipad.png')",
+        "jp-infra-xv": "url('/assets/Images/jp-infra-xv.png')",
       },
       colors: {
         "prime-green": "#cdea67",
+        "neutral-white": "#F4F4F8",
+        "neutral-grey": "#A8A9B2",
         "head-light": "#fafafa",
         "head-dark": "#0c1136",
         "pure-black": "#000000",
