@@ -53,7 +53,7 @@ const ProjectSection = () => {
                 </svg>
               </p>
             </div>
-            <div className="mobile:px-9">
+            <div className="mobile:px-9 tab:px-0">
               <Image
                 width={662}
                 height={296}
@@ -91,7 +91,7 @@ const ProjectSection = () => {
           </div>
 
           <div
-            className="flex justify-between py-10 tab:gap-x-3 lg:gap-6 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center mobile:px-9"
+            className="flex lg:justify-between py-10 tab:gap-x-3 lg:gap-6 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center tab:px-0 mobile:px-9"
             style={{ borderBottom: "0.75px solid rgba(255, 255, 255, 0.5)" }}
           >
             <div className="mobile:py-4 tab:py-0">
@@ -163,7 +163,7 @@ const ProjectSection = () => {
               </button>
             </div>
           </div>
-          <div className="flex justify-between pt-10 pb-12 lg:gap-6 tab:gap-x-3 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center mobile:px-9">
+          <div className="flex lg:justify-between pt-10 pb-12 lg:gap-6 tab:gap-x-3 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center tab:px-0 mobile:px-9">
             <div className="mobile:py-4 tab:py-0">
               <Image
                 width={644}
