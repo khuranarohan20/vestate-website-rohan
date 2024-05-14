@@ -13,7 +13,7 @@ const PostSales = () => {
         <div className="bg-post-sales bg-no-repeat">
           <HeaderSection />
           <div
-            className="bg-no-repeat lg:h-[41.3rem] tab:h-[36.3rem] bg-center tab:bg-contain sales-logo relative"
+            className="bg-no-repeat lg:h-[33rem] tab:h-[36.3rem] bg-center tab:bg-contain sales-logo relative"
             style={{ backgroundPosition: "-.5rem -7rem" }}
           >
             <Image
@@ -21,7 +21,7 @@ const PostSales = () => {
               height={443}
               src="/assets/Images/vestate-logo.png"
               alt=""
-              className=" lg:h-full lg:w-full absolute z-10"
+              className=" mx-auto left-0 right-0 top-0 lg:w-[80%] w-full h-full absolute z-10"
             />
             <div className="max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
               <p className="text-white opacity-75 text-center text-[2.5rem] pb-5">
@@ -150,7 +150,7 @@ const PostSales = () => {
                 </svg>
                 <p
                   className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                  style={{ borderLeft: "1px solid #0E1D29" }}
+                  style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   PROJECT SITE PLAN
                 </p>
@@ -183,7 +183,7 @@ const PostSales = () => {
 
                 <p
                   className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                  style={{ borderLeft: "1px solid #0E1D29" }}
+                  style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   CONFIGURATION PLAN
                 </p>
@@ -233,7 +233,7 @@ const PostSales = () => {
                   </svg>
                   <p
                     className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                    style={{ borderLeft: "1px solid #0E1D29" }}
+                    style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                   >
                     AR BUILDING
                   </p>
@@ -268,7 +268,7 @@ const PostSales = () => {
                   </svg>
                   <p
                     className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                    style={{ borderLeft: "1px solid #0E1D29" }}
+                    style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                   >
                     AMENTIES
                   </p>
@@ -297,7 +297,7 @@ const PostSales = () => {
                   </svg>
                   <p
                     className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                    style={{ borderLeft: "1px solid #0E1D29" }}
+                    style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                   >
                     VICINITIES
                   </p>
@@ -340,7 +340,7 @@ const PostSales = () => {
                 </svg>
                 <p
                   className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                  style={{ borderLeft: "1px solid #0E1D29" }}
+                  style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   PROJECT SITE PLAN
                 </p>
@@ -373,7 +373,7 @@ const PostSales = () => {
 
                 <p
                   className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                  style={{ borderLeft: "1px solid #0E1D29" }}
+                  style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   CONFIGURATION PLAN
                 </p>
@@ -420,7 +420,7 @@ const PostSales = () => {
                 </svg>
                 <p
                   className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                  style={{ borderLeft: "1px solid #0E1D29" }}
+                  style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   AR BUILDING
                 </p>
@@ -455,7 +455,7 @@ const PostSales = () => {
                 </svg>
                 <p
                   className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                  style={{ borderLeft: "1px solid #0E1D29" }}
+                  style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   AMENTIES
                 </p>
@@ -484,7 +484,7 @@ const PostSales = () => {
                 </svg>
                 <p
                   className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
-                  style={{ borderLeft: "1px solid #0E1D29" }}
+                  style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   VICINITIES
                 </p>

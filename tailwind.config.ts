@@ -28,6 +28,7 @@ const config: Config = {
         "post-sales-logo": "url('/assets/Images/vestate-logo.png')",
         "post-video-frame": "url('/assets/Images/Ipad.png')",
         "jp-infra-xv": "url('/assets/Images/jp-infra-xv.png')",
+        "journey-redefined": "url(/assets/Images/journey-redefined.png)",
       },
       colors: {
         "prime-green": "#cdea67",

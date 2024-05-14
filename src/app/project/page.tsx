@@ -61,7 +61,7 @@ const ProjectSection = () => {
                 src="/assets/Images/florence.png"
                 alt="florence-fortune"
               />
-              <h2 className="text-white head-3 font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+              <h2 className="text-white head-56 font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 Florence Fortune
               </h2>
               <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
@@ -101,7 +101,7 @@ const ProjectSection = () => {
                 src="/assets/Images/L&T.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+              <h2 className="text-white head-56  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 L&T Rejuve 360
               </h2>
               <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
@@ -135,7 +135,7 @@ const ProjectSection = () => {
                 src="/assets/Images/shapoorji.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+              <h2 className="text-white head-56  font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 Shapoorji & Pallonji
               </h2>
               <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
@@ -171,7 +171,7 @@ const ProjectSection = () => {
                 src="/assets/Images/L&T.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+              <h2 className="text-white head-56  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 Jp Infra
               </h2>
               <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5 mobile:px-4">
@@ -205,7 +205,7 @@ const ProjectSection = () => {
                 src="/assets/Images/shapoorji.png"
                 alt=""
               />
-              <h2 className="text-white head-3  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+              <h2 className="text-white head-56  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 L&T
               </h2>
               <button className="flex items-center  text-white project-btn rounded-full tab:py-0.5 tab:px-5  mobile:px-4">

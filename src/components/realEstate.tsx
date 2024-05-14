@@ -12,7 +12,7 @@ const RealEstate = () => {
           className="absolute lg:h-full tab:h-[21.06rem] z-10"
         />
         <div className="mx-0 my-auto tab:py-28 lg:py-10 pl-14 pr-6 relative z-20 mobile:pt-20">
-          <h1 className="bg-white text-center head-3 leading-[2.63rem] inline px-4 tab:py-2 lg:py-0  mobile:leading-[1.12rem]">
+          <h1 className="bg-white text-center head-56 leading-[2.63rem] inline px-4 tab:py-2 lg:py-0  mobile:leading-[1.12rem]">
             Bring Out The Best
           </h1>
           <p className="head-64 font-semibold lgdesktop:leading-[4rem]  lg:leading-[3rem] tab:leading-[2.25rem] tab:pt-6 tab:pb-5 lg:pt-5 lg:pb-3.5 mobile-leading-[1.6rem] mobile:py-2">

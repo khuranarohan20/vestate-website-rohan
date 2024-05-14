@@ -4,9 +4,10 @@ const manrope = Manrope({ subsets: ["greek"] });
 const HeaderSection = () => {
   return (
     <>
-      <div className="flex justify-between py-10 lg:px-14 tab:px-14 items-center mobile:px-9">
+      <div className="flex justify-between py-10 lg:px-14 tab:px-14 items-center mobile:px-10">
         <div>
           <svg
+            className="mobile:w-[7.25rem] tab:w-auto"
             width="181"
             height="32"
             viewBox="0 0 181 32"
@@ -22,7 +23,7 @@ const HeaderSection = () => {
           </svg>
         </div>
         <div className="flex items-center ">
-          <div className="flex items-center text-head-meun lg:hidden">
+          <div className="flex items-center text-head-meun mobile:hidden">
             <div>
               <p>
                 <a href="">Home</a>
@@ -41,6 +42,7 @@ const HeaderSection = () => {
           </div>
           <div className="mr-6">
             <svg
+              className="mobile:w-[2.81rem] tab:w-auto"
               width="59"
               height="12"
               viewBox="0 0 59 12"

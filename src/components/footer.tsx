@@ -9,20 +9,21 @@ const FooterSection = () => {
   return (
     <>
       <div
-        className="xl:max-w-[82rem] m-auto lg:pb-12 pb-10"
+        className="xl:max-w-[82rem] m-auto lg:pb-12 pb-10 mobile:px-2 px-0"
         style={{ borderBottom: "1px solid #bbbbbb" }}
       >
         <div className="flex justify-between lg:mt-20 mt-10">
           <Image
             width={154}
             height={52}
-            className="w-[8.75rem] lg:w-[9.65rem] lg:h-[3.4rem] h-[2.94rem]"
+            className="w-[8.75rem] tab:w-[9.65rem] lg:h-[3.4rem] h-[2.94rem] mobile:w-[7.18rem]"
             src="/assets/Images/footer-logo.svg"
             alt="v-state"
           />
 
           <div>
             <svg
+              className="mobile:w-[2.43rem] tab:w-auto"
               width="53"
               height="53"
               viewBox="0 0 53 53"
@@ -44,43 +45,45 @@ const FooterSection = () => {
             </svg>
           </div>
         </div>
-        <div className="flex justify-between mt-8 items-baseline">
-          <div className="flex lg:w-[31.4rem] w-[19.4rem]">
-            <div className="pr-14">
-              <ul className="text-base text-form-head font-medium">
-                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3">
+        <div className="flex justify-between mt-8 items-baseline mobile:flex-col tab:flex-row">
+          <div className="flex lg:w-[31.4rem] w-[19.4rem] mobile:flex-col tab:flex-row">
+            <div className="tab:pr-14 mobile:pr-0">
+              <ul className="text-base text-form-head font-medium tab:block mobile:flex mobile:justify-center tab:justify-normal">
+                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3 mobile:pr-2">
                   <a href="">Home</a>
                 </li>
-                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3">
+                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3 mobile:pr-2">
                   <a href="">Book A Demo</a>
                 </li>
-                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3">
+                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3 mobile:pr-2">
                   <a href="">Projects</a>
                 </li>
-                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] ">
+                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] mobile:pr-2">
                   <a href="">Contact</a>
                 </li>
               </ul>
             </div>
             <div>
-              <ul className="text-base text-form-head font-medium">
-                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3">
+              <ul className="text-base text-form-head font-medium  tab:block tab:justify-normal mobile:flex mobile:justify-center">
+                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3 mobile:pr-2">
                   <a href="">Pre-Sale</a>
                 </li>
-                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3">
+                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3 mobile:pr-2">
                   <a href="">Sales-Tool</a>
                 </li>
-                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9]">
+                <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] mobile:pr-2">
                   <a href="">Post-Sale</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="flex lg:justify-between">
-            <div className="lg:pr-16 lgdesktop:pr-28 pr-0 w-2/4 lg:w-auto">
-              <p className="font-semibold text-base pb-2">Address:</p>
+          <div className="flex lg:justify-between mobile:justify-between mobile:px-2 px-0 mobile:pt-5 pt-0">
+            <div className="lg:pr-16 lgdesktop:pr-28 pr-0 w-2/4 lg:w-auto ">
+              <p className="font-semibold tab:text-base pb-2 mobile:uppercase tab:capitalize mobile:text-[0.8rem]">
+                Address:
+              </p>
               <p
-                className={`${manrope.className} text-form-head leading-6 text-left head-14  tab:w-10/12 lgdesktop:w-auto`}
+                className={`${manrope.className} text-form-head leading-6 text-left head-14 mobile:leading-4 tab:w-10/12 lgdesktop:w-auto`}
               >
                 405, Corporate Annexe Sonawala Rd{" "}
                 <br className="lg:block hidden"></br>
@@ -89,14 +92,16 @@ const FooterSection = () => {
               </p>
             </div>
             <div>
-              <p className="font-semibold text-base pb-2">Contact:</p>
+              <p className="font-semibold tab:text-base pb-2 mobile:uppercase tab:capitalize mobile:text-[0.8rem]">
+                Contact:
+              </p>
               <p
-                className={`${manrope.className} text-form-head lg:text-xl text-lg leading-5 font-semibold pb-1`}
+                className={`${manrope.className} text-form-head lg:text-xl text-lg leading-5 head-14 mobile:leading-4 font-semibold pb-1`}
               >
                 +91 830-322-9629
               </p>
               <p
-                className={`${manrope.className} text-form-head lg:text-xl text-lg leading-5 font-semibold pb-1`}
+                className={`${manrope.className} text-form-head lg:text-xl text-lg leading-5 head-14 mobile:leading-4 font-semibold pb-1`}
               >
                 +91 915- 238- 7077
               </p>
@@ -151,7 +156,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between lg:py-10 py-6 lg:max-w-[82rem] m-auto">
+      <div className="flex justify-between lg:py-10 py-6 lg:max-w-[82rem] m-auto mobile:px-2 px-0">
         <p
           className={`${inter.className} text-form-head text-xs leading-4 opacity-60`}
         >
@@ -159,12 +164,12 @@ const FooterSection = () => {
         </p>
         <div className="flex">
           <p
-            className={`${inter.className} pr-10 text-form-head text-xs leading-4 opacity-60`}
+            className={`${inter.className} tab:pr-10 mobile:pr-0 text-form-head text-xs leading-4 opacity-60`}
           >
             Privacy Policy
           </p>
           <p
-            className={`${inter.className} text-form-head text-xs leading-4 opacity-60`}
+            className={`${inter.className} text-form-head text-xs leading-4 opacity-60 mobile:hidden tab:block`}
           >
             Terms of Service
           </p>

@@ -13,7 +13,7 @@ const PreSales = () => {
         <div className="bg-post-sales bg-no-repeat">
           <HeaderSection />
           <div
-            className=" bg-no-repeat h-[41.3rem] bg-center relative"
+            className=" bg-no-repeat lg:h-[33rem] tab:h-[36.3rem] bg-center relative"
             style={{ backgroundPosition: "4.5rem -7rem" }}
           >
             <Image
@@ -21,7 +21,7 @@ const PreSales = () => {
               height={443}
               src="/assets/Images/vestate-logo.png"
               alt=""
-              className=" lg:h-full lg:w-full absolute z-10"
+              className=" mx-auto left-0 right-0 top-0 lg:w-[82%] w-full h-full  absolute z-10"
             />
             <div className="max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
               <p className="text-white opacity-75 text-center text-[2.5rem] pb-5">
@@ -31,7 +31,7 @@ const PreSales = () => {
                 Pre Sales
               </p>
               <p
-                className={`${manrope.className} text-white opacity-65 text-base text-center tab:px-36 lg:px-0`}
+                className={`${manrope.className} text-white opacity-65 text-base text-center tab:px-36 lg:px-[8.5rem]`}
               >
                 Pre-sales tools play a pivotal role in the overall sales
                 journey, serving as powerful magnets to attract customers to
@@ -54,7 +54,7 @@ const PreSales = () => {
         </div>
         <div className="bg-prime-green">
           <div className="max-w-[82rem] m-auto">
-            <div className="flex lg:justify-between lg:flex-row tab:flex-col tab:justify-center tab:items-center py-20">
+            <div className="flex lg:justify-between lgdesktop:flex-row mobile:flex-col tab:justify-center tab:items-center py-20">
               <div>
                 <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-white inline px-6">
                   Project Overview
@@ -73,7 +73,7 @@ const PreSales = () => {
               </div>
 
               <div className="mt-20">
-                <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[33.1rem] mb-5">
+                <div className="bg-white flex gap-2.5 items-center px-5 py-4 lgdesktop:w-[33.1rem] tab:w-[41.1rem] mb-5">
                   <div
                     className="pr-4"
                     style={{ borderRight: "1px solid #cdea67" }}
@@ -129,7 +129,7 @@ const PreSales = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[33.1rem] mb-5">
+                <div className="bg-white flex gap-2.5 items-center px-5 py-4 lgdesktop:w-[33.1rem] tab:w-[41.1rem] mb-5">
                   <div
                     className="pr-4"
                     style={{ borderRight: "1px solid #cdea67" }}
@@ -173,7 +173,7 @@ const PreSales = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[33.1rem] mb-5">
+                <div className="bg-white flex gap-2.5 items-center px-5 py-4 lgdesktop:w-[33.1rem] tab:w-[41.1rem] mb-5">
                   <div
                     className="pr-4"
                     style={{ borderRight: "1px solid #cdea67" }}
@@ -216,7 +216,7 @@ const PreSales = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[33.1rem]">
+                <div className="bg-white flex gap-2.5 items-center px-5 py-4 lgdesktop:w-[33.1rem] tab:w-[41.1rem]">
                   <div
                     className="pr-4"
                     style={{ borderRight: "1px solid #cdea67" }}
@@ -254,10 +254,10 @@ const PreSales = () => {
         </div>
 
         <div className="max-w-[82rem] m-auto">
-          <div className="flex justify-between  lg:flex-row lg:justify-between tab:flex-col-reverse tab:justify-center tab:items-center  py-20">
+          <div className="flex lgdesktop:justify-between  lgdesktop:flex-row  mobile:flex-col-reverse tab:justify-center tab:items-center  py-20">
             <div className="mt-16">
               <div
-                className="bg-white flex gap-2.5 items-center pl-8 pr-7 pt-2 pb-4 lg:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
+                className="bg-white flex gap-2.5 items-center pl-8 pr-7 pt-2 pb-4 lgdesktop:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
                 <div
@@ -297,7 +297,7 @@ const PreSales = () => {
                 </div>
               </div>
               <div
-                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-6 lg:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
+                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-6 lgdesktop:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
                 <div
@@ -340,7 +340,7 @@ const PreSales = () => {
                 </div>
               </div>
               <div
-                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-6 lg:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
+                className="bg-white flex gap-2.5 items-center pl-8 pr-7 py-6 lgdesktop:w-[33.15rem] tab:w-[41.5rem] mb-5 rounded"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
                 <div
@@ -379,7 +379,7 @@ const PreSales = () => {
                 Vicinity Mapping
               </h2>
               <p
-                className={`${manrope.className} text-amenities-para opacity-60 lg:text-lg tab:text-base  font-medium pt-8 pb-8 w-[30rem]`}
+                className={`${manrope.className} text-amenities-para opacity-60 lg:text-lg tab:text-base  font-medium pt-8 pb-8 lgdesktop:w-[30rem] lg:w-[40rem]`}
               >
                 This feature lets the visitor understand the location factor of
                 the project and the surrounding vicinity
@@ -393,8 +393,8 @@ const PreSales = () => {
           </div>
         </div>
         <div className="bg-form-head">
-          <div className="max-w-[82rem] m-auto">
-            <div className="flex lg:justify-between lg:flex-row tab:flex-col tab:justify-center tab:items-center pt-24">
+          <div className="max-w-[82rem] m-auto pb-20">
+            <div className="flex lgdesktop:justify-between lgdesktop:flex-row mobile:flex-col tab:justify-center tab:items-center pt-24">
               <div>
                 <h2 className="lg:text-7xl tab:text-5xl leading-[3.33rem] bg-prime-green inline px-6">
                   Amenities Highlight
@@ -406,15 +406,17 @@ const PreSales = () => {
                   project has embodied and offers to its buyers.
                 </p>
 
-                <img
+                <Image
+                  width={683}
+                  height={485}
                   src="/assets/Images/vicinity-mapping.png"
                   alt="project-overview"
                 />
               </div>
 
-              <div className="lg:my-52 tab:mt-16 tab:mb-20">
+              <div className="lgdesktop:mt-60 tab:mt-16 tab:mb-20">
                 <div
-                  className="flex gap-2.5 items-center px-5 py-4 lg:w-[33.15rem] tab:w-[41rem] rounded mb-5"
+                  className="flex gap-2.5 items-center px-5 py-4 lgdesktop:w-[33.15rem] tab:w-[41.1rem] rounded mb-5"
                   style={{ border: "1px solid  rgba(176, 219, 23, 0.25)" }}
                 >
                   <div
@@ -468,7 +470,7 @@ const PreSales = () => {
                       Accessibility Information
                     </h2>
                     <p
-                      className={`${manrope.className}  lg:text-xs tab:text-base text-white opacity-80 leading-[1.1rem] tab:w-[31rem] lg-w-full`}
+                      className={`${manrope.className}  lg:text-xs tab:text-base text-white opacity-80 leading-[1.1rem] tab:w-[31rem] lg:w-full`}
                     >
                       Visitors can assess the convenience of the location, such
                       as proximity to schools, hospitals, shopping centers, and
@@ -477,7 +479,7 @@ const PreSales = () => {
                   </div>
                 </div>
                 <div
-                  className="flex gap-2.5 items-center px-5 py-4 lg:w-[33.15rem] tab:w-[41rem] mb-5 rounded "
+                  className="flex gap-2.5 items-center px-5 py-4 lgdesktop:w-[33.15rem] tab:w-[41.1rem] mb-5 rounded "
                   style={{ border: "1px solid  rgba(176, 219, 23, 0.25)" }}
                 >
                   <div
@@ -524,14 +526,14 @@ const PreSales = () => {
         </div>
 
         <div className="max-w-[82rem] m-auto tab:px-16 lg:px-0">
-          <div className="flex lg:justify-between lg:flex-row tab:flex-col-reverse tab:justify-center tab:items-center mt-28">
-            <div className="lg:w-3/5 tab:w-auto tab:my-5">
+          <div className="flex lgdesktop:justify-between lgdesktop:flex-row mobile:flex-col-reverse tab:justify-center tab:items-center mt-28">
+            <div className="lgdesktop:w-3/5  tab:w-auto tab:my-5">
               <img
                 src="/assets/Images/vicinity-mapping.png"
                 alt="amenities-highlight"
               />
             </div>
-            <div className="m-auto  lg:w-2/5 tab:w-auto">
+            <div className="m-auto  lgdesktop:w-2/5 lg:w-[65%] tab:w-auto">
               <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-5xl inline leading-[3.33rem]">
                 Interior Unit
               </h2>
@@ -548,8 +550,8 @@ const PreSales = () => {
             </div>
           </div>
 
-          <div className="flex justify-between lg:flex-row tab:flex-col lg:my-20 tab:mt-5 tab:mb-20 tab:items-center tab:gap-5 lg:gap-0">
-            <div className="flex">
+          <div className="flex justify-between lgdesktop:flex-row mobile:flex-col lg:mt-12  lgdesktop::my-20 tab:mt-5 tab:mb-20 tab:items-center tab:gap-5 lg:gap-0">
+            <div className="flex lg:pb-6 lgdesktop:pb-0">
               <div className="bg-prime-green rounded-2xl p-4 flex justify-center items-center w-[5.15rem] h-[5.15rem] mt-2.5">
                 <svg
                   width="33"
@@ -564,12 +566,12 @@ const PreSales = () => {
                   />
                 </svg>
               </div>
-              <div className="pl-5">
+              <div className="pl-5 ">
                 <h2 className=" text-2xl font-semibold lwading-[2.15rem]">
                   Layout Understanding
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lgdesktop:w-[16.5rem] lg:w-[35.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
                 >
                   The interior unit or dollhouse view allows potential buyers to
                   navigate inside the flat and gain a clear understanding of its
@@ -577,7 +579,7 @@ const PreSales = () => {
                 </p>
               </div>
             </div>
-            <div className="flex">
+            <div className="flex lg:pb-6 lgdesktop:pb-0">
               <div className="bg-prime-green rounded-2xl p-4 flex justify-center items-center w-[5.15rem] h-[5.15rem] mt-2.5">
                 <svg
                   width="35"
@@ -597,7 +599,7 @@ const PreSales = () => {
                   Personalization
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lgdesktop:w-[16.5rem] lg:w-[35.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
                 >
                   Buyers can personalize their exploration by virtually walking
                   through different units, helping them select the one that best
@@ -625,7 +627,7 @@ const PreSales = () => {
                   Reduced Surprises
                 </h2>
                 <p
-                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lg:w-[16.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
+                  className={`${manrope.className} text-head-dark opacity-60 text-base font-medium py-2 lgdesktop:w-[16.5rem] lg:w-[35.5rem] tab:w-[30.5rem] leading-[1.45rem]`}
                 >
                   It minimizes surprises upon purchase since customers have a
                   detailed understanding of the interior, reducing the
@@ -634,8 +636,10 @@ const PreSales = () => {
               </div>
             </div>
           </div>
-          <RealEstate />
-          <FooterSection />
+          <div className="max-w-[82rem] m-auto px-14 lgdesktop:px-0">
+            <RealEstate />
+            <FooterSection />
+          </div>
         </div>
       </div>
     </>

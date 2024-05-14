@@ -12,7 +12,7 @@ const SalesToolSection = () => {
         <div className="bg-post-sales bg-no-repeat">
           <HeaderSection />
           <div
-            className=" bg-no-repeat lg:h-[41.3rem] tab:h-[36.3rem]  bg-center relative"
+            className=" bg-no-repeat lg:h-[33.3rem] tab:h-[36.3rem]  bg-center relative"
             style={{ backgroundPosition: "4.5rem -7rem" }}
           >
             <Image
@@ -20,7 +20,7 @@ const SalesToolSection = () => {
               height={443}
               src="/assets/Images/vestate-logo.png"
               alt=""
-              className=" lg:h-full lg:w-full absolute z-10"
+              className="mx-auto left-0 right-0 top-0 lg:w-[70%] w-full h-full  absolute z-10"
             />
             <div className="max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
               <p className="text-white opacity-75 text-center lg:text-[2.5rem] tab:text-[1.75rem] lg:pb-5 tab:pb-3">
@@ -39,7 +39,12 @@ const SalesToolSection = () => {
                 customers.
               </p>
               <div className="mx-auto my-0 max-w-[59.3rem] lg:translate-x-[2rem] tab:translate-x-[0]">
-                <img src="/assets/Images/pre-sales-video.png" alt="" />
+                <Image
+                  width={800}
+                  height={467}
+                  src="/assets/Images/pre-sales-video.png"
+                  alt=""
+                />
                 {/* <div className="bg-post-video-frame bg-no-repeat"> */}
                 {/* <video src=""></video> */}
               </div>

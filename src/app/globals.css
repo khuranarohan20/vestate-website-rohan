@@ -13,45 +13,6 @@ body {
   font-family: "ClashDisplay Regular";
 }
 
-@media (max-width: 1439px) and (min-width: 1024px) {
-  .head-3 {
-    font-size: 2.5rem !important;
-  }
-  .head-64 {
-    font-size: 3rem !important;
-  }
-}
-
-@media (max-width: 1023px) and (min-width: 720px) {
-  .head-3 {
-    font-size: 2rem !important;
-  }
-  .head-64 {
-    font-size: 2.25rem !important;
-  }
-  .real-estate {
-    margin-top: -0.5rem !important;
-  }
-  .project-btn {
-    font-size: 0.75rem !important;
-  }
-  .marginRight {
-    margin-right: -35px !important;
-  }
-  .sales-logo {
-    background-position: -0.5rem 1rem !important;
-  }
-}
-
-@media (min-width: 320px) {
-  .head-3 {
-    font-size: 1.85rem;
-  }
-  .project-btn {
-    font-size: 1.12rem;
-  }
-}
-
 /* Colors */
 :root {
   --white-color: #ffffff;
@@ -70,7 +31,7 @@ body {
 .head-64 {
   font-size: 4rem;
 }
-.head-3 {
+.head-56 {
   font-size: 3.5rem;
 }
 .head-14 {
@@ -98,4 +59,48 @@ body {
   border-bottom: 1px solid #909090;
   padding-bottom: 0.5rem;
   color: #121112;
+}
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .head-56 {
+    font-size: 2.5rem !important;
+  }
+  .head-64 {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 720px) {
+  .head-56 {
+    font-size: 2rem !important;
+  }
+  .head-64 {
+    font-size: 2.25rem !important;
+  }
+  .real-estate {
+    margin-top: -0.5rem !important;
+  }
+  .project-btn {
+    font-size: 0.75rem !important;
+  }
+  .marginRight {
+    margin-right: -35px !important;
+  }
+  .sales-logo {
+    background-position: -0.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 719px) and (min-width: 320px) {
+  .head-14 {
+    font-size: 0.81rem;
+  }
+  .head-56 {
+    font-size: 1.85rem !important;
+  }
+  .project-btn {
+    font-size: 1.12rem !important;
+  }
+  .head-64 {
+    font-size: 1.6rem !important;
+  }
 }

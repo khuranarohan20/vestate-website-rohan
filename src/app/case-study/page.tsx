@@ -183,7 +183,7 @@ const caseStudy = () => {
                 src="/assets/Images/florence.png"
                 alt=""
               />
-              <h2 className="text-head-dark head-3  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+              <h2 className="text-head-dark head-56  font-semibold  mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 Florence Fortune
               </h2>
               <button
@@ -222,7 +222,7 @@ const caseStudy = () => {
                 src="/assets/Images/gallery-2.png"
                 alt=""
               />
-              <h2 className="text-head-dark head-3  font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
+              <h2 className="text-head-dark head-56  font-semibold mobile:leading-[1.6rem] mobile:py-3 tab:py-8">
                 Majestique
               </h2>
               <button
