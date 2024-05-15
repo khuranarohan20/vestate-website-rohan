@@ -492,10 +492,10 @@ export default function Home() {
             <p
               className={`${manrope.className} text-base text-para2-light leading-8 mb-4`}
             >
-              V-Estate's tech-immersive solution offers a modern and efficient
-              approach to real estate sales, leveraging cutting-edge technology
-              to transform the customer experience and giving the power of
-              imagination in the customer palms.
+              V-Estate&apos;s tech-immersive solution offers a modern and
+              efficient approach to real estate sales, leveraging cutting-edge
+              technology to transform the customer experience and giving the
+              power of imagination in the customer palms.
             </p>
             <button className="bg-prime-green flex items-center  rounded-full text-xl px-4 py-2">
               Explore{" "}
@@ -805,7 +805,7 @@ export default function Home() {
               <p
                 className={`${manrope.className} text-black text-base leading-6`}
               >
-                "This is the best tool we have seen in our search in the
+                &quot;This is the best tool we have seen in our search in the
               </p>
               <div className="flex items-center">
                 <Image
@@ -860,8 +860,8 @@ export default function Home() {
               <p
                 className={`${manrope.className} text-black text-base leading-7`}
               >
-                "One of the best and most immersive experiences <br></br>we have
-                seen in recent years"
+                &quot;One of the best and most immersive experiences <br></br>we
+                have seen in recent years&quot;
               </p>
               <div className="flex items-center">
                 <Image
@@ -917,10 +917,11 @@ export default function Home() {
               <p
                 className={`${manrope.className} text-black text-base leading-6`}
               >
-                "Disruption" is a frequently used term in the startup realm,
+                &quot;Disruption is a frequently used term in the startup realm,
                 almost losing its novelty. However, when you explore V-Estate by
-                INKINCAPS, you'll find it truly lives up to the disruptive
-                spirit, particularly in the traditional realm of Real Estate"
+                INKINCAPS, you&apos;ll find it truly lives up to the disruptive
+                spirit, particularly in the traditional realm of Real
+                Estate&quot;
               </p>
               <div className="flex items-center">
                 <Image

@@ -102,14 +102,14 @@ const PostSales = () => {
                 >
                   This Augmented reality system is designed to present an entire
                   property in a dynamic and immersive manner at the palms of
-                  your client's hand. This encompasses the exterior and interior
-                  models of the property. It can seamlessly integrate into
-                  various platforms, including site brochures, websites, and
-                  online marketing materials. Through AR technology, we provide
-                  a captivating and interactive way for potential buyers or
-                  viewers to explore and experience a property, offering a more
-                  engaging and informative presentation and increasing the
-                  brand's recall value.
+                  your client&apos;s hand. This encompasses the exterior and
+                  interior models of the property. It can seamlessly integrate
+                  into various platforms, including site brochures, websites,
+                  and online marketing materials. Through AR technology, we
+                  provide a captivating and interactive way for potential buyers
+                  or viewers to explore and experience a property, offering a
+                  more engaging and informative presentation and increasing the
+                  brand&apos;s recall value.
                 </p>
               </div>
               <div className="tab:py-6">
@@ -307,7 +307,12 @@ const PostSales = () => {
                 <p className="font-semibold text-head-dark w-100 pr-5">
                   Try It Yourself
                 </p>
-                <img src="/assets/Images/scanner.svg" alt="" />
+                <Image
+                  width={80}
+                  height={80}
+                  src="/assets/Images/scanner.svg"
+                  alt=""
+                />
               </div>
             </div>
 

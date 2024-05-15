@@ -35,12 +35,13 @@ const PreSales = () => {
               >
                 Pre-sales tools play a pivotal role in the overall sales
                 journey, serving as powerful magnets to attract customers to
-                your website and bolstering the project's word-of-mouth
-                reputation. At Ink In Caps, we've crafted an all-encompassing
-                online solution that enables businesses to connect with
-                prospective clients on a global scale. Our solution provides a
-                comprehensive and intricate insight into the project, showcasing
-                its key highlights and intricacies for a thorough understanding.
+                your website and bolstering the projects word-of-mouth
+                reputation. At Ink In Caps, we&apos;ve crafted an
+                all-encompassing online solution that enables businesses to
+                connect with prospective clients on a global scale. Our solution
+                provides a comprehensive and intricate insight into the project,
+                showcasing its key highlights and intricacies for a thorough
+                understanding.
               </p>
               <div className="mx-auto my-0 max-w-[59.3rem] lg:translate-x-[2rem] tab:translate-x-[0]">
                 <img src="/assets/Images/pre-sales-video.png" alt="" />
@@ -248,7 +249,7 @@ const PreSales = () => {
                     >
                       The ability to virtually explore the property empowers
                       buyers to make more informed decisions by assessing the
-                      site's features and layout.
+                      site&apos;s features and layout.
                     </p>
                   </div>
                 </div>
@@ -295,9 +296,9 @@ const PreSales = () => {
                     className={`${manrope.className} lg:text-[0.8rem] tab:text-base text-augment-para leading-[1.1rem] mobile:text-[0.6875rem]`}
                   >
                     Vicinity mapping helps potential buyers understand the
-                    project's location in the context of its surroundings. It
-                    allows them to see nearby amenities, services, and landmarks
-                    within a 5 km radius.
+                    project&apos;s location in the context of its surroundings.
+                    It allows them to see nearby amenities, services, and
+                    landmarks within a 5 km radius.
                   </p>
                 </div>
               </div>
@@ -392,7 +393,9 @@ const PreSales = () => {
                 the project and the surrounding vicinity
               </p>
 
-              <img
+              <Image
+                width={600}
+                height={350}
                 src="/assets/Images/vicinity-mapping.png"
                 alt="vicinity-mapping"
               />
@@ -535,7 +538,9 @@ const PreSales = () => {
         <div className="max-w-[82rem] m-auto mobile:px-5 tab:px-16 lg:px-0 ">
           <div className="flex lgdesktop:justify-between lgdesktop:flex-row mobile:flex-col-reverse tab:justify-center tab:items-center tab:mt-28 mobile:mt-12">
             <div className="lgdesktop:w-3/5  tab:w-auto tab:my-5">
-              <img
+              <Image
+                width={600}
+                height={350}
                 src="/assets/Images/vicinity-mapping.png"
                 alt="amenities-highlight"
               />

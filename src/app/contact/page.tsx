@@ -13,7 +13,7 @@ const ContactSection = () => {
           <div className="flex 2xl:justify-between tab:pb-10 mobile:pb-3 lgdesktop:mt-16 tab:mt-8">
             <div className="lg:mr-36 mr-0 marginRight">
               <h2 className="text-white font-medium lg:text-7xl tab:text-[2.5rem] lg:leading-[5rem] tab:leading-[2.82rem] mobile:text-xl mobile:leading-[0.25rem]">
-                Let's
+                Let&apos;s
                 <br></br>
                 <span className="text-prime-green flex items-center tab:leading-[2.82rem] mobile:leading-[0.25rem]">
                   Get in Touch
@@ -52,7 +52,7 @@ const ContactSection = () => {
                 className={`${manrope.className} text-white  lg:text-base text-[0.57rem] lg:leading-5 lg:w-[34rem] leading-3 tab:w-3/4 opacity-70 mobile:w-full lg:pt-4`}
               >
                 Our experts are available to answer any questions you might
-                have. We’ve got the answers.
+                have. We&apos;ve got the answers.
               </p>
             </div>
             <div className="flex items-center  lg:w-[38.5rem]  lg:mt-20 tab:w-[auto] mt-[2.2rem] mobile:hidden tab:flex">
@@ -100,8 +100,8 @@ const ContactSection = () => {
             <div className="mobile:pb-5 pb-0">
               <h2 className="text-form-head font-semibold lg:text-7xl text-[2.5rem] lg:leading-[5rem] leading-[2.85rem] mobile:text-xl">
                 Have A <br className="mobile:hidden tab:block"></br> Project?{" "}
-                <br></br> Let's <br className="mobile:hidden tab:block"></br>{" "}
-                Discuss
+                <br></br> Let&apos;s{" "}
+                <br className="mobile:hidden tab:block"></br> Discuss
               </h2>
             </div>
             <div className="discuss-form-container">
