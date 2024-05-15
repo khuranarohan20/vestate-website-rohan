@@ -115,7 +115,7 @@ const ExperienceCenter = () => {
                     </h2>
                     <p className="lg:text-[0.8rem] tab:text-base text-augment-para leading-[1.1rem] ">
                       Our user-friendly tablet control system puts the power in
-                      your sales team's hands, enabling them to seamlessly
+                      your sales team&apos;s hands, enabling them to seamlessly
                       navigate and manage presentations with ease.
                     </p>
                   </div>
@@ -275,8 +275,9 @@ const ExperienceCenter = () => {
                     className={`${manrope.className} text-neutral-white opacity-60 lgdesktop:text-base lg:text-[0.9rem] font-medium py-2 lg:w-[12.5rem] xl:w-[16.5rem] tab:w-[33.5rem] leading-[1.45rem]`}
                   >
                     From compact 24-inch screens to massive 100-inch displays,
-                    we'll work with you to find the perfect touchscreen solution
-                    that complements the aesthetics of your Experience Center.
+                    we&apos;ll work with you to find the perfect touchscreen
+                    solution that complements the aesthetics of your Experience
+                    Center.
                   </p>
                 </div>
               </div>

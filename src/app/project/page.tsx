@@ -235,10 +235,11 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
-      <div className="lgdesktop:max-w-[82rem] m-auto pt-40 pb-20 tab:pb-0 tab:pt-20 tab:px-[1.82rem] lg:px-14 lgdesktop:px-0">
+      <div className="lgdesktop:max-w-[82rem] m-auto lg:pt-40 lg:pb-20 tab:pb-0 tab:pt-20 mobile:px-[1.82rem] lg:px-14 lgdesktop:px-0 mobile:pt-10 mobile:pb-5">
         <RealEstate />
-        <FooterSection />
       </div>
+
+      <FooterSection />
     </>
   );
 };

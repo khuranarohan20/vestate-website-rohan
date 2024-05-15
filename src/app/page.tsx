@@ -1,6 +1,10 @@
 import Image from "next/image";
 import HeaderSection from "@/components/header";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import { Manrope } from "next/font/google";
+import FooterSection from "@/components/footer";
+import RealEstate from "@/components/realEstate";
 
 const manrope = Manrope({ subsets: ["greek"] });
 
@@ -64,7 +68,7 @@ export default function Home() {
               alt=""
             />
             <div className="w-[60%] pl-20">
-              <h2 className="bg-prime-green text-head-dark text-7xl w-[15rem] m-auto">
+              <h2 className="bg-prime-green text-head-dark text-7xl w-[15rem] m-auto text-center">
                 About
               </h2>
               <p className="flex text-7xl font-semibold items-center py-5 justify-center">
@@ -776,8 +780,51 @@ export default function Home() {
           <h3 className="text-7xl font-semibold text-center py-2">
             Happy Clients Says
           </h3>
-          <div>
-            <div className="bg-light-grey">
+          <div className="flex justify-between gap-5 pt-16">
+            <div className="bg-light-grey w-[32.18rem] flex flex-col justify-center p-5 ">
+              <div className="flex">
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+              </div>
+              <p
+                className={`${manrope.className} text-black text-base leading-6`}
+              >
+                "This is the best tool we have seen in our search in the
+              </p>
+              <div className="flex items-center">
+                <Image
+                  width={38}
+                  height={38}
+                  src="/assets/Images/home/infra-marketing.jpg"
+                  alt=""
+                />
+                <div className="pl-4">
+                  <h2 className="text-2xl text-[#1f1f1f] font-bold">
+                    JP Infra
+                  </h2>
+                  <p className={`${manrope.className} text-[#1D1D1F] text-sm `}>
+                    Marketing Team
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-light-grey w-[32.18rem] flex flex-col justify-center p-5 p-5">
               <div className="flex">
                 <Image
                   width={15}
@@ -810,7 +857,9 @@ export default function Home() {
                   alt=""
                 />
               </div>
-              <p>
+              <p
+                className={`${manrope.className} text-black text-base leading-7`}
+              >
                 "One of the best and most immersive experiences <br></br>we have
                 seen in recent years"
               </p>
@@ -821,14 +870,179 @@ export default function Home() {
                   src="/assets/Images/home/infra-marketing.jpg"
                   alt=""
                 />
-                <div>
-                  <h2>JP Infra</h2>
-                  <p>Marketing Team</p>
+                <div className="pl-4">
+                  <h2 className="text-2xl text-[#1f1f1f] font-bold">
+                    JP Infra
+                  </h2>
+                  <p className={`${manrope.className} text-[#1D1D1F] text-sm `}>
+                    Marketing Team
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-light-grey w-[32.18rem] flex flex-col justify-center p-5">
+              <div className="flex">
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+                <Image
+                  width={15}
+                  height={14}
+                  src="/assets/Images/home/star.png"
+                  alt=""
+                />
+              </div>
+              <p
+                className={`${manrope.className} text-black text-base leading-6`}
+              >
+                "Disruption" is a frequently used term in the startup realm,
+                almost losing its novelty. However, when you explore V-Estate by
+                INKINCAPS, you'll find it truly lives up to the disruptive
+                spirit, particularly in the traditional realm of Real Estate"
+              </p>
+              <div className="flex items-center">
+                <Image
+                  width={38}
+                  height={38}
+                  src="/assets/Images/home/infra-logo.jpg"
+                  alt=""
+                />
+                <div className="pl-4">
+                  <h2 className="text-2xl text-[#1f1f1f] font-bold">Jatin</h2>
+                  <p className={`${manrope.className} text-[#1D1D1F] text-sm `}>
+                    CEO, Adani
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="bg-black my-20">
+          <div className="max-w-[82rem] m-auto py-20">
+            <h2
+              className="bg-white text-7xl w-[35rem] m-auto text-center"
+              style={{ transform: "rotate(-1deg)" }}
+            >
+              Ways To Use
+            </h2>
+            <h3 className="text-7xl font-semibold text-center text-white py-2">
+              Interactive Sales Tool
+            </h3>
+            <div
+              className="grid  grid-cols-3 place-items-center mt-12"
+              style={{
+                border: "1px solid rgba(255, 255, 255, 0.25)",
+              }}
+            >
+              <div className="w-[]">
+                <div>
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/assets/Images/home/experience-tool.png"
+                    alt=""
+                  />
+                  <h2 className="text-[1.75rem] text-white font-semibold">
+                    Experience Centers
+                  </h2>
+                </div>
+              </div>
+              <div className="w-[]">
+                <div>
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/assets/Images/home/trade-show.png"
+                    alt=""
+                  />
+                  <h2 className="text-[1.75rem] text-white font-semibold">
+                    Trade Show
+                  </h2>
+                </div>
+              </div>
+              <div className="w-[]">
+                <div>
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/assets/Images/home/event-spaces.png"
+                    alt=""
+                  />
+                  <h2 className="text-[1.75rem] text-white font-semibold">
+                    Event Spaces
+                  </h2>
+                </div>
+              </div>
+              <div className="w-[]">
+                <div>
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/assets/Images/home/offices.png"
+                    alt=""
+                  />
+                  <h2 className="text-[1.75rem] text-white font-semibold">
+                    Offices
+                  </h2>
+                </div>
+              </div>
+              <div className="w-[]">
+                <div>
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/assets/Images/home/website.png"
+                    alt=""
+                  />
+                  <h2 className="text-[1.75rem] text-white font-semibold">
+                    Websites
+                  </h2>
+                </div>
+              </div>
+              <div className="w-[]">
+                <div>
+                  <Image
+                    width={80}
+                    height={80}
+                    src="/assets/Images/home/apps.png"
+                    alt=""
+                  />
+                  <h2 className="text-[1.75rem] text-white font-semibold">
+                    Apps
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-[82rem] m-auto px-14 lgdesktop:px-0 ">
+          <RealEstate />
+        </div>
+
+        <FooterSection />
       </main>
     </>
   );

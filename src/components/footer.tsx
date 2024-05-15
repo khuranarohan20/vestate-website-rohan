@@ -8,11 +8,8 @@ const inter = Inter({ subsets: ["greek"] });
 const FooterSection = () => {
   return (
     <>
-      <div
-        className="xl:max-w-[82rem] m-auto lg:pb-12 pb-10 mobile:px-2 px-0"
-        style={{ borderBottom: "1px solid #bbbbbb" }}
-      >
-        <div className="flex justify-between lg:mt-20 mt-10">
+      <div className="xl:max-w-[82rem] m-auto lg:pb-12  mobile:px-2 px-0 lg:px-20 lgdesktop:px-0 tab:px-0">
+        <div className="flex justify-between lg:mt-20 mt-10 tab:px-0">
           <Image
             width={154}
             height={52}
@@ -45,10 +42,10 @@ const FooterSection = () => {
             </svg>
           </div>
         </div>
-        <div className="flex justify-between mt-8 items-baseline mobile:flex-col tab:flex-row">
+        <div className="flex lg:justify-between mt-8 items-baseline mobile:flex-col tab:flex-row mobile:justify-center tab:pb-10 lg:pb-0 mobile:pb-5">
           <div className="flex lg:w-[31.4rem] w-[19.4rem] mobile:flex-col tab:flex-row">
             <div className="tab:pr-14 mobile:pr-0">
-              <ul className="text-base text-form-head font-medium tab:block mobile:flex mobile:justify-center tab:justify-normal">
+              <ul className="text-base text-form-head font-medium tab:block mobile:flex tab:px-0">
                 <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3 mobile:pr-2">
                   <a href="">Home</a>
                 </li>
@@ -64,7 +61,7 @@ const FooterSection = () => {
               </ul>
             </div>
             <div>
-              <ul className="text-base text-form-head font-medium  tab:block tab:justify-normal mobile:flex mobile:justify-center">
+              <ul className="text-base text-form-head font-medium  tab:block mobile:flex  tab:px-0">
                 <li className="font-semibold lg:text-base head-14 text-form-head lg:leading-4 leading-[0.9] pb-3 mobile:pr-2">
                   <a href="">Pre-Sale</a>
                 </li>
@@ -77,7 +74,7 @@ const FooterSection = () => {
               </ul>
             </div>
           </div>
-          <div className="flex lg:justify-between mobile:justify-between mobile:px-2 px-0 mobile:pt-5 pt-0">
+          <div className="flex lg:justify-between mobile:justify-between  px-0 mobile:pt-5 pt-0 mobile:w-full tab:w-auto">
             <div className="lg:pr-16 lgdesktop:pr-28 pr-0 w-2/4 lg:w-auto ">
               <p className="font-semibold tab:text-base pb-2 mobile:uppercase tab:capitalize mobile:text-[0.8rem]">
                 Address:
@@ -155,8 +152,10 @@ const FooterSection = () => {
             </div>
           </div>
         </div>
+        <hr className="tab:block lg:hidden " />
       </div>
-      <div className="flex justify-between lg:py-10 py-6 lg:max-w-[82rem] m-auto mobile:px-2 px-0">
+      <hr className="mobile:hidden  lg:block" />
+      <div className="flex justify-between lg:py-10 py-6 lg:max-w-[82rem] m-auto mobile:px-2 px-0 lg:px-14 lgdesktop:px-0 tab:px-0">
         <p
           className={`${inter.className} text-form-head text-xs leading-4 opacity-60`}
         >

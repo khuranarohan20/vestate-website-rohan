@@ -33,10 +33,10 @@ const SalesToolSection = () => {
                 className={`${manrope.className} text-white opacity-65 text-base text-center px-32 `}
               >
                 Pre-sales experiences encompass a versatile set of tools
-                designed to articulate & convey the company's vision, showcase
-                its brand legacy, and serve as an introductory gateway into the
-                immersive customer journey they are meaning to create for their
-                customers.
+                designed to articulate & convey the company&apos;s vision,
+                showcase its brand legacy, and serve as an introductory gateway
+                into the immersive customer journey they are meaning to create
+                for their customers.
               </p>
               <div className="mx-auto my-0 max-w-[59.3rem] lg:translate-x-[2rem] tab:translate-x-[0]">
                 <Image
@@ -459,11 +459,11 @@ const SalesToolSection = () => {
                     <li className="pb-2">
                       Identify and highlight nearby points of interest, such as
                       schools, shopping centers, and recreational areas,
-                      contributing to the property's appeal.
+                      contributing to the property&apos;s appeal.
                     </li>
                     <li>
                       {" "}
-                      Enhance the overall perception of the property's
+                      Enhance the overall perception of the property&apos;s
                       convenience and lifestyle benefits.
                     </li>
                   </ul>
@@ -484,7 +484,7 @@ const SalesToolSection = () => {
                     </li>
                     <li>
                       {" "}
-                      Helps clients assess the property's connectivity to
+                      Helps clients assess the property&apos;s connectivity to
                       essential services and their daily commute.
                     </li>
                   </ul>
@@ -547,13 +547,13 @@ const SalesToolSection = () => {
                   className={`${manrope.className} lg:text-base lg:leading-6 text-head-dark list-disc pl-9 tab:text-[0.56rem] tab:leading-3`}
                 >
                   <li className="pb-2">
-                    Enable clients to experience the property's ambiance at
+                    Enable clients to experience the property&apos;s ambiance at
                     different times of the day, providing a holistic
                     understanding of lighting conditions.
                   </li>
                   <li>
                     {" "}
-                    Enhances the appreciation of the property's atmosphere.
+                    Enhances the appreciation of the property&apos;s atmosphere.
                   </li>
                 </ul>
               </div>
@@ -636,7 +636,7 @@ const SalesToolSection = () => {
                       >
                         Identify and highlight nearby points of interest, such
                         as schools, shopping centers, and recreational areas,
-                        contributing to the property's appeal.
+                        contributing to the property&apos;s appeal.
                       </p>
                     </div>
                   </div>
@@ -866,8 +866,8 @@ const SalesToolSection = () => {
                   className={`${manrope.className} text-augment-para pl-4 lg:text-base tab:text-[0.56rem] font-bold opacity-80 capitalize`}
                   style={{ borderLeft: "1px solid #0E1D29" }}
                 >
-                  Facilitates a more intuitive exploration of the property's
-                  design.
+                  Facilitates a more intuitive exploration of the
+                  property&apos;s design.
                 </p>
               </div>
             </div>
