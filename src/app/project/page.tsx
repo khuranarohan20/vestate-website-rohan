@@ -32,22 +32,22 @@ const ProjectSection = () => {
                     <path
                       d="M39.1376 20.1826L0.346191 20.1826"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                     <path
                       d="M33.4638 6.46096L6.03418 33.8906"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                     <path
                       d="M33.4638 33.8896L6.03418 6.45996"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                     <path
                       d="M19.7417 39.5795L19.7417 0.788086"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                   </g>
                 </svg>
@@ -81,9 +81,9 @@ const ProjectSection = () => {
                   <path
                     d="M6.4834 5.18262H15.3308V13.8696"
                     stroke="white"
-                    stroke-width="1.23496"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.23496"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -121,9 +121,9 @@ const ProjectSection = () => {
                   <path
                     d="M6.4834 5.18262H15.3308V13.8696"
                     stroke="white"
-                    stroke-width="1.23496"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.23496"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -155,9 +155,9 @@ const ProjectSection = () => {
                   <path
                     d="M6.4834 5.18262H15.3308V13.8696"
                     stroke="white"
-                    stroke-width="1.23496"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.23496"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -191,9 +191,9 @@ const ProjectSection = () => {
                   <path
                     d="M6.4834 5.18262H15.3308V13.8696"
                     stroke="white"
-                    stroke-width="1.23496"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.23496"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -225,9 +225,9 @@ const ProjectSection = () => {
                   <path
                     d="M6.4834 5.18262H15.3308V13.8696"
                     stroke="white"
-                    stroke-width="1.23496"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.23496"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>

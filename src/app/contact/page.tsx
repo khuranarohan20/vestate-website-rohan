@@ -28,22 +28,22 @@ const ContactSection = () => {
                     <path
                       d="M38.7914 20.2295L0 20.2295"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                     <path
                       d="M33.1174 6.50783L5.68774 33.9375"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                     <path
                       d="M33.1174 33.9365L5.68774 6.50684"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                     <path
                       d="M19.3955 39.6264L19.3955 0.834961"
                       stroke="#E7E7E7"
-                      stroke-width="3.49787"
+                      strokeWidth="3.49787"
                     />
                   </svg>
                 </span>

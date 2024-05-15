@@ -26,33 +26,52 @@ body {
   --para2-light: #6a6a6a;
 }
 
-/* Heading 3  (56px)*/
+/* gsap css */
+.slide-up,
+.slide-up-trigger,
+.book-up-trigger,
+.slide-right {
+  visibility: hidden;
+}
 
+.book-up-trigger,
+.book-up-video {
+  transform: perspective(600px);
+}
+
+/* Heading 3  (56px)*/
 .head-64 {
   font-size: 4rem;
 }
+
 .head-56 {
   font-size: 3.5rem;
 }
+
 .head-14 {
   font-size: 0.9rem;
 }
+
 .head-btn {
   font-size: 1rem;
 }
+
 .text-22 {
   font-size: 1.4rem;
 }
+
 .project-btn {
   border: 0.75px solid rgba(255, 255, 255, 0.5);
   font-size: 1.3rem;
 }
+
 .input-style {
   background: transparent;
 
   border-bottom: 1px solid #909090;
   padding-bottom: 0.5rem;
 }
+
 .input-full {
   background: transparent;
   width: 100%;
@@ -60,10 +79,12 @@ body {
   padding-bottom: 0.5rem;
   color: #121112;
 }
+
 @media (max-width: 1439px) and (min-width: 1024px) {
   .head-56 {
     font-size: 2.5rem !important;
   }
+
   .head-64 {
     font-size: 3rem !important;
   }
@@ -73,18 +94,23 @@ body {
   .head-56 {
     font-size: 2rem !important;
   }
+
   .head-64 {
     font-size: 2.25rem !important;
   }
+
   .real-estate {
     margin-top: -0.5rem !important;
   }
+
   .project-btn {
     font-size: 0.75rem !important;
   }
+
   .marginRight {
     margin-right: -35px !important;
   }
+
   .sales-logo {
     background-position: -0.5rem 1rem !important;
   }
@@ -94,12 +120,15 @@ body {
   .head-14 {
     font-size: 0.81rem;
   }
+
   .head-56 {
     font-size: 1.56rem !important;
   }
+
   .project-btn {
     font-size: 1.12rem !important;
   }
+
   .head-64 {
     font-size: 1.78rem !important;
   }

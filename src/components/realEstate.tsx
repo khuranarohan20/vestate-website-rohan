@@ -1,9 +1,28 @@
+"use client";
 import Image from "next/image";
-
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+gsap.registerPlugin(useGSAP);
 const RealEstate = () => {
+  const container = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      gsap.from(".bounce-up", {
+        y: 20,
+        rotate: -2,
+        ease: "none",
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        yoyoEase: "none",
+      });
+    },
+    { scope: container }
+  );
   return (
     <>
-      <div className="flex justify-between relative">
+      <div ref={container} className="flex justify-between relative">
         <Image
           src="/assets/Images/real-estate-bg.png"
           width={1312}
@@ -40,9 +59,9 @@ const RealEstate = () => {
               <path
                 d="M6.15283 5.0498H15.0408V13.9378"
                 stroke="#121112"
-                stroke-width="1.3328"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.3328"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
@@ -54,7 +73,7 @@ const RealEstate = () => {
           <Image
             width={535}
             height={463}
-            className="lgdesktop:w-[33.45rem] lg:w-[25rem]"
+            className="bounce-up lgdesktop:w-[33.45rem] lg:w-[25rem]"
             src="/assets/Images/realEstage-right.png"
             alt=""
           />

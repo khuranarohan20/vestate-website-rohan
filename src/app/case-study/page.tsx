@@ -208,9 +208,9 @@ const caseStudy = () => {
                   <path
                     d="M5.64453 4.3418H14.4919V13.0287"
                     stroke="black"
-                    stroke-width="1.23496"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.23496"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -247,9 +247,9 @@ const caseStudy = () => {
                   <path
                     d="M5.64453 4.3418H14.4919V13.0287"
                     stroke="black"
-                    stroke-width="1.23496"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.23496"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
