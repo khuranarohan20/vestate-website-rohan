@@ -115,7 +115,7 @@ const HeaderSection = () => {
                         pathName.slice(1) == "project" ? "underline" : ""
                       }`}
                     >
-                      <Link href="/project">Clients</Link>
+                      <Link href="/project">Projects</Link>
                     </p>
                   </div>
                   <div>
@@ -126,7 +126,7 @@ const HeaderSection = () => {
                         pathName.slice(1) == "pre-sales" ? "underline" : ""
                       }`}
                     >
-                      <Link href="/contacts">Contacts</Link>
+                      <Link href="/contact">Contact</Link>
                     </p>
                   </div>
                 </div>
@@ -160,7 +160,11 @@ const HeaderSection = () => {
             ></div>
           </div>
 
-          <div className="mx-3 mobile:hidden tab:flex">
+          <Link
+            href={"https://wa.me/+919152387077"}
+            className="mx-3 mobile:hidden tab:flex "
+            target="_blank"
+          >
             <svg
               width="55"
               height="55"
@@ -174,7 +178,7 @@ const HeaderSection = () => {
                 fill="black"
               />
             </svg>
-          </div>
+          </Link>
           <button className="bg-prime-green rounded-full px-8 py-4 mobile:hidden tab:flex">
             <Link
               className={`${manrope.className} font-semibold text-base`}
