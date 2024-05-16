@@ -29,6 +29,8 @@ body {
   display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
+
+
 /* gsap css */
 .slide-up,
 .slide-up-trigger,
@@ -37,10 +39,11 @@ body {
   visibility: hidden;
 }
 
+
 .book-up-trigger,
 .book-up-video,
 .book-left-trigger,
-.book-right-trigger {
+.book-right-trigger, .banner-up {
   transform: perspective(600px);
 }
 

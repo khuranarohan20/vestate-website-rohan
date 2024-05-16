@@ -1,27 +1,63 @@
+"use client";
+
 import HeaderSection from "@/components/header";
 import HomeSection from "@/components/footer";
 import RealEstate from "@/components/realEstate";
 import FooterSection from "@/components/footer";
 import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 const ProjectSection = () => {
+  useGSAP(() => {
+    gsap.from(".rotate-animation", {
+      rotate: -360,
+      duration: 10,
+      repeat: -1,
+      ease: "none",
+    });
+    gsap.from(".title-up", {
+      y: 200,
+      opacity: 0,
+      stagger: 0.18,
+      duration: 0.75,
+      autoAlpha: 0,
+    });
+    gsap.from(".images-up", {
+      y: 200,
+      opacity: 0,
+      stagger: 0.18,
+      duration: 0.75,
+      // autoAlpha: 0,
+      scrollTrigger: {
+        trigger: ".images-up",
+        start: "top 110%",
+        end: "top top",
+        markers: true,
+      },
+    });
+  });
   return (
     <>
       <div className="bg-pure-black">
         <HeaderSection />
-        <div className=" tab:px-[1.82rem] lgdesktop:max-w-[82rem] lgdesktop:m-auto pt-10 lg:px-14 lgdesktop:px-0">
+        <div className=" tab:px-[1.82rem] lgdesktop:max-w-[82rem] lgdesktop:m-auto pt-10 lg:px-14 lgdesktop:px-0 overflow-hidden">
           <div
             className="flex justify-between pb-10  tab:flex-row mobile:flex-col"
             style={{ borderBottom: "0.75px solid rgba(255, 255, 255, 0.5)" }}
           >
-            <div className="my-auto mx-0 mobile:flex mobile:flex-col mobile:justify-center mobile:items-center tab:block">
+            <div className="my-auto mx-0 mobile:flex mobile:flex-col mobile:justify-center mobile:items-center tab:block title-up">
               <h1 className="bg-white px-5 font-semibold tab:px-2 mobile:text-[3.15rem] mobile:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] flex items-center">
                 V-Estate
               </h1>
               <p className="text-prime-green flex items-center font-semibold mobile:text-[3.15rem] mobile:leading-[2.82rem] lg:text-[4.5rem] xl:text-[5.5rem] lg:leading-[5rem] pt-2 mobile:pb-3 tab:pb-0">
                 Projects{" "}
                 <svg
-                  className="lg:ml-4 tab:w-[1.32rem] mobile:ml-2 lg:w-[2.5rem] mobile:w-[1.3rem] "
+                  className="lg:ml-4 tab:w-[1.32rem] mobile:ml-2 lg:w-[2.5rem] mobile:w-[1.3rem] rotate-animation"
                   width="40"
                   height="40"
                   viewBox="0 0 40 40"
@@ -53,7 +89,7 @@ const ProjectSection = () => {
                 </svg>
               </p>
             </div>
-            <div className="mobile:px-9 tab:px-0">
+            <div className="mobile:px-9 tab:px-0 title-up">
               <Image
                 width={662}
                 height={296}
@@ -91,10 +127,10 @@ const ProjectSection = () => {
           </div>
 
           <div
-            className="flex lg:justify-between py-10 tab:gap-x-3 lg:gap-6 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center tab:px-0 mobile:px-9"
+            className="flex overflow-hidden lg:justify-between py-10 tab:gap-x-3 lg:gap-6 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center tab:px-0 mobile:px-9"
             style={{ borderBottom: "0.75px solid rgba(255, 255, 255, 0.5)" }}
           >
-            <div className="mobile:py-4 tab:py-0">
+            <div className="mobile:py-4 tab:py-0 title-up">
               <Image
                 width={644}
                 height={350}
@@ -128,7 +164,7 @@ const ProjectSection = () => {
                 </svg>
               </button>
             </div>
-            <div className="mobile:py-4 tab:py-0">
+            <div className="mobile:py-4 tab:py-0 title-up">
               <Image
                 width={644}
                 height={350}
@@ -164,7 +200,7 @@ const ProjectSection = () => {
             </div>
           </div>
           <div className="flex lg:justify-between pt-10 pb-12 lg:gap-6 tab:gap-x-3 tab:flex-row mobile:flex-col mobile:justify-center mobile:items-center tab:px-0 mobile:px-9">
-            <div className="mobile:py-4 tab:py-0">
+            <div className="mobile:py-4 tab:py-0 images-up">
               <Image
                 width={644}
                 height={350}
@@ -198,7 +234,7 @@ const ProjectSection = () => {
                 </svg>
               </button>
             </div>
-            <div className="mobile:py-4 tab:py-0">
+            <div className="mobile:py-4 tab:py-0 images-up">
               <Image
                 width={644}
                 height={350}
