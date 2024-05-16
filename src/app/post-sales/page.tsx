@@ -13,7 +13,7 @@ const PostSales = () => {
         <div className="bg-post-sales bg-no-repeat">
           <HeaderSection />
           <div
-            className="bg-no-repeat lg:h-[33rem] tab:h-[36.3rem] bg-center tab:bg-contain sales-logo relative"
+            className="bg-no-repeat lg:h-[31rem] tab:h-[30.3rem] mobile:h-[24rem] bg-center relative"
             style={{ backgroundPosition: "-.5rem -7rem" }}
           >
             <Image
@@ -21,24 +21,25 @@ const PostSales = () => {
               height={443}
               src="/assets/Images/vestate-logo.png"
               alt=""
-              className=" mx-auto left-0 right-0 top-0 lg:w-[80%] w-full h-full absolute z-10"
+              className=" mx-auto left-0 right-0 top-0 lg:w-[78%] w-full h-full absolute z-10"
             />
-            <div className="max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
-              <p className="text-white opacity-75 text-center text-[2.5rem] pb-5">
+
+            <div className="lg:max-w-[59.3rem] tab:max-w-[37.5rem] my-0 mx-auto tab:pt-14 mobile:pt-10 relative z-20">
+              <p className="text-white opacity-75 text-center tab:text-[2.5rem] mobile:text-2xl pb-5">
                 V-Estate
               </p>
-              <p className="text-white lg:text-[6.8rem] text-center leading-[4.5rem] pb-7 font-semibold tab:text-7xl tab:leading-[3rem]">
+              <p className="text-white lg:text-[6.8rem] text-center lg:leading-[4.5rem] tab:pb-7 font-semibold tab:text-7xl mobile:text-5xl mobile:pb-3">
                 Post Visit Sales
               </p>
               <p
-                className={`${manrope.className} text-white opacity-65 lg:text-[1.4rem] tab:text-base  lg:leading-8 text-center tab:px-20 lg:px-0`}
+                className={`${manrope.className} text-white opacity-65 tab:text-base text-center tab:px-36 lg:px-[8.5rem] mobile:text-xs mobile:leading-6 mobile:px-6`}
               >
                 Post sales tools enables the developers to create a high level
                 of interaction once the client leaves the site which increases
                 the brand recall, and helps them demonstrate the offerings to
                 clients that are not able to physically be with them.
               </p>
-              <div className="mx-auto my-0 max-w-[59.3rem] lg:translate-x-[2rem] tab:translate-x-0">
+              <div className="mx-auto my-0 max-w-[55.3rem] lg:translate-x-[2rem] tab:translate-x-0">
                 <Image
                   width={800}
                   height={467}
@@ -50,23 +51,23 @@ const PostSales = () => {
               </div>
             </div>
           </div>
-          <div className="bg-light-grey lg:h-[23rem] tab:h-[19.7rem]"></div>
+          <div className="bg-light-grey lg:h-[23rem] tab:h-[15.6rem] mobile:h-[15rem]"></div>
         </div>
 
-        <div className="bg-prime-green py-20">
+        <div className="bg-prime-green tab:py-20 mobile:py-12">
           <div className=" lgdesktop:max-w-[82rem] m-auto lgdesktop:px-0 tab:px-20">
-            <div className="lgdesktop:flex lgdesktop:flex-row justify-between tab:flex-col">
+            <div className="lgdesktop:flex lgdesktop:flex-row justify-between tab:flex-col mobile:px-8  tab:px-0 lg:px-0 lgdesktop:px-0">
               <div>
-                <h2 className="inline text-7xl bg-white text-head-dark leading-[3.5rem] mb-4 px-2 ">
+                <h2 className="lg:text-7xl tab:text-5xl tab:leading-[3.33rem] bg-white inline tab:px-6 mobile:text-[2rem] mobile:px-2 ">
                   AR Offerings
                 </h2>
-                <p className="flex items-center text-7xl text-head-dark font-semibold leading-[4.4rem] pb-2 pt-4">
+                <p className="flex items-center tab:text-7xl mobile:text-[2.5rem] text-head-dark font-semibold tab:leading-[4.4rem] mobile:leading-[2.18rem] pb-2 tab:pt-4 mobile:pt-2">
                   Augmented{" "}
                 </p>
-                <p className="flex items-center text-7xl text-head-dark font-semibold leading-[4.4rem]">
+                <p className="flex items-center tab:text-7xl mobile:text-[2.5rem] text-head-dark font-semibold tab:leading-[4.4rem] mobile:leading-[2.18rem]">
                   Reality{" "}
                   <svg
-                    className="ml-2"
+                    className="ml-2 mobile:w-[1.62rem] tab:w-auto"
                     width="37"
                     height="37"
                     viewBox="0 0 37 37"
@@ -98,7 +99,7 @@ const PostSales = () => {
                   </svg>
                 </p>
                 <p
-                  className={`${manrope.className} leading-6 lgdesktop:w-[31.6rem] opacity-60 text-base text-amenities-para pt-4 tab:w-auto`}
+                  className={`${manrope.className} text-amenities-para opacity-60 head-14 font-medium tab:py-5 tab:w-[38rem] tab:px-0 mobile:py-2 tab:leading-6 lgdesktop:pr-36`}
                 >
                   This Augmented reality system is designed to present an entire
                   property in a dynamic and immersive manner at the palms of
@@ -121,7 +122,7 @@ const PostSales = () => {
                 />
               </div>
             </div>
-            <div className="lgdesktop:flex gap-4 mb-5 mt-10 tab:hidden">
+            <div className="lgdesktop:flex gap-4 mb-5 mt-10  tab:hidden mobile:hidden lg:hidden">
               <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[18.9rem]">
                 <svg
                   className="mr-4"
@@ -189,7 +190,7 @@ const PostSales = () => {
                 </p>
               </div>
             </div>
-            <div className="lgdesktop:flex justify-between tab:hidden">
+            <div className="lgdesktop:flex justify-between tab:hidden mobile:hidden ">
               <div className="flex gap-4">
                 <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[18.9rem] h-[4.5rem]">
                   <svg
@@ -304,7 +305,7 @@ const PostSales = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <p className="font-semibold text-head-dark w-100 pr-5">
+                <p className="font-semibold text-head-dark w-100 pr-5 mobile:text-[0.68rem] tab:text-2xl">
                   Try It Yourself
                 </p>
                 <Image
@@ -316,10 +317,10 @@ const PostSales = () => {
               </div>
             </div>
 
-            <div className="tab:flex tab:flex-wrap gap-4 mb-5 mt-10 lgdesktop:hidden">
-              <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[18.9rem]">
+            <div className="tab:flex tab:flex-wrap gap-4 mb-5 mt-10 lgdesktop:hidden mobile:flex mobile:flex-col tab:flex-row mobile:px-8 tab:px-0">
+              <div className="bg-white flex gap-2.5 items-center tab:px-5 mobile:py-1 tab:w-[18.9rem] mobile:justify-center tab:justify-normal mobile:w-auto">
                 <svg
-                  className="mr-4"
+                  className="mr-4 mobile:w-[1.12rem] tab:w-auto"
                   width="40"
                   height="40"
                   viewBox="0 0 40 40"
@@ -344,15 +345,15 @@ const PostSales = () => {
                   />
                 </svg>
                 <p
-                  className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
+                  className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80 mobile:text-xs tab:text-base lg:text-[1.06rem]`}
                   style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   PROJECT SITE PLAN
                 </p>
               </div>
-              <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[18.9rem]">
+              <div className="bg-white flex gap-2.5 items-center tab:px-5 mobile:py-1 tab:w-[18.9rem] mobile:justify-center tab:justify-normal mobile:w-auto">
                 <svg
-                  className="mr-4"
+                  className="tab:mr-4 mobile:mr-1 mobile:w-[1.12rem] tab:w-auto"
                   width="39"
                   height="38"
                   viewBox="0 0 39 38"
@@ -377,15 +378,15 @@ const PostSales = () => {
                 </svg>
 
                 <p
-                  className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
+                  className={`${manrope.className} ext-augment-para pl-4 font-bold opacity-80 mobile:text-xs tab:text-base lg:text-[1.06rem]`}
                   style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   CONFIGURATION PLAN
                 </p>
               </div>
-              <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[18.9rem] h-[4.5rem]">
+              <div className="bg-white flex gap-2.5 items-center tab:px-5 mobile:py-1 tab:w-[18.9rem] mobile:justify-center tab:justify-normal mobile:w-auto">
                 <svg
-                  className="mr-4"
+                  className="tab:mr-4 mobile:mr-1 mobile:w-[1.12rem] tab:w-auto"
                   width="37"
                   height="36"
                   viewBox="0 0 37 36"
@@ -424,15 +425,15 @@ const PostSales = () => {
                   />
                 </svg>
                 <p
-                  className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
+                  className={`${manrope.className} ext-augment-para pl-4 font-bold opacity-80 mobile:text-xs tab:text-base lg:text-[1.06rem]`}
                   style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   AR BUILDING
                 </p>
               </div>
-              <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[18.9rem] h-[4.5rem]">
+              <div className="bg-white flex gap-2.5 items-center tab:px-5 mobile:py-1 tab:w-[18.9rem] mobile:justify-center tab:justify-normal mobile:w-auto">
                 <svg
-                  className="mr-4"
+                  className="tab:mr-4 mobile:mr-1 mobile:w-[1.12rem] tab:w-auto"
                   width="39"
                   height="43"
                   viewBox="0 0 39 43"
@@ -459,15 +460,15 @@ const PostSales = () => {
                   />
                 </svg>
                 <p
-                  className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
+                  className={`${manrope.className} ext-augment-para pl-4 font-bold opacity-80 mobile:text-xs tab:text-base lg:text-[1.06rem]`}
                   style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   AMENTIES
                 </p>
               </div>
-              <div className="bg-white flex gap-2.5 items-center px-5 py-4 w-[18.9rem] h-[4.5rem]">
+              <div className="bg-white flex gap-2.5 items-center tab:px-5 mobile:py-1 tab:w-[18.9rem] mobile:justify-center tab:justify-normal mobile:w-auto">
                 <svg
-                  className="mr-4"
+                  className="tab:mr-4 mobile:mr-1 mobile:w-[1.12rem] tab:w-auto"
                   width="26"
                   height="42"
                   viewBox="0 0 26 42"
@@ -488,14 +489,14 @@ const PostSales = () => {
                   />
                 </svg>
                 <p
-                  className={`${manrope.className} text-augment-para pl-4 font-bold opacity-80`}
+                  className={`${manrope.className} ext-augment-para pl-4 font-bold opacity-80 mobile:text-xs tab:text-base lg:text-[1.06rem]`}
                   style={{ borderLeft: "1px solid rgba(14, 29, 41, 0.5)" }}
                 >
                   VICINITIES
                 </p>
               </div>
             </div>
-            <div className="tab:flex items-center justify-center lgdesktop:hidden">
+            <div className="flex items-center justify-center lgdesktop:hidden mt-10 lgdesktop:mt-0">
               <p className="font-semibold text-2xl text-head-dark w-100 pr-5">
                 Try It Yourself
               </p>
@@ -504,8 +505,8 @@ const PostSales = () => {
           </div>
         </div>
 
-        <div className=" lgdesktop:max-w-[82rem] m-auto lgdesktop:pt-44 tab:pt-20 lgdesktop:px-0 tab:px-20">
-          <div className="flex lgdesktop:flex-row lgdesktop:justify-between tab:flex-col-reverse">
+        <div className=" lgdesktop:max-w-[82rem] m-auto lgdesktop:pt-44 tab:pt-20 mobile:pt-12 lgdesktop:px-0 tab:px-20">
+          <div className="flex lgdesktop:flex-row lgdesktop:justify-between mobile:flex-col-reverse mobile:px-8 tab:px-0 lg:px-0">
             <div className="lgdesktop:w-2/4 m-auto tab:w-auto tab:m-0  tab:py-6">
               <Image
                 width={680}
@@ -515,13 +516,15 @@ const PostSales = () => {
               />
             </div>
             <div className="lgdesktop:w-2/4 lgdesktop:pl-20 tab:w-auto tab:pl-0">
-              <h2 className=" bg-prime-green head-64 inline px-4">Virtual</h2>
-              <p className="text-7xl font-semibold">
+              <h2 className=" lg:text-7xl tab:text-5xl tab:leading-[3.33rem] bg-prime-green inline tab:px-6 mobile:text-[2rem] mobile:px-2 ">
+                Virtual
+              </h2>
+              <p className="font-semibold tab:text-7xl mobile:text-[2.5rem] text-head-dark  tab:leading-[4.4rem] mobile:leading-[2.18rem] pb-2 tab:pt-4 mobile:pt-2">
                 Assistance <br></br>
-                <span className="flex items-center">
+                <span className="flex items-center tab:text-7xl mobile:text-[2.5rem] text-head-dark font-semibold tab:leading-[4.4rem] mobile:leading-[2.18rem] pb-2 tab:pt-4 mobile:pt-2">
                   Tool{" "}
                   <svg
-                    className="ml-2 lg:block tab:hidden"
+                    className="ml-2 mobile:w-[1.62rem] tab:w-auto"
                     width="38"
                     height="38"
                     viewBox="0 0 38 38"
@@ -549,53 +552,11 @@ const PostSales = () => {
                       strokeWidth="3.14228"
                     />
                   </svg>
-                  <svg
-                    className="ml-2 lg:hidden tab:block"
-                    width="48"
-                    height="49"
-                    viewBox="0 0 48 49"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M40.9766 7.67295L7.03711 41.6191"
-                      stroke="#CDEA67"
-                      strokeWidth="4.09288"
-                    />
-                    <path
-                      d="M40.9782 41.6262L7.03711 7.68164"
-                      stroke="#CDEA67"
-                      strokeWidth="4.09288"
-                    />
-                    <path
-                      d="M48.0059 24.6582H0.00585938"
-                      stroke="#CDEA67"
-                      strokeWidth="4.09288"
-                    />
-                    <path
-                      d="M24.0117 48.6786L24.0117 0.673828"
-                      stroke="#CDEA67"
-                      strokeWidth="4.09288"
-                    />
-                  </svg>
                 </span>
-              </p>
-              <p
-                className={`${manrope.className} lg:block tab:hidden leading-6 lgdesktop:w-[35rem] opacity-55 text-base text-head-dark pt-4 tab:w-auto`}
-              >
-                Embark on an interactive journey with our Virtual Assisted Tour,
-                a cutting-edge tool designed to bring our website to life. Your
-                skilled executives are ready to guide the client through every
-                detail, offering personalized assistance in real-time. From
-                exploring your immersive solutions to answering their queries,
-                our Virtual Assisted Tour ensures you have an engaging and
-                informative experience. Schedule a tour at your clients
-                convenience and lets you navigate the way, making your clients
-                exploration effortless and enjoyable.
               </p>
 
               <p
-                className={`${manrope.className} lg:hidden tab:block leading-6 lgdesktop:w-[35rem] opacity-55 text-base text-head-dark pt-4 tab:w-auto`}
+                className={`${manrope.className} text-amenities-para opacity-60 head-14 font-medium tab:py-5 tab:w-[35rem] tab:px-0 mobile:py-2 tab:leading-6`}
               >
                 This tool enables real estate developers to tap into clients
                 from across the globe and give them an immersive and personal
@@ -607,7 +568,7 @@ const PostSales = () => {
 
           <div
             className="lg:flex tab:hidden justify-between mt-[4.44rem]
-           text-"
+           mobile:hidden"
           >
             <div>
               <div className="flex gap-5 pb-16">
@@ -631,7 +592,7 @@ const PostSales = () => {
                     Personalized Guidance
                   </h3>
                   <p
-                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
+                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] lg:w-[18.75rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
                   >
                     Sales executives can provide personalized assistance,
                     addressing specific client queries and guiding them through
@@ -680,7 +641,7 @@ const PostSales = () => {
                      Enhanced Engagement:
                   </h3>
                   <p
-                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
+                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] lg:w-[18.75rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
                   >
                     Boosts user engagement by providing a guided exploration of
                     the website, ensuring clients fully grasp the offerings
@@ -728,7 +689,7 @@ const PostSales = () => {
                     Interactive Q&A
                   </h3>
                   <p
-                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
+                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] lg:w-[18.75rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
                   >
                     Facilitates interactive question and answer sessions,
                     allowing clients to seek clarification and gain a deeper
@@ -764,7 +725,7 @@ const PostSales = () => {
                     Real-Time Interaction
                   </h3>
                   <p
-                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
+                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] lg:w-[18.75rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
                   >
                     Enables real-time communication between clients and sales
                     executives, fostering a dynamic and engaging experience.
@@ -796,7 +757,7 @@ const PostSales = () => {
                     Effortless Navigation
                   </h3>
                   <p
-                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
+                    className={`${manrope.className} lgdesktop:w-[26.45rem] tab:w-[21.45rem] lg:w-[18.75rem] leading-6 opacity-55 text-base text-head-dark font-medium`}
                   >
                     Sales executives can navigate the website on behalf of the
                     client, simplifying the user experience and highlighting key
@@ -807,7 +768,7 @@ const PostSales = () => {
             </div>
           </div>
 
-          <div className="flex justify-between gap-[8rem] mt-8 lg:hidden tab:flex">
+          <div className="flex justify-between gap-[8rem] mt-8 lg:hidden tab:flex mobile:px-8 tab:px-0">
             <div className="w-3/6">
               <svg
                 width="64"
@@ -828,11 +789,11 @@ const PostSales = () => {
                   fill="#0C1136"
                 />
               </svg>
-              <h2 className="text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5">
+              <h2 className="tab:text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5 mobile:text-sm">
                 360 Degree
               </h2>
               <p
-                className={`${manrope.className} text-base font-semibold opacity-55 leading-6 text-head-dark`}
+                className={`${manrope.className} tab:text-base font-semibold opacity-55 tab:leading-6 text-head-dark mobile:text-[0.625rem]`}
               >
                 Immerse the user into the property and show the interiors,
                 exteriors & amenities.
@@ -858,18 +819,18 @@ const PostSales = () => {
                   fill="#0C1136"
                 />
               </svg>
-              <h2 className="text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5">
+              <h2 className="tab:text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5 mobile:text-sm">
                 Window View{" "}
               </h2>
               <p
-                className={`${manrope.className} text-base font-semibold opacity-55 leading-6 text-head-dark`}
+                className={`${manrope.className} tab:text-base font-semibold opacity-55 tab:leading-6 text-head-dark mobile:text-[0.625rem]`}
               >
                 Show what they are going to see on a day to day basis from their
                 windows
               </p>
             </div>
           </div>
-          <div className="flex justify-between gap-[8rem] mt-14 mb-14 lg:hidden tab:flex">
+          <div className="flex justify-between gap-[8rem] mt-14 mb-14 lg:hidden tab:flex mobile:px-8 tab:px-0">
             <div className="w-3/6">
               <svg
                 width="64"
@@ -890,11 +851,11 @@ const PostSales = () => {
                   fill="#0C1136"
                 />
               </svg>
-              <h2 className="text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5">
+              <h2 className="tab:text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5 mobile:text-sm">
                 100% Transparency
               </h2>
               <p
-                className={`${manrope.className} text-base font-semibold opacity-55 leading-6 text-head-dark`}
+                className={`${manrope.className} tab:text-base font-semibold opacity-55 tab:leading-6 text-head-dark mobile:text-[0.625rem]`}
               >
                 Show exactly what you are envisioning
               </p>
@@ -919,19 +880,22 @@ const PostSales = () => {
                   fill="#0C1136"
                 />
               </svg>
-              <h2 className="text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5">
+              <h2 className="tab:text-2xl font-semibold leading-[1.9rem] text-window-txt pt-5 mobile:text-sm">
                 Portable
               </h2>
               <p
-                className={`${manrope.className} text-base font-semibold opacity-55 leading-6 text-head-dark`}
+                className={`${manrope.className} tab:text-base font-semibold opacity-55 tab:leading-6 text-head-dark mobile:text-[0.625rem]`}
               >
                 This platform can be adapted on VR/AR and a web version
               </p>
             </div>
           </div>
-
-          <RealEstate />
-          <FooterSection />
+          <div className="max-w-[82rem] m-auto lg:px-0 mobile:px-4 lgdesktop:px-0 mobile:pt-16 tab:pt-0 tab:px-0">
+            <RealEstate />
+          </div>
+          <div className="mobile:mt-20 tab:mt-0 mobile:px-4 lg:px-0 tab:px-0">
+            <FooterSection />
+          </div>
         </div>
       </div>
     </>

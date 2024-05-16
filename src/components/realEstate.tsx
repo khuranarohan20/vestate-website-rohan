@@ -30,7 +30,7 @@ const RealEstate = () => {
           alt=""
           className="absolute lg:h-full tab:h-[21.06rem] z-10 mobile:h-[12.31rem] "
         />
-        <div className="mx-0 my-auto tab:py-28 lg:py-10 tab:pl-14 tab:pr-6 relative z-20 mobile:pt-12 mobile:px-4">
+        <div className="mx-0 my-auto tab:py-28 lg:pt-[5.5rem] lg:pb-6 tab:pl-14  lg:pl-10 lgdesktop:pl-[4.5rem] lgdesktop:pt-[3.5rem] tab:pr-6 relative z-20 mobile:pt-12 mobile:px-4 ">
           <h1 className="bg-white text-center head-56 leading-[2.63rem] inline px-4 tab:py-2 lg:py-0 mobile:leading-[1.12rem] ">
             Bring Out The Best
           </h1>

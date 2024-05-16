@@ -25,6 +25,9 @@ body {
   --para1-dark: #949494;
   --para2-light: #6a6a6a;
 }
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
 
 /* gsap css */
 .slide-up,
@@ -35,7 +38,9 @@ body {
 }
 
 .book-up-trigger,
-.book-up-video {
+.book-up-video,
+.book-left-trigger,
+.book-right-trigger {
   transform: perspective(600px);
 }
 

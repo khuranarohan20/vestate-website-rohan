@@ -8,15 +8,49 @@ import FooterSection from "@/components/footer";
 import RealEstate from "@/components/realEstate";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const manrope = Manrope({ subsets: ["greek"] });
 
 export default function Home() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
+  const listItemStyle = {
+    backgroundColor: isClicked ? "#ffffff" : "#20273C",
+    transition: "width 0.3s ease",
+    width: isClicked ? "calc(100% + 2rem)" : "100%",
+  };
+
+  const spanStyle = {
+    backgroundColor: isClicked ? "#323B41" : "rgba(255, 255, 255,0.50)",
+    transition: "background-color 0.3s ease",
+  };
+
+  const textStyle = {
+    color: isClicked ? "#20273C" : "#ffffff",
+    transition: "color 0.3s ease",
+  };
+
   const container = useRef<HTMLElement>(null);
   useGSAP(
     () => {
@@ -52,6 +86,37 @@ export default function Home() {
         autoAlpha: 0,
       });
 
+      gsap.from(".book-left-trigger", {
+        x: -200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".book-left-trigger",
+          markers: true,
+        },
+        markers: true,
+
+        rotateY: "-30px",
+        stagger: 0.3,
+        duration: 1,
+        scale: 2,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".book-right-trigger", {
+        x: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".book-right-trigger",
+          markers: true,
+        },
+        markers: true,
+
+        rotateY: "30px",
+        stagger: 0.3,
+        duration: 1,
+        scale: 2,
+        autoAlpha: 0,
+      });
       gsap.from(".book-up-trigger", {
         y: 200,
         opacity: 0,
@@ -101,6 +166,24 @@ export default function Home() {
   );
   return (
     <main ref={container} className="">
+      {/* <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+        autoplay={{ delay: 3000 }}
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        ...
+      </Swiper> */}
+
       <div className="bg-journey-redefined bg-no-repeat bg-cover desktop:h-[120vh] relative">
         <HeaderSection />
         {/* <video
@@ -111,14 +194,14 @@ export default function Home() {
           src="https://framer-assets.vestate.iiclab.com/home/1.Home_Hero-Experince.mp4"
           className="hero-background"
         ></video> */}
-        <div className="flex flex-col items-center justify-center py-40">
+        <div className="flex flex-col items-center justify-center py-48">
           <div className="slide-up text-center">
             <h2 className="text-white head-64">Sales Journey Redefined</h2>
-            <p className="text-white text-2xl text-center w-[65rem]">
+            <p className="text-white head-56 text-center w-[65rem]">
               An Immersive Property Experiences
             </p>
           </div>
-          <button className="slide-up bg-prime-green flex items-center lg:px-[2.12rem] lg:py-1.5 tab:px-14  tab:py-2.5 rounded-full text-2xl mobile:text-lg mobile:px-5 mobile:py-0.5">
+          <button className="slide-up bg-prime-green flex items-center lg:px-[2.12rem] lg:py-1.5 tab:px-14  tab:py-2.5 rounded-full lg:text-[2rem] mobile:text-lg mobile:px-5 mobile:py-0.5 lgdesktop:py-[1.12rem] lgdesktop:px-[6.3rem] mt-5">
             Book Demo{" "}
             <svg
               className="ml-1"
@@ -157,7 +240,6 @@ export default function Home() {
           />
         </svg>
       </div>
-
       <div className="max-w-[82rem] m-auto py-32">
         <div className="flex">
           <Image
@@ -173,7 +255,7 @@ export default function Home() {
             <p className="flex text-7xl font-semibold items-center py-5 justify-center">
               V-Estate{" "}
               <svg
-                className="ml-4"
+                className="ml-4 rotate-animation"
                 width="57"
                 height="56"
                 viewBox="0 0 57 56"
@@ -441,7 +523,7 @@ export default function Home() {
         <div
           className="flex justify-center py-2 slide-up-view-all-trigger "
           style={{
-            borderTop: " 1px solid rgba(0, 0, 0, 0.3);",
+            borderTop: " 1px solid rgba(0, 0, 0, 0.3)",
             borderBottom: "1px solid rgba(0, 0, 0, 0.3)",
           }}
         >
@@ -477,7 +559,7 @@ export default function Home() {
       </div>
       <div className="bg-black  pb-10">
         <div className="max-w-[82rem] m-auto">
-          <div className="flex justify-between items-center py-10">
+          <div className="flex justify-between items-center py-16">
             <h2 className="text-head-light text-7xl font-semibold w-full slide-right">
               Wide Array of Experiences
             </h2>
@@ -549,9 +631,8 @@ export default function Home() {
           alt=""
         />
       </div>
-
       <div className="max-w-[82rem] m-auto py-32 flex justify-between">
-        <div className="w-[44%]">
+        <div className="w-[44%] slide-up">
           <h2 className="bg-prime-green text-head-dark text-7xl inline px-2">
             {" "}
             The Interactive{" "}
@@ -596,7 +677,7 @@ export default function Home() {
             technology to transform the customer experience and giving the power
             of imagination in the customer palms.
           </p>
-          <button className="bg-prime-green flex items-center  rounded-full text-xl px-4 py-2">
+          <button className="bg-prime-green flex items-center  rounded-full text-xl px-6 py-2">
             Explore{" "}
             <svg
               className="ml-1"
@@ -621,14 +702,13 @@ export default function Home() {
           </button>
         </div>
         <Image
-          className=""
+          className="book-right-trigger"
           width={693}
           height={411}
           src="/assets/Images/home/interactive-solution.png"
           alt=""
         />
       </div>
-
       <div className="bg-prime-green">
         <div className="flex justify-between py-28">
           <div className="flex">
@@ -642,31 +722,99 @@ export default function Home() {
             </div>
             <div>
               <ul className="my-[3.43rem]">
-                <li className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center">
-                  <span className="w-9 h-9 bg-white opacity-15 rounded-full"></span>
-                  <p className="text-[#F5FBE1] text-lg pl-4 pr-8">Interiors</p>
+                <li
+                  onClick={handleClick}
+                  style={listItemStyle}
+                  className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center cursor-pointer"
+                >
+                  <span
+                    style={spanStyle}
+                    className="w-9 h-9 bg-white opacity-15 rounded-full "
+                  ></span>
+                  <p
+                    style={textStyle}
+                    className="text-[#F5FBE1] text-lg pl-4 pr-8 "
+                  >
+                    Interiors
+                  </p>
                 </li>
-                <li className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center">
-                  <span className="w-9 h-9 bg-white opacity-15 rounded-full"></span>
-                  <p className="text-[#F5FBE1] text-lg pl-4 pr-8">Exteriors</p>
+                <li
+                  onClick={handleClick}
+                  style={listItemStyle}
+                  className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center cursor-pointer"
+                >
+                  <span
+                    style={spanStyle}
+                    className="w-9 h-9 bg-white opacity-15 rounded-full "
+                  ></span>
+                  <p
+                    style={textStyle}
+                    className="text-[#F5FBE1] text-lg pl-4 pr-8 "
+                  >
+                    Exteriors
+                  </p>
                 </li>
-                <li className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center">
-                  <span className="w-9 h-9 bg-white opacity-15 rounded-full"></span>
-                  <p className="text-[#F5FBE1] text-lg pl-4 pr-8">Amenities</p>
+                <li
+                  onClick={handleClick}
+                  style={listItemStyle}
+                  className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center cursor-pointer"
+                >
+                  <span
+                    style={spanStyle}
+                    className="w-9 h-9 bg-white opacity-15 rounded-full "
+                  ></span>
+                  <p
+                    style={textStyle}
+                    className="text-[#F5FBE1] text-lg pl-4 pr-8 "
+                  >
+                    Amenities
+                  </p>
                 </li>
-                <li className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center">
-                  <span className="w-9 h-9 bg-white opacity-15 rounded-full"></span>
-                  <p className="text-[#F5FBE1] text-lg pl-4 pr-8">Vicinity</p>
+                <li
+                  onClick={handleClick}
+                  style={listItemStyle}
+                  className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center cursor-pointer"
+                >
+                  <span
+                    style={spanStyle}
+                    className="w-9 h-9 bg-white opacity-15 rounded-full "
+                  ></span>
+                  <p
+                    style={textStyle}
+                    className="text-[#F5FBE1] text-lg pl-4 pr-8 "
+                  >
+                    Vicinity
+                  </p>
                 </li>
-                <li className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center">
-                  <span className="w-9 h-9 bg-white opacity-15 rounded-full"></span>
-                  <p className="text-[#F5FBE1] text-lg pl-4 pr-8">
+                <li
+                  onClick={handleClick}
+                  style={listItemStyle}
+                  className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center cursor-pointer"
+                >
+                  <span
+                    style={spanStyle}
+                    className="w-9 h-9 bg-white opacity-15 rounded-full "
+                  ></span>
+                  <p
+                    style={textStyle}
+                    className="text-[#F5FBE1] text-lg pl-4 pr-8 "
+                  >
                     Road connectivity
                   </p>
                 </li>
-                <li className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center">
-                  <span className="w-9 h-9 bg-white opacity-15 rounded-full"></span>
-                  <p className="text-[#F5FBE1] text-lg pl-4 pr-8">
+                <li
+                  onClick={handleClick}
+                  style={listItemStyle}
+                  className="bg-amenities-primary px-4 rounded-tr-full rounded-br-full py-3 mb-3 flex items-center cursor-pointer"
+                >
+                  <span
+                    style={spanStyle}
+                    className="w-9 h-9 bg-white opacity-15 rounded-full "
+                  ></span>
+                  <p
+                    style={textStyle}
+                    className="text-[#F5FBE1] text-lg pl-4 pr-8 "
+                  >
                     Floor plans
                   </p>
                 </li>
@@ -695,7 +843,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="bg-black py-20">
         <h2 className="bg-prime-green text-7xl text-form-head my-10 w-[24rem] text-center m-auto">
           Portability
@@ -797,7 +944,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="bg-prime-green py-20">
         <div className="max-w-[82rem] m-auto">
           <h2 className="text-7xl leading-[3.5rem] text-center">One Tool</h2>
@@ -858,7 +1004,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="max-w-[82rem] m-auto py-20">
         <h2
           className="bg-prime-green text-7xl w-[35rem] m-auto text-center"
@@ -1024,7 +1169,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="bg-black my-20">
         <div className="max-w-[82rem] m-auto py-20">
           <h2
@@ -1126,7 +1270,108 @@ export default function Home() {
       <div className="max-w-[82rem] m-auto px-14 lgdesktop:px-0 ">
         <RealEstate />
       </div>
-
+      <div className="bg-black my-20">
+        <div className="max-w-[82rem] m-auto py-20">
+          <h2
+            className="bg-white text-7xl w-[35rem] m-auto text-center"
+            style={{ transform: "rotate(-1deg)" }}
+          >
+            Ways To Use
+          </h2>
+          <h3 className="text-7xl font-semibold text-center text-white py-2">
+            Interactive Sales Tool
+          </h3>
+          <div
+            className="grid mt-12 grid-section"
+            style={{
+              border: "1px solid rgba(255, 255, 255, 0.25)",
+              background: "rgba(255, 255, 255,0.25)",
+            }}
+          >
+            <div className="flex justify-center bg-black items-center p-5">
+              <div className="flex justify-center items-center">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/assets/Images/home/experience-tool.png"
+                  alt=""
+                />
+                <h2 className="text-[1.75rem] text-white font-semibold">
+                  Experience Centers
+                </h2>
+              </div>
+            </div>
+            <div className="flex justify-center bg-black items-center p-5">
+              <div className="flex justify-center items-center">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/assets/Images/home/trade-show.png"
+                  alt=""
+                />
+                <h2 className="text-[1.75rem] text-white font-semibold">
+                  Trade Show
+                </h2>
+              </div>
+            </div>
+            <div className="flex justify-center bg-black items-center p-5">
+              <div className="flex justify-center items-center">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/assets/Images/home/event-spaces.png"
+                  alt=""
+                />
+                <h2 className="text-[1.75rem] text-white font-semibold">
+                  Event Spaces
+                </h2>
+              </div>
+            </div>
+            <div className="flex justify-center bg-black items-center p-5">
+              <div className="flex justify-center items-center">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/assets/Images/home/offices.png"
+                  alt=""
+                />
+                <h2 className="text-[1.75rem] text-white font-semibold">
+                  Offices
+                </h2>
+              </div>
+            </div>
+            <div className="flex justify-center bg-black items-center p-5">
+              <div className="flex justify-center items-center">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/assets/Images/home/website.png"
+                  alt=""
+                />
+                <h2 className="text-[1.75rem] text-white font-semibold">
+                  Websites
+                </h2>
+              </div>
+            </div>
+            <div className="flex justify-center bg-black items-center p-5">
+              <div className="flex justify-center items-center">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/assets/Images/home/apps.png"
+                  alt=""
+                />
+                <h2 className="text-[1.75rem] text-white font-semibold">
+                  Apps
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-[82rem] m-auto px-14 lgdesktop:px-0 ">
+        <RealEstate />
+      </div>
       <FooterSection />
     </main>
   );

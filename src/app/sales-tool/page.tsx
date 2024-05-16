@@ -1,18 +1,140 @@
+"use client";
 import FooterSection from "@/components/footer";
 import HeaderSection from "@/components/header";
 import Image from "next/image";
 import { Manrope } from "next/font/google";
 import RealEstate from "@/components/realEstate";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 const manrope = Manrope({ subsets: ["greek"] });
 const SalesToolSection = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const banner = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      gsap.from(".slide-up", {
+        y: 200,
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".slide-up-trigger", {
+        y: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".slide-up-trigger",
+        },
+        rotateX: 40,
+        stagger: 0.2,
+        duration: 1,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".slide-up-view-all-trigger", {
+        y: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".slide-up-view-all-trigger",
+        },
+        rotateX: 40,
+        stagger: 0.2,
+        duration: 1,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".book-up-trigger", {
+        y: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".book-up-trigger",
+        },
+        rotateX: "-30px",
+        stagger: 0.3,
+        duration: 1,
+        scale: 0.8,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".book-left-trigger", {
+        x: -200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".book-left-trigger",
+          markers: true,
+        },
+        markers: true,
+
+        rotateY: "-30px",
+        stagger: 0.3,
+        duration: 1,
+        scale: 2,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".book-right-trigger", {
+        x: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".book-right-trigger",
+          markers: true,
+        },
+        markers: true,
+
+        rotateY: "30px",
+        stagger: 0.3,
+        duration: 1,
+        scale: 2,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".rotate-animation", {
+        rotate: -360,
+        duration: 10,
+        repeat: -1,
+        ease: "none",
+      });
+
+      gsap.from(".slide-right", {
+        x: -200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".slide-right",
+        },
+        stagger: 0.3,
+        duration: 1,
+        autoAlpha: 0,
+      });
+
+      gsap.from(".book-up-video", {
+        y: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".book-up-video",
+        },
+        rotateX: "-30px",
+        stagger: 0.3,
+        duration: 1,
+        scale: 0.8,
+        autoAlpha: 0,
+      });
+    },
+
+    { scope: banner }
+  );
+
   return (
     <>
-      <div>
+      <div ref={banner}>
         <div className="bg-post-sales bg-no-repeat">
           <HeaderSection />
           <div
-            className=" bg-no-repeat lg:h-[33.3rem] tab:h-[36.3rem]  bg-center relative"
+            className=" bg-no-repeat lg:h-[33.3rem] tab:h-[36.3rem] mobile:h-[26rem]  bg-center relative"
             style={{ backgroundPosition: "4.5rem -7rem" }}
           >
             <Image
@@ -22,15 +144,22 @@ const SalesToolSection = () => {
               alt=""
               className="mx-auto left-0 right-0 top-0 lg:w-[70%] w-full h-full  absolute z-10"
             />
-            <div className="max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
-              <p className="text-white opacity-75 text-center lg:text-[2.5rem] tab:text-[1.75rem] lg:pb-5 tab:pb-3">
+            <Image
+              width={85}
+              height={74}
+              src="/assets/Images/home/3d-pentagon.png"
+              alt=""
+              className="rotate-animation absolute right-[15.31rem] top-[6.25rem]"
+            />
+            <div className="  max-w-[59.3rem] my-0 mx-auto pt-14 relative z-20">
+              <p className=" slide-up text-white opacity-75 text-center tab:text-[2.5rem] mobile:text-2xl pb-5">
                 V-Estate
               </p>
-              <p className="text-white lg:text-[6.8rem] text-center lg:leading-[4.5rem] lg:pb-7 tab:pb-5 font-semibold tab:text-5xl">
+              <p className=" slide-up text-white lg:text-[6.8rem] text-center lg:leading-[4.5rem] tab:pb-7 font-semibold tab:text-7xl mobile:text-5xl mobile:pb-3">
                 Sales Tool
               </p>
               <p
-                className={`${manrope.className} text-white opacity-65 text-base text-center px-32 `}
+                className={`${manrope.className} slide-up text-white opacity-65 tab:text-base text-center tab:px-36 lg:px-[8.5rem] mobile:text-xs mobile:leading-6 mobile:px-6`}
               >
                 Pre-sales experiences encompass a versatile set of tools
                 designed to articulate & convey the company&apos;s vision,
@@ -38,12 +167,13 @@ const SalesToolSection = () => {
                 into the immersive customer journey they are meaning to create
                 for their customers.
               </p>
-              <div className="mx-auto my-0 max-w-[59.3rem] lg:translate-x-[2rem] tab:translate-x-[0]">
+              <div className=" mx-auto my-0 max-w-[59.3rem] lg:translate-x-[2rem] tab:translate-x-[0]">
                 <Image
                   width={800}
                   height={467}
                   src="/assets/Images/pre-sales-video.png"
                   alt=""
+                  className="slide-up"
                 />
                 {/* <div className="bg-post-video-frame bg-no-repeat"> */}
                 {/* <video src=""></video> */}
@@ -51,46 +181,41 @@ const SalesToolSection = () => {
             </div>
           </div>
 
-          <div className="bg-light-grey lg:h-[23rem] tab:h-[19.6rem]"></div>
+          <div className="bg-light-grey lg:h-[23rem] tab:h-[19.6rem] mobile:h-[10rem]"></div>
         </div>
 
-        <div className="bg-prime-green lg:py-[7.8rem] tab:py-16">
+        <div className="bg-prime-green lg:py-[7.8rem] mobile:py-16  mobile:px-6">
           <div className="lg:max-w-[73.5rem] m-auto">
-            <div className="lg:mb-16 tab:mb-8 flex justify-center items-center flex-col">
-              <h2 className="lg:text-7xl tab:text-[2rem] lg:leading-[3.33rem] tab:leading-8 bg-white lg:px-6 lg:py-4 tab:py-2 tab:px-4">
+            <div className="slide-up lg:mb-16 tab:mb-8 flex justify-center items-center flex-col mobile:pb-5">
+              <h2 className="lg:text-7xl tab:text-5xl tab:leading-[3.33rem] bg-white inline tab:px-6 mobile:text-[2rem] mobile:px-2 ">
                 Exterior
               </h2>
-              <p className="text-amenities-para lg:text-7xl tab:text-[2rem] tab:leading-40 font-semibold lg:py-5 tab:py-3 text-center">
+              <p className="text-amenities-para lg:text-7xl tab:text-[2rem] tab:leading-40 font-semibold lg:py-5 tab:py-3 text-center mobile:text-2xl">
                 Comprehensive Exploration
               </p>
             </div>
 
             <div className="">
-              <div className="flex tab:justify-center lg:justify-normal">
+              <div className="flex tab:justify-center lg:justify-normal mobile:flex-col tab:flex-row">
                 <Image
-                  className="lg:w-[35rem] tab:w-[19.68rem]"
+                  className="book-left-trigger lg:w-[35rem] tab:w-[19.68rem] mobile"
                   width={560}
                   height={328}
                   src="/assets/Images/Exterior.png"
                   alt="project-overview"
                 />
 
-                <div className="lg:ml-16 tab:ml-14">
-                  <h2 className="lg:text-5xl tab:text-2xl lg:leading-[3.33rem] tab:leading-8 bg-white lg:px-6 lg:py-5 tab:px-4 tab:py-2 text-center">
+                <div className="lg:ml-16 tab:ml-14 mobile:mt-8 tab:mt-0 mobile:py-3">
+                  <h2 className=" slide-up mobile:py-2  lg:text-5xl tab:text-2xl lg:leading-[3.33rem] tab:leading-8 bg-white lg:px-6 lg:py-5 tab:px-4 tab:py-2 text-center mobile:mb-3 tab:mb-0">
                     Amenity Showcase
                   </h2>
                   <div
-                    className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem]  lg:mt-5 lg:mb-5 tab:mt-3 tab:mb-3rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
+                    className=" slide-up flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem]  lg:mt-5 lg:mb-5 tab:mt-3 tab:mb-3rounded lg:h-24 tab:h-[3.4rem] tab:p-2 mobile:mb-3 tab:mb-0 mobile:py-3"
                     style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                   >
-                    <div
-                      className="pr-4 "
-                      style={{
-                        borderRight: "0.75px solid rgba(14, 29, 41, 0.5)",
-                      }}
-                    >
+                    <div className=" ">
                       <svg
-                        className="tab:w-[1.25rem] lg:w-[2.56rem]"
+                        className="tab:w-[1.25rem] lg:w-[2.56rem] mobile:w-[1.5rem]"
                         width="41"
                         height="41"
                         viewBox="0 0 41 41"
@@ -118,7 +243,10 @@ const SalesToolSection = () => {
 
                     <div className="lg:pl-2 tab:pl-1">
                       <p
-                        className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
+                        className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 mobile:text-[0.68rem] pl-3`}
+                        style={{
+                          borderLeft: "0.75px solid rgba(14, 29, 41, 0.5)",
+                        }}
                       >
                         Highlight and showcase each amenity, providing a virtual
                         tour of recreational spaces, parks, pools, and other
@@ -127,17 +255,12 @@ const SalesToolSection = () => {
                     </div>
                   </div>
                   <div
-                    className="flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] lg:mt-5 lg:mb-5 tab:mt-3 rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
+                    className=" slide-up flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] lg:mt-5 lg:mb-5 tab:mt-3 rounded lg:h-24 tab:h-[3.4rem] tab:p-2 mobile:py-3"
                     style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                   >
-                    <div
-                      className="pr-4"
-                      style={{
-                        borderRight: "0.75px solid rgba(14, 29, 41, 0.5)",
-                      }}
-                    >
+                    <div className="">
                       <svg
-                        className="tab:w-[1.25rem] lg:w-[2.56rem]"
+                        className="tab:w-[1.25rem] lg:w-[2.56rem] mobile:w-[1.5rem]"
                         width="41"
                         height="41"
                         viewBox="0 0 41 41"
@@ -155,9 +278,12 @@ const SalesToolSection = () => {
                       </svg>
                     </div>
 
-                    <div className="pl-2">
+                    <div className="tab:pl-2 mobile:pl-0 ">
                       <p
-                        className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
+                        className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 mobile:text-[0.68rem] pl-3`}
+                        style={{
+                          borderLeft: "0.75px solid rgba(14, 29, 41, 0.5)",
+                        }}
                       >
                         Clients gain a vivid understanding of the lifestyle the
                         property offers.
@@ -168,13 +294,13 @@ const SalesToolSection = () => {
               </div>
 
               <div>
-                <div className="flex mt-20 tab:justify-center lg:justify-normal">
-                  <div className="mr-16">
-                    <h2 className="lg:text-5xl tab:text-2xl leading-[3.33rem] tab:leading-8 bg-white lg:px-6 lg:py-5 tab:px-4 tab:py-2 text-center">
+                <div className="flex tab:mt-20 mobile:mt-10 tab:justify-center lg:justify-normal mobile:flex-col-reverse tab:flex-row">
+                  <div className="slide-up tab:mr-16 mobile:mr-0 mobile:mt-8 tab:mt-0">
+                    <h2 className="lg:text-5xl tab:text-2xl lg:leading-[3.33rem] mobile:leading-10 bg-white lg:px-6 lg:py-5 tab:px-4 tab:py-2 text-center">
                       Architectural Insights
                     </h2>
                     <div
-                      className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] mt-5 mb-5 rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
+                      className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] mt-5 mb-5 rounded lg:h-24 tab:h-[3.4rem] tab:p-2 mobile:py-3"
                       style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                     >
                       <div
@@ -184,7 +310,7 @@ const SalesToolSection = () => {
                         }}
                       >
                         <svg
-                          className="tab:w-[1.25rem] lg:w-[2.56rem]"
+                          className="tab:w-[1.25rem] lg:w-[2.56rem] mobile:w-[1.5rem]"
                           width="40"
                           height="41"
                           viewBox="0 0 40 41"
@@ -202,7 +328,7 @@ const SalesToolSection = () => {
 
                       <div className="pl-2">
                         <p
-                          className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 `}
+                          className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 mobile:text-[0.68rem]`}
                         >
                           Explore the ergonomic architecture of the property,
                           emphasizing design elements that contribute to a
@@ -211,7 +337,7 @@ const SalesToolSection = () => {
                       </div>
                     </div>
                     <div
-                      className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] mt-5 mb-5 rounded lg:h-24 tab:h-[3.4rem] tab:p-2"
+                      className=" flex gap-2.5 items-center lg:px-5 lg:py-4 lg:w-[34rem] tab:w-[19rem] mt-5 mb-5 rounded lg:h-24 tab:h-[3.4rem] tab:p-2 mobile:py-3"
                       style={{ border: "1px solid rgba(12, 17, 54, 0.16)" }}
                     >
                       <div
@@ -221,7 +347,7 @@ const SalesToolSection = () => {
                         }}
                       >
                         <svg
-                          className="tab:w-[1.25rem] lg:w-[2.56rem]"
+                          className="tab:w-[1.25rem] lg:w-[2.56rem] mobile:w-[1.5rem]"
                           width="40"
                           height="41"
                           viewBox="0 0 40 41"
@@ -273,7 +399,7 @@ const SalesToolSection = () => {
 
                       <div className="pl-2">
                         <p
-                          className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
+                          className={`${manrope.className} lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 mobile:text-[0.68rem]`}
                         >
                           Architectural details are highlighted, creating a
                           lasting impression on potential buyers.
@@ -282,7 +408,7 @@ const SalesToolSection = () => {
                     </div>
                   </div>
                   <Image
-                    className="lg:w-[35rem] tab:w-[19.68rem]"
+                    className="lg:w-[35rem] tab:w-[19.68rem] book-right-trigger"
                     width={560}
                     height={328}
                     src="/assets/Images/Exterior.png"
@@ -295,12 +421,12 @@ const SalesToolSection = () => {
         </div>
 
         <div className="lg:max-w-[70rem] m-auto">
-          <div className="flex lg:my-36 tab:my-20 justify-center">
-            <div className="lg:w-1/2 tab:w-[18.125rem]">
-              <h2 className="bg-prime-green lg:px-6 lg:text-7xl tab:text-2xl lg:leading-[3.33rem] inline tab:leading-8 tab:px-4 tab:py-2">
+          <div className="flex lg:my-36 tab:my-20 justify-center mobile:flex-col tab:flex-row">
+            <div className="lg:w-1/2 tab:w-[18.125rem] mobile:justify-center mobile:flex mobile:flex-col mobile:items-center tab:block mobile:mt-10 tab:mt-0">
+              <h2 className="slide-up bg-prime-green lg:text-7xl tab:text-5xl tab:leading-[3.33rem] inline tab:px-6 mobile:text-[2rem] mobile:px-2 ">
                 Realistic Unit
               </h2>
-              <p className="lg:text-7xl tab:text-2xl font-semibold leading-[3.33rem] lg:pt-4 lg:pb-6 tab:py-2">
+              <p className=" slide-up text-amenities-para lg:text-7xl tab:text-[2rem] tab:leading-40 font-semibold lg:py-5 tab:py-3 mobile:text-center lgdesktop:text-left mobile:text-2xl mobile:pb-4 tab:pb-0">
                 Visualization
               </p>
               <Image
@@ -308,17 +434,18 @@ const SalesToolSection = () => {
                 height={328}
                 src="/assets/Images/Visualization.png"
                 alt="project-overview"
+                className="book-left-trigger"
               />
             </div>
 
-            <div className="lg:w-1/2 tab:w-[18.125rem] lg:ml-20 tab:ml-8">
+            <div className="lg:w-1/2 tab:w-[18.125rem] lg:ml-20 tab:ml-8 slide-up">
               <div
                 className="flex rounded lg:p-8 tab:p-5 lg:mb-5 tab:mb-3"
                 style={{ border: "1px solid rgba(12, 17, 54, 0.25)" }}
               >
                 <div style={{ marginTop: "-0.4rem" }}>
                   <svg
-                    className="tab:w-[1.31rem] lg:w-[2.06rem] mr-3"
+                    className="tab:w-[1.31rem] lg:w-[2.06rem] mr-3 mobile:w-[1.5rem]"
                     width="33"
                     height="33"
                     viewBox="0 0 33 33"
@@ -342,7 +469,7 @@ const SalesToolSection = () => {
                     Delivery Day Preview
                   </h2>
                   <ul
-                    className={`${manrope.className} list-disc lg:pl-9 tab:pl-7 lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
+                    className={`${manrope.className} list-disc lg:pl-9 tab:pl-7 lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 mobile:text-[0.68rem]`}
                   >
                     <li className="pb-2">
                       Clients virtually walk through the units to experience the
@@ -362,7 +489,7 @@ const SalesToolSection = () => {
               >
                 <div style={{ marginTop: "-0.1rem" }}>
                   <svg
-                    className="tab:w-[1.25rem] lg:w-[2.56rem] mr-3"
+                    className="tab:w-[1.25rem] lg:w-[2.56rem] mr-3 mobile:w-[1.5rem]"
                     width="28"
                     height="32"
                     viewBox="0 0 28 32"
@@ -415,7 +542,7 @@ const SalesToolSection = () => {
                      Orientation Details
                   </h2>
                   <ul
-                    className={`${manrope.className} list-disc lg:pl-9 tab:pl-7 lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3`}
+                    className={`${manrope.className} list-disc lg:pl-9 tab:pl-7 lg:text-base text-augment-para lg:leading-6 tab:text-[0.56rem] tab:leading-3 mobile:text-[0.68rem]`}
                   >
                     <li className="pb-2">
                       Showcase how each unit is oriented within the building,
@@ -436,16 +563,16 @@ const SalesToolSection = () => {
 
         <div className="bg-form-head lg:py-36 tab:py-20">
           <div className="lg:px-[5.2rem] tab:px-[3.2rem]">
-            <div className="mb-8 text-center">
+            <div className="mb-8 text-center slide-up">
               <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-[2rem] inline lg:leading-[3.33rem] tab:leading-8">
                 Vicinity Touchpoints
               </h2>
-              <p className="lg:text-7xl tab:text-[2rem] font-semibold text-white lg:leading-[3.33rem] tab:leading-10 lg:pt-4 lg:pb-6 tab:pt-2">
+              <p className=" slide-up lg:text-7xl tab:text-[2rem] font-semibold text-white lg:leading-[3.33rem] tab:leading-10 lg:pt-4 lg:pb-6 tab:pt-2">
                 Contextual Surroundings
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="lgdesktop:w-[32.73rem] lg:w-[34rem] 2xl:w-[38rem] lg:mr-12 tab:mr-6">
+              <div className=" slide-up lgdesktop:w-[32.73rem] lg:w-[34rem] 2xl:w-[38rem] lg:mr-12 tab:mr-6">
                 <div
                   className="lg:p-6 tab:p-4 lg:mb-6 tab:mb-4"
                   style={{ border: "1px solid rgba(255, 255, 255, 0.25)" }}
@@ -491,7 +618,7 @@ const SalesToolSection = () => {
                 </div>
               </div>
               <Image
-                className="lg:w-[32.5rem] lgdesktop:w-[42.18rem] mx-0 my-auto"
+                className="lg:w-[32.5rem] lgdesktop:w-[42.18rem] tab:w-[19.68rem] mx-0 my-auto book-right-trigger"
                 width={675}
                 height={396}
                 src="/assets/Images/contextual.png"
@@ -502,7 +629,7 @@ const SalesToolSection = () => {
         </div>
 
         <div className="lg:py-40 tab:py-20">
-          <div className="lg:mb-8 tab:mb-4 text-center">
+          <div className="slide-up lg:mb-8 tab:mb-4 text-center">
             <h2 className="bg-prime-green px-4 lg:text-7xl tab:text-[2rem] inline lg:leading-[3.33rem] tab:leading-8">
               All Weather Modes
             </h2>
@@ -514,7 +641,7 @@ const SalesToolSection = () => {
           <div className="flex lg:gap-10 tab:gap-3.5 px-40 justify-center">
             <div>
               <div
-                className="rounded lg:w-[33.6rem]  tab:w-[19rem] lg:p-4 tab:py-3 tab:pr-3"
+                className="slide-up rounded lg:w-[33.6rem]  tab:w-[19rem] lg:p-4 tab:py-3 tab:pr-3"
                 style={{ border: "1px solid rgba(18, 17, 18, 0.25)" }}
               >
                 <h2 className="font-semibold lg:text-2xl text-head-dark lg:leading-8 pl-3 pb-2 tab:text-sm tab:leading-[1.12rem] ">
@@ -535,7 +662,7 @@ const SalesToolSection = () => {
                 </ul>
               </div>
             </div>
-            <div className="mb-10">
+            <div className=" slide-up mb-10">
               <div
                 className="rounded lg:w-[33.6rem]  tab:w-[19rem] lg:p-4 tab:py-3 tab:pr-3"
                 style={{ border: "1px solid rgba(18, 17, 18, 0.25)" }}
@@ -561,7 +688,7 @@ const SalesToolSection = () => {
           </div>
 
           <Image
-            className="my-0 mx-auto lg:w-[68.75rem] tab:w-[40.31rem]"
+            className="my-0 mx-auto lg:w-[68.75rem] tab:w-[40.31rem] slide-up-trigger"
             width={1100}
             height={645}
             src="/assets/Images/weather-mode.png"

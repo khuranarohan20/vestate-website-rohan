@@ -41,8 +41,8 @@ const caseStudy = () => {
           </svg>
         </div>
 
-        <div className="max-w-[82rem] m-auto py-20">
-          <h2 className="text-form-head text-7xl leading-[5rem] font-semibold text-center py-10">
+        <div className="max-w-[82rem] m-auto py-20 lg:px-14 lgdesktop:px-0">
+          <h2 className="text-form-head lgdesktop:text-7xl lg:text-5xl leading-[5rem] font-semibold text-center py-10">
             Gallery
           </h2>
           <Image
@@ -53,6 +53,7 @@ const caseStudy = () => {
           />
           <div className="flex mt-6 gap-6">
             <Image
+              className="lg:w-[28.12rem] lgdesktop:w-auto"
               width={644}
               height={354}
               src="/assets/Images/gallery-2.png"
@@ -63,14 +64,14 @@ const caseStudy = () => {
               height={292}
               src="/assets/Images/florence.png"
               alt=""
-              className="h-[18.25rem] m-auto"
+              className="lg:w-[28.12rem] lgdesktop:w-auto lgdesktop:h-[18.25rem] lg:h-[13.25rem] my-auto mx-0"
             />
           </div>
         </div>
 
         <div className="bg-black">
           <div className="max-w-[82rem] m-auto py-20">
-            <div className="bg-prime-green flex items-center justify-center">
+            <div className="bg-prime-green flex items-center justify-center w-[40%] m-auto">
               <h2 className="text-7xl text-form-head">Case Study</h2>
             </div>
 

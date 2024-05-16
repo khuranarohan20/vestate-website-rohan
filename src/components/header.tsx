@@ -1,10 +1,45 @@
+"use client";
+
 import { Manrope } from "next/font/google";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+gsap.registerPlugin(useGSAP);
 
 const manrope = Manrope({ subsets: ["greek"] });
+
 const HeaderSection = () => {
+  const pathName = usePathname();
+  const [linksVisible, setLinksVisible] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
+
+  const toggleLinksVisibility = () => {
+    setLinksVisible(!linksVisible);
+    setIsRotated(!isRotated);
+    if (!linksVisible) {
+      gsap.from(".slide-rightToleft", {
+        opacity: 0,
+        x: 300,
+        duration: 1,
+      });
+    } else {
+      gsap.from(".slide-rightToleft", {
+        opacity: 0,
+        x: 300,
+        duration: 1,
+      });
+    }
+  };
+  useEffect(() => {
+    console.log(pathName.slice(1));
+  }, [pathName]);
+
   return (
     <>
-      <div className="flex justify-between py-10 lg:px-14 tab:px-14 items-center mobile:px-10">
+      <div className="flex justify-between pt-6 pb-10 lg:px-14 tab:px-14 items-center mobile:px-10">
         <div>
           <svg
             className="mobile:w-[7.25rem] tab:w-auto"
@@ -22,51 +57,107 @@ const HeaderSection = () => {
             />
           </svg>
         </div>
-        <div className="flex items-center ">
-          <div className="flex items-center text-head-meun mobile:hidden">
-            <div>
-              <p>
-                <a href="">Home</a>
-              </p>
-            </div>
-            <div>
-              <p>
-                <a href="">About</a>
-              </p>
-            </div>
-            <div>
-              <p>
-                <a href="">Connect</a>
-              </p>
-            </div>
+
+        <div className="flex items-center">
+          <div className="flex items-center text-head-menu slide-rightToleft">
+            {linksVisible && (
+              <>
+                <div className="flex items-center text-head-menu ">
+                  <div>
+                    <p
+                      className={`${
+                        manrope.className
+                      } text-white font-semibold px-4 opacity-70 hover:text-prime-green ${
+                        pathName.slice(1) == "" ? "underline" : ""
+                      }`}
+                    >
+                      <Link href="/">Home</Link>
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className={`${
+                        manrope.className
+                      } text-white font-semibold px-4 opacity-70 hover:text-prime-green ${
+                        pathName.slice(1) == "pre-sales" ? "underline" : ""
+                      }`}
+                    >
+                      <Link href="/pre-sales">Pre-Sale</Link>
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className={`${
+                        manrope.className
+                      } text-white font-semibold px-4 opacity-70 hover:text-prime-green ${
+                        pathName.slice(1) == "sales-tool" ? "underline" : ""
+                      }`}
+                    >
+                      <Link href="/sales-tool">Sales-Tool</Link>
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className={`${
+                        manrope.className
+                      } text-white font-semibold px-4 opacity-70 hover:text-prime-green ${
+                        pathName.slice(1) == "post-sales" ? "underline" : ""
+                      }`}
+                    >
+                      <Link href="/post-sales">Post-Sale</Link>
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className={`${
+                        manrope.className
+                      } text-white font-semibold px-4 opacity-70 hover:text-prime-green ${
+                        pathName.slice(1) == "project" ? "underline" : ""
+                      }`}
+                    >
+                      <Link href="/project">Clients</Link>
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className={`${
+                        manrope.className
+                      } text-white font-semibold px-4 opacity-70 hover:text-prime-green ${
+                        pathName.slice(1) == "pre-sales" ? "underline" : ""
+                      }`}
+                    >
+                      <Link href="/contacts">Contacts</Link>
+                    </p>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
-          <div className="mr-6">
-            <svg
-              className="mobile:w-[2.81rem] tab:w-auto"
-              width="59"
-              height="12"
-              viewBox="0 0 59 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="0.193359"
-                y="0.697266"
-                width="47.8063"
-                height="1.21955"
-                fill="white"
-                stroke="white"
-                strokeWidth="0.15"
-              />
-              <rect
-                width="47.8063"
-                height="1.21955"
-                transform="matrix(1 0.000212852 -0.000143113 1 10.1934 10.0732)"
-                fill="white"
-                stroke="white"
-                strokeWidth="0.15"
-              />
-            </svg>
+
+          <div
+            className="mr-6 cursor-pointer"
+            onClick={() => {
+              toggleLinksVisibility();
+            }}
+          >
+            <div
+              className="mr-6  border-t-[2px] border-t-white w-10 h-[1px] pb-2 pl-2"
+              style={{
+                transition: "transform 0.3s",
+                transform: isRotated
+                  ? " rotate(43deg) translate(11px, -2px)"
+                  : "none",
+              }}
+            ></div>
+            <div
+              className="border-t-[1px] border-t-white w-10 h-[1px] ml-2"
+              style={{
+                transition: "transform 0.3s",
+                transform: isRotated
+                  ? "rotate(135deg) translate(-5px, -1px)"
+                  : "none",
+              }}
+            ></div>
           </div>
 
           <div className="mx-3 mobile:hidden tab:flex">
@@ -85,9 +176,12 @@ const HeaderSection = () => {
             </svg>
           </div>
           <button className="bg-prime-green rounded-full px-8 py-4 mobile:hidden tab:flex">
-            <p className={`${manrope.className} font-semibold text-base`}>
+            <Link
+              className={`${manrope.className} font-semibold text-base`}
+              href="https://calendly.com/apurva-iic/ink-in-caps-vretail-discussion?month=2024-05"
+            >
               Book A Demo
-            </p>
+            </Link>
           </button>
         </div>
       </div>

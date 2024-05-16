@@ -18,7 +18,7 @@ const ContactSection = () => {
                 <span className="text-prime-green flex items-center tab:leading-[2.82rem] mobile:leading-[0.25rem]">
                   Get in Touch
                   <svg
-                    className="pl-3.5 mobile:w-[1.62rem] w-auto mobile:pl-2"
+                    className="pl-3.5 mobile:w-[1.62rem] tab:w-auto mobile:pl-2"
                     width="39"
                     height="40"
                     viewBox="0 0 39 40"

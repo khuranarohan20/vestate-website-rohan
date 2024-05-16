@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["greek"] });
 const FooterSection = () => {
   return (
     <>
-      <div className="xl:max-w-[82rem] m-auto lg:pb-12  mobile:px-2 px-0 lg:px-20 lgdesktop:px-0 tab:px-0">
+      <div className="xl:max-w-[82rem] m-auto lg:pb-12  mobile:px-2 px-0  lgdesktop:px-0 tab:px-0">
         <div className="flex justify-between lg:mt-20 mt-10 tab:px-0">
           <Image
             width={154}
