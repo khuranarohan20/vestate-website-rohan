@@ -1,90 +1,199 @@
+"use client";
+// @ts-ignore
 import FooterSection from "@/components/footer";
 import HeaderSection from "@/components/header";
 import Image from "next/image";
 import { Manrope } from "next/font/google";
 import RealEstate from "@/components/realEstate";
+import { useEffect, useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const manrope = Manrope({ subsets: ["greek"] });
 const ExperienceCenter = () => {
+  const container = useRef<any>(null);
+  gsap.registerPlugin(useGSAP);
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(
+    () => {
+      gsap.from(".book-up-trigger", {
+        y: 200,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".book-up-trigger",
+        },
+        rotateX: "-30px",
+        stagger: 0.3,
+        duration: 1,
+        scale: 0.8,
+        autoAlpha: 0,
+      });
+    },
+    { scope: container }
+  );
+
+  window.addEventListener("scroll", function () {
+    const scrollableHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+    const progressBar = document.getElementById("scroll-progress");
+    const progress = (scrolled / scrollableHeight) * 100;
+    if (progressBar) progressBar.style.width = progress + "%";
+  });
+
+  const divRefs = useRef<any[]>([]);
+
+  const [activeDivIndex, setActiveDivIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      divRefs.current.forEach((div, index) => {
+        const { top, bottom } = div.getBoundingClientRect();
+        if (top < window.innerHeight && bottom > 0) {
+          setActiveDivIndex(index);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div>
-        <div className="bg-post-sales bg-no-repeat">
-          <HeaderSection />
-          <div
-            className=" bg-no-repeat lg:h-[33.3rem] tab:h-[27rem] mobile:h-[27rem] bg-center relative"
-            style={{ backgroundPosition: "4.5rem -7rem" }}
-          >
-            <Image
-              width={826}
-              height={443}
-              src="/assets/Images/vestate-logo.png"
-              alt=""
-              className=" lg:h-full lg:w-full absolute z-10"
-            />
-            <div className="max-w-[63.3rem] my-0 mx-auto pt-10 relative z-20">
-              <p className="text-white opacity-75 text-center tab:text-[2.5rem] mobile:text-2xl lg:pb-5 mobile:pb-2">
-                V-Estate
-              </p>
-              <p className="text-white lg:text-[6.75rem] text-center lg:leading-[4.5rem] tab:pb-[3.75rem] font-semibold tab:text-7xl mobile:text-5xl mobile:pb-3">
-                Experience Center
-              </p>
-              <p
-                className={`${manrope.className} text-white opacity-65 tab:text-base text-center tab:px-36 lg:px-[8.5rem] mobile:text-xs mobile:leading-6 mobile:px-6`}
-              >
-                Elevate your real estate marketing experience by powering up
-                your Sales & Experience <br /> Centers with V-Estate. Transcend
-                traditional property showcasing, and empower your Clients <br />
-                to embark on a captivating journey that brings your properties
-                to life like never before.
-              </p>
-              <div className="mx-auto my-10 lg:max-w-[59.3rem] tab:max-w-[37.5rem]">
-                <Image
-                  className="tab:w-[37.5rem] lg:w-[56.25rem]"
-                  width={900}
-                  height={467}
-                  src="/assets/Images/pre-sales-video.png"
-                  alt=""
-                />
-                {/* <div className="bg-post-video-frame bg-no-repeat"> */}
-                {/* <video src=""></video> */}
-              </div>
+      <div className="bg-post-sales bg-no-repeat" ref={container}>
+        <HeaderSection />
+        <div
+          className=" bg-no-repeat lg:h-[33.3rem] tab:h-[27rem] mobile:h-[27rem] bg-center relative"
+          style={{ backgroundPosition: "4.5rem -7rem" }}
+        >
+          <Image
+            width={826}
+            height={443}
+            src="/assets/Images/vestate-logo.png"
+            alt=""
+            className=" lg:h-full lg:w-full absolute z-10"
+          />
+          <div className="max-w-[63.3rem] my-0 mx-auto pt-10 relative z-20">
+            <p className="text-white opacity-75 text-center tab:text-[2.5rem] mobile:text-2xl lg:pb-5 mobile:pb-2 book-up-trigger">
+              V-Estate
+            </p>
+            <p className="text-white lg:text-[6.75rem] text-center lg:leading-[4.5rem] tab:pb-[3.75rem] font-semibold tab:text-7xl mobile:text-5xl mobile:pb-3 book-up-trigger">
+              Experience Center
+            </p>
+            <p
+              className={`${manrope.className} text-white opacity-65 tab:text-base text-center tab:px-36 lg:px-[8.5rem] mobile:text-xs mobile:leading-6 mobile:px-6 book-up-trigger`}
+            >
+              Elevate your real estate marketing experience by powering up your
+              Sales & Experience Centers with V-Estate. Transcend
+              traditional property showcasing, and empower your Clients
+              to embark on a captivating journey that brings your properties to
+              life like never before.
+            </p>
+            <div className="mx-auto my-10 lg:max-w-[59.3rem] tab:max-w-[37.5rem] book-up-trigger">
+              <Image
+                className="tab:w-[37.5rem] lg:w-[56.25rem]"
+                width={900}
+                height={467}
+                src="/assets/Images/pre-sales-video.png"
+                alt=""
+              />
+              {/* <div className="bg-post-video-frame bg-no-repeat"> */}
+              {/* <video src=""></video> */}
             </div>
-          </div>
-
-          <div className="bg-light-grey lg:h-[23rem] tab:h-[19.6rem] mobile:h-[10rem]"></div>
-
-          <div className="bg-white h-[14rem]">
-            <ul className="flex mobile:justify-center tab:justify-normal">
-              <li className="lg:px-24 py-8  tab:px-8 text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
-                <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
-                  Intuitive smart display
-                </p>
-              </li>
-              <li className="lg:px-24 py-8  tab:px-8  text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
-                <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
-                  Dynamic projection Mapping
-                </p>
-              </li>
-              <li className="lg:px-24 py-8  tab:px-8  text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
-                <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
-                  Interactive touchscreen experience
-                </p>
-              </li>
-              <li className="lg:px-24 py-8  tab:px-8  text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
-                <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
-                  Immersive virtual Reality
-                </p>
-              </li>
-            </ul>
-            <hr className="border-t-[0.37rem] rounded-full tab:mx-8 mobile:mx-4" />
           </div>
         </div>
 
-        <div className="bg-prime-green">
-          <div className="max-w-[82rem] m-auto lg:py-20 tab:px-20 lgdesktop:px-0 tab:py-16 mobile:px-8  mobile:pt-16 mobile:pb-12">
+        <div className="bg-light-grey lg:h-[28rem] tab:h-[19.6rem] mobile:h-[15rem]"></div>
+      </div>
+      <div className="relative">
+        <div className="bg-white h-[12rem] sticky top-0 z-50">
+          <ul className="flex justify-center mobile:gap-8 tab:gap-6 lg:gap-8">
+            <li className="lg:px-24 py-8  tab:px-8 text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
+              <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
+                <span
+                  className={activeDivIndex === 0 ? "text-black font-bold" : ""}
+                >
+                  Intuitive smart
+                </span>
+                <br />
+                <span
+                  className={
+                    activeDivIndex === 0 ? "text-prime-green font-medium" : ""
+                  }
+                >
+                  display
+                </span>
+              </p>
+            </li>
+            <li className="lg:px-24 py-8  tab:px-8  text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
+              <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
+                <span
+                  className={activeDivIndex === 1 ? "text-black font-bold" : ""}
+                >
+                  Dynamic projection
+                </span>
+                <br />
+                <span
+                  className={
+                    activeDivIndex === 1 ? "text-prime-green font-medium" : ""
+                  }
+                >
+                  Mapping
+                </span>
+              </p>
+            </li>
+            <li className="lg:px-24 py-8  tab:px-8  text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
+              <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
+                <span
+                  className={activeDivIndex === 2 ? "text-black font-bold" : ""}
+                >
+                  Interactive touchscreen
+                </span>
+                <br />
+                <span
+                  className={
+                    activeDivIndex === 2 ? "text-prime-green font-medium" : ""
+                  }
+                >
+                  experience
+                </span>
+              </p>
+            </li>
+            <li className="lg:px-24 py-8  tab:px-8  text-center relative after:content-[''] after:absolute after:bg-prime-green after:w-4 after:h-4 after:rounded-full after:bottom-[-0.68rem]">
+              <p className="lg:text-lg  mobile:text-[0.5rem] text-neutral-grey">
+                <span
+                  className={activeDivIndex === 3 ? "text-black font-bold" : ""}
+                >
+                  Immersive virtual
+                </span>
+                <br />
+                <span
+                  className={
+                    activeDivIndex === 3 ? "text-prime-green font-medium" : ""
+                  }
+                >
+                  Reality
+                </span>
+              </p>
+            </li>
+          </ul>
+          <hr
+            className="border-t-[0.37rem] border-prime-green rounded-full tab:mx-8 mobile:mx-4"
+            id="scroll-progress"
+          />
+        </div>
+
+        <div
+          className="bg-prime-green"
+          ref={(el: any) => (divRefs.current[0] = el)}
+        >
+          <div className="max-w-[82rem] m-auto lg:py-28 tab:px-20 lgdesktop:px-0 tab:py-16 mobile:px-8  mobile:pt-16 mobile:pb-12">
             <div className="tab:flex mobile:flex-col tab:items-center tab:justify-center lgdesktop:justify-normal lgdesktop:items-start">
-              <h2 className="lg:text-7xl tab:text-5xl tab:leading-[3.33rem] bg-white inline tab:px-6 mobile:text-[2rem] mobile:px-2">
+              <h2 className="lg:text-7xl tab:text-5xl tab:leading-[3.33rem] bg-white inline tab:px-6 mobile:text-[2rem] mobile:px-2 text-nowrap">
                 Intuitive Smart Display
               </h2>
               <p
@@ -104,11 +213,8 @@ const ExperienceCenter = () => {
                 alt="project-overview"
               />
               <div className="mobile:pt-10 lgdesktop:pt-10">
-                <div className="bg-white flex gap-2.5 items-center px-5 py-4 lg:w-[42.1rem] tab:w-[36rem] lgdesktop:w-[34.1rem] mb-5">
-                  <h2
-                    className="text-prime-green lg:text-[3.5rem] tab:text-[2.5rem] pr-3"
-                    style={{ borderRight: "1px solid rgba(14, 29, 41, 0.5)" }}
-                  >
+                <div className="bg-white flex gap-2.5 px-5 py-4 lg:w-[42.1rem] tab:w-[36rem] lgdesktop:w-[34.1rem] mb-5">
+                  <h2 className="text-prime-green lg:text-[3.5rem] tab:text-[2.5rem] pr-3 w-[4.75rem]">
                     01
                   </h2>
 
@@ -123,15 +229,12 @@ const ExperienceCenter = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-white flex gap-2.5 items-center px-5 py-4 lg:w-[42.1rem] tab:w-[36rem] lgdesktop:w-[34.1rem] mb-5">
-                  <h2
-                    className="text-prime-green lg:text-[3.5rem] tab:text-[2.5rem] pr-3"
-                    style={{ borderRight: "1px solid rgba(14, 29, 41, 0.5)" }}
-                  >
+                <div className="bg-white flex gap-2.5 px-5 py-4 lg:w-[42.1rem] tab:w-[36rem] lgdesktop:w-[34.1rem] mb-5">
+                  <h2 className="text-prime-green lg:text-[3.5rem] tab:text-[2.5rem] pr-3 w-[4.75rem]">
                     02
                   </h2>
 
-                  <div className="pl-2">
+                  <div className="pl-4">
                     <h2 className="text-augment-para lg:text-lg tab:text-2xl  mobile:font-[700] tab:font-bold opacity-80">
                       Premium display solution
                     </h2>
@@ -148,14 +251,17 @@ const ExperienceCenter = () => {
           </div>
         </div>
 
-        <div className="max-w-[80rem] m-auto tab:px-16 lg:px-14 lgdesktop:px-0 mobile:px-8 ">
+        <div
+          className="max-w-[80rem] m-auto tab:px-16 lg:px-14 lgdesktop:px-0 mobile:px-8 "
+          ref={(el: any) => (divRefs.current[1] = el)}
+        >
           <div className="flex lg:justify-between lgdesktop:flex-row mobile:flex-col  tab:justify-center tab:items-center lgdesktop:mt-28 mobile:mt-16 ">
             <div className="lgdesktop:w-2/5 lg:w-7/12 tab:w-[37rem]">
               <h2 className="lg:text-7xl tab:text-5xl tab:leading-[3.33rem] bg-prime-green inline tab:px-6 mobile:text-[2rem] mobile:px-2">
                 Dynamic
               </h2>
-              <p className="lg:text-[3.5rem] text-amenities-para tab:text-5xl font-semibold lg:leading-[3.33rem] tab:leading-8 tab:pt-8 mobile:text-2xl mobile:pt-0">
-                Project mapping
+              <p className="lg:text-[3.5rem] text-amenities-para tab:text-5xl font-semibold lg:leading-[3.33rem] tab:leading-8 tab:pt-8 mobile:text-2xl mobile:pt-0 text-nowrap">
+                Projection mapping
               </p>
               <p
                 className={`${manrope.className} mobile:text-sm lg:text-sm tab:text-base text-amenities-para leading-6 lgdesktop:pt-5 mobile:py-3`}
@@ -238,9 +344,12 @@ const ExperienceCenter = () => {
           </div>
         </div>
 
-        <div className="bg-form-head lg:py-12">
+        <div
+          className="bg-form-head"
+          ref={(el: any) => (divRefs.current[2] = el)}
+        >
           <div className="max-w-[82rem] m-auto tab:px-16 lg:px-14 lgdesktop:px-0 mobile:flex-col-reverse lgdesktop:flex-row mobile:px-8 mobile:py-16">
-            <div className="flex lg:justify-between lgdesktop:flex-row mobile:flex-col-reverse tab:justify-center tab:items-center lg:mt-28 tab:pt-16">
+            <div className="flex lg:justify-between lgdesktop:flex-row mobile:flex-col-reverse tab:justify-center tab:items-center">
               <div className="lgdesktop:w-3/5 tab:w-auto tab:my-5 lg:mr-16 lgdesktop:mr-0 ">
                 <Image
                   className="lg:ml-4 tab:w-[37.5rem] lg:w-[42.68rem]"
@@ -329,7 +438,10 @@ const ExperienceCenter = () => {
           </div>
         </div>
 
-        <div className="max-w-[82rem] m-auto lg:py-20 lg:px-14 tab:py-16 lgdesktop:px-0 mobile:px-8 mobile:py-16">
+        <div
+          className="max-w-[82rem] m-auto lg:py-20 lg:px-14 tab:py-16 lgdesktop:px-0 mobile:px-8 mobile:py-16"
+          ref={(el: any) => (divRefs.current[3] = el)}
+        >
           <div className="tab:flex tab:flex-col tab:items-center tab:justify-center lg:block lgdesktop:flex-row">
             <h2 className="lg:text-7xl tab:text-5xl tab:leading-[3.33rem] bg-prime-green inline tab:px-6 mobile:text-[2rem] mobile:px-2">
               Immersive VR experience
@@ -353,23 +465,17 @@ const ExperienceCenter = () => {
             />
             <div className="mobile:pt-8 lgdesktop:pt-0">
               <div
-                className=" flex gap-2.5 items-center px-5 py-3 lgdesktop:w-[33.1rem] tab:w-[36rem] mb-5"
-                style={{
-                  border: " 1px solid rgba(48, 52, 84, 0.24)",
-                }}
+                className="flex gap-2.5 items-center px-5 py-3 lgdesktop:w-[33.1rem] tab:w-[36rem] mb-5"
+                style={{ border: "1px solid rgba(48, 52, 84, 0.24)" }}
               >
-                <h2
-                  className="text-prime-green lg:text-[3.5rem] mobile:text-lg pr-4"
-                  style={{ borderRight: "1px solid rgba(14, 29, 41, 0.5)" }}
-                >
+                <h2 className="text-prime-green lg:text-[3.5rem] mobile:text-lg pr-4 w-[4.75rem]">
                   01
                 </h2>
-
                 <div className="pl-3">
-                  <h2 className="text-augment-para lg:text-lg tab:text-2xl lgdesktop:font-semibold mobile:font-bold  opacity-80">
+                  <h2 className="text-augment-para lg:text-lg tab:text-2xl lgdesktop:font-semibold mobile:font-bold opacity-80">
                     VR Headsets
                   </h2>
-                  <p className="mobile:text-sm text-augment-para lg:text-[0.8rem] tab:text-base  leading-[1.1rem]">
+                  <p className="mobile:text-sm text-augment-para lg:text-[0.8rem] tab:text-base leading-[1.1rem]">
                     We support a wide range of VR headsets, from the
                     cutting-edge Oculus Quest to the industry-leading HTC Vive,
                     ensuring a seamless and immersive experience for your
@@ -378,20 +484,14 @@ const ExperienceCenter = () => {
                 </div>
               </div>
               <div
-                className=" flex gap-2.5 items-center px-5 py-3  lgdesktop:w-[33.1rem] tab:w-[36rem] mb-5"
-                style={{
-                  border: " 1px solid rgba(48, 52, 84, 0.24)",
-                }}
+                className="flex gap-2.5 items-center px-5 py-3 lgdesktop:w-[33.1rem] tab:w-[36rem] mb-5"
+                style={{ border: "1px solid rgba(48, 52, 84, 0.24)" }}
               >
-                <h2
-                  className="text-prime-green lg:text-[3.5rem] mobile:text-lg pr-3"
-                  style={{ borderRight: "1px solid rgba(14, 29, 41, 0.5)" }}
-                >
+                <h2 className="text-prime-green lg:text-[3.5rem] mobile:text-lg pr-3 w-[4.75rem]">
                   02
                 </h2>
-
                 <div className="pl-2">
-                  <h2 className=" text-augment-para lg:text-lg tab:text-2xl lgdesktop:font-semibold mobile:font-bold opacity-80">
+                  <h2 className="text-augment-para lg:text-lg tab:text-2xl lgdesktop:font-semibold mobile:font-bold opacity-80">
                     Photorealistic VR Content
                   </h2>
                   <p className="mobile:text-sm text-augment-para lg:text-[0.8rem] tab:text-base leading-[1.1rem]">
@@ -404,12 +504,12 @@ const ExperienceCenter = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[82rem] m-auto mobile:px-8 tab:px-14 lgdesktop:px-0">
-          <RealEstate />
-        </div>
-        <div className="max-w-[82rem] m-auto mobile:px-8 tab:px-14 lgdesktop:px-0 mobile:pt-10 lgdesktop:mt-0">
-          <FooterSection />
-        </div>
+      </div>
+      <div className="max-w-[82rem] m-auto mobile:px-8 tab:px-14 lgdesktop:px-0 lgdesktop:pt-[7rem] mobile:pt-[4rem]">
+        <RealEstate />
+      </div>
+      <div className="max-w-[82rem] m-auto mobile:px-8 tab:px-14 lgdesktop:px-0 mobile:pt-10 lgdesktop:mt-0">
+        <FooterSection />
       </div>
     </>
   );

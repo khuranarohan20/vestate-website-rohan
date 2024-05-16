@@ -6,6 +6,10 @@ const manrope = Manrope({ subsets: ["greek"] });
 const inter = Inter({ subsets: ["greek"] });
 
 const FooterSection = () => {
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="xl:max-w-[82rem] m-auto lg:pb-12  mobile:px-2 px-0  lgdesktop:px-0 tab:px-0">
@@ -18,7 +22,7 @@ const FooterSection = () => {
             alt="v-state"
           />
 
-          <div>
+          <div onClick={handleScrollTop}>
             <svg
               className="mobile:w-[2.43rem] tab:w-auto"
               width="53"
